@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import {
+  Box,
   Button,
   Center,
   Footer,
@@ -11,6 +11,7 @@ import {
 } from "@mantine/core";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Image from "next/image";
 export default function Home() {
   return (
     <Stack>
@@ -23,7 +24,20 @@ export default function Home() {
       </Center>
       <Stack align="center">
         <h2>Sources</h2>
-        <SimpleGrid></SimpleGrid>
+        <SimpleGrid cols={3}>
+          <Box>
+            <Image src="../media/abc.png"  width={200} height={200}/>
+            ABC News</Box>
+          <Box>Fox News</Box>
+          <Box>New York Times</Box>
+
+          <Box>ABC News</Box>
+          <Box>Fox News</Box>
+          <Box>New York Times</Box>
+
+
+
+        </SimpleGrid>
       </Stack>
       <Footer>
         <Stack justify="center" sx={{ flexDirection: "row" }}>

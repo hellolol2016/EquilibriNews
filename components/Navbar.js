@@ -23,8 +23,8 @@ export default function AppShellDemo() {
         </Link>
         </Box>
       <Stack height={100} justify={"flex-end"} sx={{ flexDirection: "row" }}>
-        <Link href="about">About</Link>
-        <Link href="tutorial">Get Started</Link>
+        <Link href="/about">About</Link>
+        <Link href="/tutorial">Get Started</Link>
       </Stack>
     </Box>
   );
