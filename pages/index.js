@@ -9,11 +9,14 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  Title,
 } from "@mantine/core";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import useStyles from "./styles"
 export default function Home() {
+  const {classes} = useStyles()  
   const NewsSource = (props) => {
     return (
       <Box
@@ -29,14 +32,15 @@ export default function Home() {
     );
   };
 
-  return (
+  return (<>
+    
     <Stack>
-      <Center>
+      <Center sx={{color:"white"}}>
         <BackgroundImage src="/media/background.jpg" opacity>
           <Navbar />
-          <Stack align="center" sx={{ height: "800px" }}>
-            <Text fontSize={300}>EquilibriNews</Text>
-            <Text>Only facts.</Text>
+          <Stack align="center" sx={{ height: "85vh" }} justify="center">
+            <Title className={classes.whiteFont}>EquilibriNews</Title> 
+            <Text className={classes.whiteFont}>Only facts.</Text>
           </Stack>
         </BackgroundImage>
       </Center>
@@ -70,6 +74,6 @@ export default function Home() {
           </Link>
         </Stack>
       </Footer>
-    </Stack>
+    </Stack></>
   );
 }
