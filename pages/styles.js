@@ -3,8 +3,9 @@ const useStyles = createStyles((theme) =>({
   whiteFont:{
     color:"white"
   },
-  Link:{
-    color:"white"
+  noSelect:{
+    color:"white",
+    userSelect: "none" 
   }
   
 }));

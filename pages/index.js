@@ -15,12 +15,13 @@ import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import useStyles from "./styles"
+import {BsInstagram,BsGithub,BsYoutube} from "react-icons/bs"
 export default function Home() {
   const {classes} = useStyles()  
   const NewsSource = (props) => {
     return (
       <Box
-        sx={{ display: "flex", justifyContent: "center", alignSelf: "center" }}
+        sx={{ display: "flex", justifyContent: "center", alignSelf: "center",padding:"10%" }}
       >
         <Image
           src={`/media/${props.img}.png`}
@@ -46,7 +47,7 @@ export default function Home() {
       </Center>
       <Stack align="center">
         <h2>Sources</h2>
-        <SimpleGrid cols={3}>
+        <SimpleGrid cols={3} sx={{margin:"20px"}}>
           <NewsSource img="abc" alt={"abc news"} h={200} />
           <NewsSource img="wsj" alt={"wall street journal"} h={200} />
           <NewsSource img="nyt" alt={"new york times"} h={150} />
@@ -55,25 +56,16 @@ export default function Home() {
           <NewsSource img="dm" alt={"dm"} h={100} />
         </SimpleGrid>
       </Stack>
-      <Footer>
-        <Stack justify="center" sx={{ flexDirection: "row" }}>
-          <Link href="#">
-            <Button sx={{ paddingTop: "3px" }}>
-              <Text>Instagram</Text>
-            </Button>
-          </Link>
-          <Link href="#">
-            <Button sx={{ paddingTop: "3px" }}>
-              <Text>Github</Text>
-            </Button>
-          </Link>
-          <Link href="#">
-            <Button sx={{ paddingTop: "3px" }}>
-              <Text>Youtube</Text>
-            </Button>
-          </Link>
-        </Stack>
-      </Footer>
+      <Footer></Footer>
+          <Stack sx={{flexDirection:"row",justifyContent:"center"}} style={{fontSize:"40px", padding:"20px"}}>
+           <Link href="https://www.instagram.com/wennis_dang/"><BsInstagram ></BsInstagram></Link>
+           <Link href="https://github.com/hellolol2016"><BsGithub></BsGithub></Link>
+           <Link href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"><BsYoutube></BsYoutube></Link>
+            </Stack> 
+        
+        
+        
+
     </Stack></>
   );
 }

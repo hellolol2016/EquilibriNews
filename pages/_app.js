@@ -32,7 +32,6 @@ function MyApp({ Component, pageProps }) {
         withNormalizeCSS
         withGlobalStyles
       >
-        <Button color="gray">mantine kinda sus</Button>
         <Component {...pageProps} />
       </MantineProvider>
     </>
