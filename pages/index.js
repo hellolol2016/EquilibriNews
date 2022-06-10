@@ -4,7 +4,6 @@ import {
   Box,
   Button,
   Center,
-  Footer,
   Grid,
   SimpleGrid,
   Stack,
@@ -16,6 +15,7 @@ import Link from "next/link";
 import Image from "next/image";
 import useStyles from "./styles"
 import {BsInstagram,BsGithub,BsYoutube} from "react-icons/bs"
+import Footer from "../components/Footer"
 export default function Home() {
   const {classes} = useStyles()  
   const NewsSource = (props) => {
@@ -56,13 +56,7 @@ export default function Home() {
           <NewsSource img="dm" alt={"dm"} h={100} />
         </SimpleGrid>
       </Stack>
-      <Footer></Footer>
-          <Stack sx={{flexDirection:"row",justifyContent:"center"}} style={{fontSize:"40px", padding:"20px"}}>
-           <Link href="https://www.instagram.com/wennis_dang/"><BsInstagram ></BsInstagram></Link>
-           <Link href="https://github.com/hellolol2016"><BsGithub></BsGithub></Link>
-           <Link href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"><BsYoutube></BsYoutube></Link>
-            </Stack> 
-        
+       <Footer></Footer> 
         
         
 

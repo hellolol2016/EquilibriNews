@@ -12,6 +12,7 @@ import {
   Space,
   Box,
   Button,
+  Image,
 } from "@mantine/core";
 import Link from "next/link";
 import useStyles from "../pages/styles";
@@ -37,7 +38,7 @@ export default function AppShellDemo() {
     <Box p="">
       <Box fixed sx={{ position: "absolute" }}>
         <Link href="/">
-          <Text>Insert Image Here Later</Text>
+        <Image src={"/media/en.png"} alt="en" height={"45px"} /> 
         </Link>
       </Box>
       <Stack height={100} justify={"flex-end"} sx={{ flexDirection: "row" }}>
