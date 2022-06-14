@@ -1,31 +1,55 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
   const items = [];
   for (let element of extractedItems) {
-    console.log(element.innerText);
     const memo = {
-      title: element.querySelector(".title")
+      title: element.querySelector(".title")!=null
         ? element.querySelector(".title").innerText
         : "NONE",
-      type: element.querySelector(".eyebrow")
+      type: element.querySelector(".eyebrow")!=null
         ? element.querySelector(".eyebrow").innerText
         : "NONE",
-      url: element.querySelector(".title a")
+      url: element.querySelector(".title a") != null
         ? element.querySelector(".title a").href
         : "NONE",
     };
-    items.push(memo);
+    if (items.length < 30 && memo.url !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+
+function extractWSJ() {
+  const extractedItems = document.querySelectorAll("article");
+  const items = [];
+  for (let element of extractedItems) {
+    const memo = {
+      title: element.querySelector("h3")!=null
+        ? element.querySelector("h3").innerText
+        : element.querySelector("h4")!=null
+        ? element.querySelector("h4").innerText
+        : "NONE",
+      type: element.querySelector("p")!=null
+        ? element.querySelector("p").innerText
+        : "NONE",
+      url: element.querySelector("a")!=null
+        ? element.querySelector("a").href
+        : "NONE",
+    };
+    if (items.length < 30 && memo.url !== "NONE") {
+      items.push(memo);
+    }
   }
   return items;
 }
 
 async function scrapeInfiniteScrollItems(
   page,
-  getFoxNews,
+  getNews,
   itemTargetCount,
   scrollDelay = 1000
 ) {
@@ -33,7 +57,7 @@ async function scrapeInfiniteScrollItems(
   try {
     let previousHeight;
     while (items.length < itemTargetCount) {
-      items = await page.evaluate(getFoxNews);
+      items = await page.evaluate(getNews);
       previousHeight = await page.evaluate("document.body.scrollHeight");
       await page.evaluate("window.scrollTo(0, document.body.scrollHeight)");
       await page.waitForFunction(
@@ -52,23 +76,19 @@ export default async function handler(req, res) {
     headless: false,
   });
   const page = await browser.newPage();
-  page.setJavaScriptEnabled(false)
+  page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 926 });
 
-  await page.goto("https://www.foxnews.com");
+  //await page.goto("https://www.foxnews.com");
 
-  // Scroll and extract items from the page.
-  let items = await scrapeInfiniteScrollItems(
-    page,
-    extractFox,
-    10
-    );
+  //let items = await scrapeInfiniteScrollItems(page, extractFox, 10);
+  //fs.writeFileSync("./fox.json", JSON.stringify(items, null, 2) + "\n");
 
+  await page.goto("https://www.wsj.com");
 
-  // Save extracted items to a file.
-  fs.writeFileSync("./data.json", JSON.stringify(items, null, 2) + "\n");
-
-  // Close the browser.
+  let items = await scrapeInfiniteScrollItems(page, extractWSJ, 10);
+  fs.writeFileSync("./wsj.json", JSON.stringify(items, null, 2) + "\n");
+  
   await browser.close();
 
   res.status(200).json({ hello: "i love rm" });

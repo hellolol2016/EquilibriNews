@@ -34,7 +34,10 @@ export default function Home() {
   };
 
   return (<>
-    
+    <Head>
+      <title>EQ News</title> 
+      <link rel = "icon" href="/media/en.png"></link>
+      </Head> 
     <Stack>
       <Center sx={{color:"white"}}>
         <BackgroundImage src="/media/background.jpg" opacity>
