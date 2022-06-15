@@ -1,20 +1,28 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
+function truncate(str, n){
+  return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
+};
+
+
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
-      title: element.querySelector(".title")!=null
-        ? element.querySelector(".title").innerText
-        : "NONE",
-      type: element.querySelector(".eyebrow")!=null
-        ? element.querySelector(".eyebrow").innerText
-        : "NONE",
-      url: element.querySelector(".title a") != null
-        ? element.querySelector(".title a").href
-        : "NONE",
+      title:
+        element.querySelector(".title") != null
+          ? element.querySelector(".title").innerText
+          : "NONE",
+      type:
+        element.querySelector(".eyebrow") != null
+          ? element.querySelector(".eyebrow").innerText
+          : "NONE",
+      url:
+        element.querySelector(".title a") != null
+          ? element.querySelector(".title a").href
+          : "NONE",
     };
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
@@ -28,19 +36,102 @@ function extractWSJ() {
   const items = [];
   for (let element of extractedItems) {
     const memo = {
-      title: element.querySelector("h3")!=null
-        ? element.querySelector("h3").innerText
-        : element.querySelector("h4")!=null
-        ? element.querySelector("h4").innerText
-        : "NONE",
-      type: element.querySelector("p")!=null
-        ? element.querySelector("p").innerText
-        : "NONE",
-      url: element.querySelector("a")!=null
-        ? element.querySelector("a").href
-        : "NONE",
+      title:
+        element.querySelector("h3") != null
+          ? element.querySelector("h3").innerText
+          : element.querySelector("h4") != null
+          ? element.querySelector("h4").innerText
+          : "NONE",
+      type:
+        element.querySelector("p") != null
+          ? element.querySelector("p").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
     };
     if (items.length < 30 && memo.url !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+
+function extractNYT() {
+  const extractedItems = document.querySelectorAll("li");
+  const items = [];
+  for (let element of extractedItems) {
+    const memo = {
+      title:
+        element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText
+          : "NONE",
+      type:
+        element.querySelector("p") != null
+          ? element.querySelector("p").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+    };
+
+    if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+
+
+function extractABC() {
+  const extractedItems = document.querySelectorAll(".ContentRoll__Item");
+  const items = [];
+  for (let element of extractedItems) {
+    const memo = {
+      title:
+        element.querySelector(".AnchorLink") != null
+          ? element.querySelector(".AnchorLink").innerText
+          : "NONE",
+      type:
+        element.querySelector(".ContentRoll__Desc") != null
+          ? element.querySelector(".ContentRoll__Desc").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+    };
+
+    if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+
+
+function extractDM() {
+  const column = document.querySelectorAll(".article");
+  const items = [];
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText
+          : "NONE",
+      type:
+        element.querySelectorAll("p:not(.show-as-new ):not(.show-as-updated)") != null
+          ? element.querySelector("p:not(.show-as-new):not(.show-as-updated)").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+    };
+
+    if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
   }
@@ -84,11 +175,27 @@ export default async function handler(req, res) {
   //let items = await scrapeInfiniteScrollItems(page, extractFox, 10);
   //fs.writeFileSync("./fox.json", JSON.stringify(items, null, 2) + "\n");
 
-  await page.goto("https://www.wsj.com");
+  //await page.goto("https://www.wsj.com");
 
-  let items = await scrapeInfiniteScrollItems(page, extractWSJ, 10);
-  fs.writeFileSync("./wsj.json", JSON.stringify(items, null, 2) + "\n");
-  
+  //items = await scrapeInfiniteScrollItems(page, extractWSJ, 10);
+  //fs.writeFileSync("./wsj.json", JSON.stringify(items, null, 2) + "\n");
+
+  //await page.goto("https://www.nytimes.com/section/politics");
+
+  //let items = await scrapeInfiniteScrollItems(page, extractNYT, 10);
+  //fs.writeFileSync("./nyt.json", JSON.stringify(items, null, 2) + "\n");
+
+
+  //await page.goto("https://abcnews.go.com/Politics");
+
+  //let items = await scrapeInfiniteScrollItems(page, extractABC, 10);
+  //fs.writeFileSync("./abc.json", JSON.stringify(items, null, 2) + "\n");
+
+  await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
+
+  let items = await scrapeInfiniteScrollItems(page, extractDM, 10);
+  fs.writeFileSync("./dm.json", JSON.stringify(items, null, 2) + "\n");
+
   await browser.close();
 
   res.status(200).json({ hello: "i love rm" });
