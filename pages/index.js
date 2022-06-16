@@ -55,7 +55,7 @@ export default function Home() {
           <NewsSource img="wsj" alt={"wall street journal"} h={200} />
           <NewsSource img="nyt" alt={"new york times"} h={150} />
           <NewsSource img="fox" alt={"fox news"} h={200} />
-          <NewsSource img="cnn" alt={"cnn"} h={200} />
+          <NewsSource img="r" alt={"r"} h={200} />
           <NewsSource img="dm" alt={"dm"} h={100} />
         </SimpleGrid>
       </Stack>

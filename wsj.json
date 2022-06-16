@@ -1,152 +1,102 @@
 [
   {
-    "title": "Fed Lifts Rates by 0.75 Point, Largest Increase Since 1994",
-    "type": "The Federal Reserve signaled it will continue tightening policy this year at the most rapid pace in decades as it races to combat inflation. It expects the federal-funds target rate to end the year at 3.4%, up from past projections. Chairman Jerome Powell said an 0.75-point rate hike could also be on the table in July.",
-    "url": "https://www.wsj.com/articles/fed-raises-rates-by-0-75-percentage-point-largest-increase-since-1994-11655316170"
+    "title": "Witnesses Lay Out How Pence Resisted Pressure to Block 2020 Election Results",
+    "type": "Some White House officials thought that a plan for then-Vice President Mike Pence to disrupt the transfer of power on Jan. 6 was wrong, with some witnesses describing it as crazy, according to testimony at a hearing into the attack on the U.S. Capitol.1,7877 min read",
+    "url": "https://www.wsj.com/articles/jan-6-committees-third-hearing-to-focus-on-trumps-effort-to-pressure-pence-11655371801?mod=politics_lead_pos1"
   },
   {
-    "title": "Stocks Rally After Fed Decision",
-    "type": "U.S. stocks jumped as the Fed raised interest rates by 0.75 percentage point but suggested moves of that scale wouldn’t become common.3 min read",
-    "url": "https://www.wsj.com/articles/global-stocks-markets-dow-update-06-15-2022-11655278404"
+    "title": "Man Charged With Attempting to Assassinate Justice Brett Kavanaugh",
+    "type": "A grand jury has leveled a new charge at Nicholas Roske, the armed California man arrested near the justice’s Maryland home.2 min read",
+    "url": "https://www.wsj.com/articles/man-arrested-over-threat-to-kill-justice-brett-kavanaugh-faces-new-charge-11655392092?mod=politics_lead_pos2"
   },
   {
-    "title": "Economics Has Some Explaining to Do About Inflation",
-    "type": "Economic models that worked for decades broke down during the pandemic, and alternatives have yet to emerge.3125 min read",
+    "title": "Illegal Border Crossings Hit Record in May",
+    "type": "Eased travel restrictions, warmer weather, political strife are contributing to sharp increases in arrests over the last several months, officials say.2 min read",
+    "url": "https://www.wsj.com/articles/illegal-border-crossings-hit-record-in-may-11655407924?mod=politics_lead_pos3"
+  },
+  {
+    "title": "U.S. Secretly Reviews Israel’s Plans for Strikes in Syria",
+    "type": "The U.S. prescreens Israeli raids against Iranian targets to avoid interference with the U.S. anti-ISIS mission.348 min read",
+    "url": "https://www.wsj.com/articles/u-s-secretly-reviews-israels-plans-for-strikes-against-iranian-targets-in-syria-11655405162?mod=politics_lead_pos4"
+  },
+  {
+    "title": "Charges in Buffalo Shooting Point to Domestic Terrorism, U.S. Says",
+    "type": "A top Justice Department official said hate-crime charges represent the “strongest tool in our arsenal.”5 min read",
+    "url": "https://www.wsj.com/articles/charges-against-accused-buffalo-shooter-point-to-alleged-act-of-domestic-terrorism-government-says-11655405466?mod=politics_lead_pos5"
+  },
+  {
+    "title": "Gun Talks Stall on Red-Flag Laws, Domestic Abuser Rules",
+    "type": "Key Senate negotiators on gun-control legislation are stuck on drafting the language for provisions that would provide federal grants to enforce so-called red-flag laws and close the “boyfriend loophole.”4 min read",
+    "url": "https://www.wsj.com/articles/senate-gun-deal-negotiators-differ-on-red-flag-laws-domestic-abuser-rules-11655384887?mod=politics_lead_pos6"
+  },
+  {
+    "title": "Flood-Prone Homes Could Lose Federal Insurance Under FEMA Plan",
+    "type": "A Senate committee is set to review the federal government’s flood insurance program as officials seek to do something they have never done: drop coverage for frequently flooding properties.56 min read",
+    "url": "https://www.wsj.com/articles/fema-urges-congress-to-drop-flood-insurance-for-highest-risk-areas-11655384400?mod=politics_lead_pos7"
+  },
+  {
+    "title": "Are We in a Recession Now?5 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/what-is-a-recession-and-are-we-in-one-now-11655392738?mod=politics_lead_pos10"
+  },
+  {
+    "title": "By Design, the Fed May Be Tightening Too Much3 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/by-design-the-fed-may-be-tightening-too-much-11655370001?mod=politics_lead_pos11"
+  },
+  {
+    "title": "States Prepare to Quickly Implement Abortion ‘Trigger’ Laws5 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/states-prepare-to-quickly-implement-abortion-trigger-laws-11655385028?mod=politics_lead_pos12"
+  },
+  {
+    "title": "House GOP Seeks Inquiry Into Reports of Vandalism, Arson at Antiabortion Offices2 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/house-republicans-request-investigation-into-reports-of-vandalism-arson-at-antiabortion-offices-11655340778?mod=politics_lead_pos13"
+  },
+  {
+    "title": "Two U.S. Veterans Serving Alongside Ukrainian Forces Reported Missing3 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/two-u-s-veterans-serving-alongside-ukrainian-forces-reported-missing-feared-captured-by-russians-11655406015?mod=politics_featst_pos1"
+  },
+  {
+    "title": "In Ukraine War, Global Arms Market Emerges as a New Front6 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/in-ukraine-war-global-arms-market-emerges-as-a-new-front-11655389740?mod=politics_featst_pos2"
+  },
+  {
+    "title": "France, Germany, Italy, Romania Back Ukraine’s Bid for EU Membership7 min read",
+    "type": "NONE",
+    "url": "https://www.wsj.com/articles/european-leaders-arrive-in-ukraine-as-kyiv-renews-calls-for-more-military-support-11655367940?mod=politics_featst_pos3"
+  },
+  {
+    "title": "Economics Has Some Explaining to Do About Inflation5 min read",
+    "type": "NONE",
     "url": "https://www.wsj.com/articles/on-inflation-economics-has-some-explaining-to-do-11655294432"
   },
   {
-    "title": "Investors See Higher Defaults Ahead as Interest Rates, Inflation Take a Toll",
-    "type": "Debt investors are betting that the Federal Reserve’s latest rate hike is a prelude to a downturn for some U.S. companies as rising borrowing costs are likely to put a damper on consumer spending and raise expenses for business.3 min read",
-    "url": "https://www.wsj.com/articles/investors-see-higher-defaults-ahead-as-interest-rates-inflation-take-a-toll-11655329404"
-  },
-  {
-    "title": "Retail Sales Fall as Inflation Stings Consumers",
-    "type": "Americans’ spending at stores, online and in restaurants declined 0.3% in May as consumers felt the pinch from inflation, higher gasoline prices and rising interest rates.3065 min read",
-    "url": "https://www.wsj.com/articles/us-economy-retail-sales-may-2022-11655238895?mod=hp_lead_pos1"
-  },
-  {
-    "title": "FDA Advisers Back Pfizer, Moderna Covid Vaccines in Young Children",
-    "type": "The positive recommendations for children as young as 6 months move the shots closer to authorization for one of the last groups of people in the U.S. who haven’t been able to get vaccinated against the coronavirus.6 min read",
-    "url": "https://www.wsj.com/articles/fda-advisers-to-review-pfizer-moderna-covid-19-vaccines-in-young-children-11655285401?mod=hp_lead_pos2"
-  },
-  {
-    "title": "U.S. Home Equity Hits Highest Level on Record—$27.8 Trillion",
-    "type": "Soaring home prices have driven up home equity, but rising interest rates are making it more expensive to use.2073 min read",
-    "url": "https://www.wsj.com/articles/u-s-home-equity-hits-highest-level-on-record-27-8-trillion-11655250769?mod=hp_lead_pos3"
-  },
-  {
-    "title": "WWE Board Probes Secret $3 Million Hush Pact by CEO Vince McMahon",
-    "type": "The board of World Wrestling Entertainment is investigating a secret settlement that its longtime chief executive agreed to pay to a departing employee with whom he allegedly had an affair, according to documents and people familiar with the board inquiry.6 min read",
-    "url": "https://www.wsj.com/articles/wwe-board-probes-secret-3-million-hush-pact-by-ceo-vince-mcmahon-sources-say-11655322722?mod=hp_lead_pos4"
-  },
-  {
-    "title": "Why Rural Americans Keep Waiting for Fast Internet, Despite Billions Spent",
-    "type": "Flaws in government programs to upgrade service have left some residents stuck with slow home internet speeds. “It’s like getting left behind.”377 min read",
-    "url": "https://www.wsj.com/articles/rural-broadband-internet-fcc-11655300008?mod=hp_lead_pos5"
-  },
-  {
-    "title": "U.S., Allies Pledge New Help to Ukraine Amid Growing Strains",
-    "type": "The U.S. is sending $1 billion in new military assistance to help Ukraine repulse Russia’s invasion, in response to urgent pleas from Kyiv for better weapons and amid growing strains among Western capitals.256 min read",
-    "url": "https://www.wsj.com/articles/ukraines-nato-allies-strain-to-keep-up-pressure-on-russia-11655279193?mod=hp_lead_pos6"
-  },
-  {
-    "title": "Washington Commanders’ Owner Dan Snyder Declines Invitation to Testify in Congress",
-    "type": "Dan Snyder could still be subpoenaed, while NFL commissioner Roger Goodell is expected to appear before a hearing of the House oversight committee.73 min read",
-    "url": "https://www.wsj.com/articles/dan-snyder-roger-goodell-nfl-investigation-house-oversight-11655323527?mod=hp_lead_pos7"
-  },
-  {
-    "title": "Biden Pushes Fuel Makers to Boost Capacity, Criticizes Profits6 min read",
+    "title": "Powell’s Opinions on Inflation Matter, Not Biden’s5 min read",
     "type": "NONE",
-    "url": "https://www.wsj.com/articles/biden-pushes-oil-companies-to-boost-capacity-criticizes-profits-11655297130?mod=hp_lead_pos10"
+    "url": "https://www.wsj.com/articles/powells-opinions-on-inflation-matter-not-bidens-11654693201"
   },
   {
-    "title": "Fauci Tests Positive for Covid-192 min read",
+    "title": "In Asia, U.S. Tries an Alternative to Traditional Trade Pacts 5 min read",
     "type": "NONE",
-    "url": "https://www.wsj.com/articles/fauci-tests-positive-for-covid-19-11655320701?mod=hp_lead_pos11"
+    "url": "https://www.wsj.com/articles/to-draw-asia-closer-u-s-tries-an-alternative-to-traditional-trade-pacts-11654084802"
   },
   {
-    "title": "Accused Buffalo Shooter Charged With Hate Crimes5 min read",
+    "title": "Lawmakers Push for New Powers to Block Investments in China8 min read",
     "type": "NONE",
-    "url": "https://www.wsj.com/articles/accused-buffalo-supermarket-shooter-payton-gendron-charged-with-federal-hate-crimes-11655303416?mod=hp_lead_pos12"
+    "url": "https://www.wsj.com/articles/bipartisan-lawmakers-propose-new-government-powers-to-block-u-s-investments-in-china-other-nations-11655147194"
   },
   {
-    "title": "Pixar’s ‘Lightyear’ Movie Banned in 14 Markets Over Same-Sex Content3 min read",
+    "title": "Biden Administration Weighs Changes to Classification of National Security Secrets 5 min read",
     "type": "NONE",
-    "url": "https://www.wsj.com/articles/lightyear-banned-in-14-markets-for-including-same-sex-relationship-11655319434?mod=hp_lead_pos13"
+    "url": "https://www.wsj.com/articles/biden-administration-weighs-changes-to-classification-of-national-security-secrets-11654779600"
   },
   {
-    "title": "The PGA Tour Banned LIV Golfers. They’re Playing in the U.S. Open Anyway.6 min read",
+    "title": "Brookings President Is Put on Leave as FBI Probes Alleged Qatar Lobbying7 min read",
     "type": "NONE",
-    "url": "https://www.wsj.com/articles/liv-golf-us-open-2022-pga-tour-11655264223?mod=hp_featst_pos3"
-  },
-  {
-    "title": "EGOT Winners Through the Years, From Richard Rodgers to Jennifer Hudson",
-    "type": "NONE",
-    "url": "https://www.wsj.com/story/egot-winners-through-the-years-from-richard-rodgers-to-jennifer-hudson-2189bea7?mod=hp_featst_pos4"
-  },
-  {
-    "title": "What the BLEEP? Maine Is Cracking Down on Obscene License Plates.5 min read",
-    "type": "NONE",
-    "url": "https://www.wsj.com/articles/maine-obscene-license-plates-crack-down-11655301439?mod=hp_featst_pos5"
-  },
-  {
-    "title": "Bitcoin Price Falls Toward $20,000 as Cryptocurrency Rout Deepens",
-    "type": "Cryptocurrencies extended their slide, with bitcoin on the verge of falling below $20,000 for the first time since December 2020.2 min read",
-    "url": "https://www.wsj.com/articles/bitcoin-careens-toward-20-000-as-cryptocurrency-rout-deepens-11655293415?mod=hp_lista_pos1"
-  },
-  {
-    "title": "Caterpillar Relocation Extends U.S. Manufacturing’s Southern Shift",
-    "type": "State lawmakers have pushed tax policies to lure makers of electric vehicles, electronics and more.64 min read",
-    "url": "https://www.wsj.com/articles/caterpillar-relocation-to-texas-extends-u-s-manufacturings-southern-shift-11655320150?mod=hp_lista_pos2"
-  },
-  {
-    "title": "Spotify to Slow Its Hiring by 25%",
-    "type": "The audio streaming giant’s move is the latest signal companies are bracing for a possible recession.2 min read",
-    "url": "https://www.wsj.com/articles/spotify-to-slow-its-hiring-by-25-11655322920?mod=hp_lista_pos3"
-  },
-  {
-    "title": "Hundreds of Car Crashes Linked to Self-Driving and Other Tech",
-    "type": "Tesla reported the most crashes suspected of involving advanced driver-assistance technology in the government’s first survey of such incidents. But the NHTSA cautioned against drawing conclusions about any company’s safety features, given the data’s limitations.1107 min read",
-    "url": "https://www.wsj.com/articles/tesla-tops-u-s-agency-list-of-crashes-suspected-to-involve-driver-assistance-technology-11655299175?mod=hp_lista_pos4"
-  },
-  {
-    "title": "GM, Ford CFOs Say They Are Preparing for Economic Slowdown",
-    "type": "Inflation hasn’t affected consumer demand, the executives say, but they are modeling different downturn scenarios.3 min read",
-    "url": "https://www.wsj.com/articles/gm-ford-cfos-say-they-are-preparing-for-economic-slowdown-11655323170?mod=hp_lista_pos5"
-  },
-  {
-    "title": "Black Death Plague Began in Central Asia, Study Shows",
-    "type": "Scientists say they have solved the longstanding mystery surrounding the origins of Black Death, a bacteria-caused plague that spread from rodents to people and killed 50 million Europeans in the 14th century.395 min read",
-    "url": "https://www.wsj.com/articles/black-death-plague-that-killed-50-million-in-europe-began-in-central-asia-study-shows-11655305200?mod=lead_feature_below_a_pos1"
-  },
-  {
-    "title": "India Official’s Opposition to Deals Unsettles WTO Meeting",
-    "type": "Critics from other countries say Piyush Goyal has hindered deal-making, but Indian minister says he speaks for the marginalized.3 min read",
-    "url": "https://www.wsj.com/articles/india-officials-opposition-to-agreements-unsettles-wto-meeting-11655329432?mod=lead_feature_below_a_pos1"
-  },
-  {
-    "title": "EU Takes Legal Action Against U.K. Over Proposed Brexit Overhaul",
-    "type": "The European Union’s move signaled that the bloc has no immediate plans to suspend the Brexit agreements but also set up a protracted period of uncertainty over the deal’s future and a possible trade war in Europe.5 min read",
-    "url": "https://www.wsj.com/articles/eu-launches-legal-action-against-u-k-over-proposed-brexit-deal-overhaul-11655292602?mod=lead_feature_below_a_pos1"
-  },
-  {
-    "title": "Hospitals May Recoup Billions of Dollars in Drug Payments Under Supreme Court Ruling",
-    "type": "The Supreme Court said the Department of Health and Human Services unlawfully cut lucrative pharmaceutical subsidies to some hospitals, in a victory for hospitals that had disputed the move.33 min read",
-    "url": "https://www.wsj.com/articles/supreme-court-reverses-cuts-to-billions-of-dollars-in-hospital-drug-subsidies-11655322904?mod=hp_listb_pos1"
-  },
-  {
-    "title": "EPA Lowers Bar for Toxic Chemicals Contamination",
-    "type": "The agency cut the level at which it said substances known as PFAS might be harmful.2 min read",
-    "url": "https://www.wsj.com/articles/epa-lowers-bar-for-pfas-contamination-11655318054?mod=hp_listb_pos2"
-  },
-  {
-    "title": "Biden Seeks to Strengthen LGBT Protections With Executive Order",
-    "type": "The president’s move aims to counter state laws around transgender youths and to reduce exposure to “conversion therapy,” a practice opposed by the medical establishment but backed by religious-freedom advocates.3 min read",
-    "url": "https://www.wsj.com/articles/biden-seeks-to-strengthen-lgbt-protections-with-executive-order-11655312068?mod=hp_listb_pos3"
-  },
-  {
-    "title": "Steve Bannon Loses Bid to Have Contempt Case Dismissed",
-    "type": "A federal judge in Washington has denied the former Trump strategist’s motion to dismiss his indictment on contempt charges for defying a subpoena from the House committee investigating the Jan. 6, 2021, attack on the U.S. Capitol.193 min read",
-    "url": "https://www.wsj.com/articles/steve-bannon-loses-bid-to-have-contempt-case-dismissed-11655319537?mod=hp_listb_pos4"
+    "url": "https://www.wsj.com/articles/fbi-investigates-retired-general-over-alleged-lobbying-for-qatar-11654714778"
   }
 ]
