@@ -16,7 +16,7 @@ import {
 } from "@mantine/core";
 import Link from "next/link";
 import useStyles from "../pages/styles";
-
+import { useEffect } from "react";
 const NavLink = ({ children, href }) => {
   const theme = useMantineTheme();
 
@@ -33,7 +33,15 @@ const NavLink = ({ children, href }) => {
   );
 };
 
-export default function AppShellDemo() {
+export default function Nav() {
+
+
+
+let user = useEffect(function() {
+  console.log(localStorage.getItem("rating"));
+  localStorage.getItem("rating")
+},[]);
+
   return (
     <Box p="">
       <Box fixed sx={{ position: "absolute" }}>
@@ -43,7 +51,7 @@ export default function AppShellDemo() {
       </Box>
       <Stack height={100} justify={"flex-end"} sx={{ flexDirection: "row" }}>
         <NavLink href="/about">About</NavLink>
-        <NavLink href="/tutorial">Get Started</NavLink>
+        <NavLink href={user!==null?`/product?rating=${localStorage.getItem("rating")}`:"/tutorial"}>Get Started</NavLink>
       </Stack>
     </Box>
   );

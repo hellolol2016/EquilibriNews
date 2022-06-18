@@ -16,7 +16,11 @@ import Image from "next/image";
 import useStyles from "./styles"
 import {BsInstagram,BsGithub,BsYoutube} from "react-icons/bs"
 import Footer from "../components/Footer"
+
 export default function Home() {
+
+
+
   const {classes} = useStyles()  
   const NewsSource = (props) => {
     return (
@@ -33,6 +37,7 @@ export default function Home() {
     );
   };
 
+
   return (<>
     <Head>
       <title>EQ News</title> 
@@ -41,7 +46,7 @@ export default function Home() {
     <Stack>
       <Center sx={{color:"white"}}>
         <BackgroundImage src="/media/background.jpg" opacity>
-          <Navbar />
+          <Navbar/>
           <Stack align="center" sx={{ height: "85vh" }} justify="center">
             <Title className={classes.whiteFont}>EquilibriNews</Title> 
             <Text className={classes.whiteFont}>Only facts.</Text>
