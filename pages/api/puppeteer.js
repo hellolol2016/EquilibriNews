@@ -77,13 +77,15 @@ function extractNYT() {
           : "NONE",
     };
 
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
   }
   return items;
 }
-
 
 function extractABC() {
   const extractedItems = document.querySelectorAll(".ContentRoll__Item");
@@ -104,6 +106,9 @@ function extractABC() {
           : "NONE",
     };
 
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
@@ -111,6 +116,36 @@ function extractABC() {
   return items;
 }
 
+function extractDM() {
+  const column = document.querySelectorAll(".article");
+  const items = [];
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText
+          : "NONE",
+      type:
+        element.querySelectorAll("p:not(.show-as-new ):not(.show-as-updated)") != null
+          ? element.querySelector("p:not(.show-as-new):not(.show-as-updated)").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+    };
+
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
+
+    if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+  
 
 function extractR() {
   const column = document.querySelectorAll("article");
@@ -187,13 +222,13 @@ export default async function handler(req, res) {
   //items = await scrapeInfiniteScrollItems(page, extractABC, 10);
   //fs.writeFileSync("./abc.json", JSON.stringify(items, null, 2) + "\n");
 
-  //await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
-  //items = await scrapeInfiniteScrollItems(page, extractDM, 10);
-  //fs.writeFileSync("./dm.json", JSON.stringify(items, null, 2) + "\n");
+  await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
+  let items = await scrapeInfiniteScrollItems(page, extractDM, 10);
+  fs.writeFileSync("./dm.json", JSON.stringify(items, null, 2) + "\n");
 
-  await page.goto("https://reason.com/latest/")
-  let items = await scrapeInfiniteScrollItems(page, extractR, 10);
-  fs.writeFileSync("./r.json", JSON.stringify(items, null, 2) + "\n");
+  //await page.goto("https://reason.com/latest/")
+  //items = await scrapeInfiniteScrollItems(page, extractR, 10);
+  //fs.writeFileSync("./r.json", JSON.stringify(items, null, 2) + "\n");
 
   await browser.close();
 
