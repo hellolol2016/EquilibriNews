@@ -46,6 +46,7 @@ export default function Page() {
               { value: 10, label: "Far Right" },
               { value: 5, label: "Neutral" },
             ]}
+            label={null}
           ></Slider>
           <Space></Space>
           <Button
@@ -57,7 +58,7 @@ export default function Page() {
             Set Rating
           </Button>
 
-            <Text>Now that you've set up your political alignment, I'll redirect you to the actual articles! They take up to 2 minutes to completely load, so hold on!</Text>
+            <Text>Now that you&apos;ve set up your political alignment, I&apos;ll redirect you to the actual articles! They take up to 2 minutes to completely load, so hold on!</Text>
 
         </Stack>
       </Center>
