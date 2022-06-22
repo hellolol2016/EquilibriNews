@@ -5,7 +5,6 @@ function truncate(str, n){
   return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
 };
 
-
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
   const items = [];
@@ -146,7 +145,6 @@ function extractDM() {
   return items;
 }
   
-
 function extractR() {
   const column = document.querySelectorAll("article");
   const items = [];
@@ -207,28 +205,27 @@ export default async function handler(req, res) {
 
   //await page.goto("https://www.foxnews.com/politics");
   //let items = await scrapeInfiniteScrollItems(page, extractFox, 10);
-  //fs.writeFileSync("./fox.json", JSON.stringify(items, null, 2) + "\n");
+  //fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   //await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
   //items = await scrapeInfiniteScrollItems(page, extractWSJ, 10);
-  //fs.writeFileSync("./wsj.json", JSON.stringify(items, null, 2) + "\n");
+  //fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   //await page.goto("https://www.nytimes.com/section/politics");
   //items = await scrapeInfiniteScrollItems(page, extractNYT, 10);
-  //fs.writeFileSync("./nyt.json", JSON.stringify(items, null, 2) + "\n");
-
+  //fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   //await page.goto("https://abcnews.go.com/Politics");
   //items = await scrapeInfiniteScrollItems(page, extractABC, 10);
-  //fs.writeFileSync("./abc.json", JSON.stringify(items, null, 2) + "\n");
+  //fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
   let items = await scrapeInfiniteScrollItems(page, extractDM, 10);
-  fs.writeFileSync("./dm.json", JSON.stringify(items, null, 2) + "\n");
+  fs.writeFileSync("./public/articles/dm.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   //await page.goto("https://reason.com/latest/")
   //items = await scrapeInfiniteScrollItems(page, extractR, 10);
-  //fs.writeFileSync("./r.json", JSON.stringify(items, null, 2) + "\n");
+  //fs.writeFileSync("./public/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await browser.close();
 
