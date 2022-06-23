@@ -2,26 +2,19 @@ import { Box } from "@mantine/core";
 import Article from "./Article";
 
 export default function ArticleContainer(props) {
-  const articles = props.articles;
-  console.log( props); 
+  console.log( data.articles); 
   return (
     <Box>
-      {articles}
+      {props.rating}
     </Box>
   );
 }
 
-import path from 'path'
+import data from "../public/articles/dm.json"
+
 export async function getStaticProps() {
-
-  const fs = require("fs").promises
-  const filePath = path.join(process.cwd(), 'data.json');
-  const jsonData = await fs.readFile(filePath);
-  const objectData = JSON.parse(jsonData);
-  let rating = localStorage.getItem("rating")
+  const rating = localStorage.getItem("rating")
   return {
-    props: objectData,
-    rating:rating
-
+    props:{data:data,rating:rating}
   }
 }
