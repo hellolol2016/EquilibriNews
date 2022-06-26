@@ -26,7 +26,7 @@ export default function Page(props) {
   }
 
   return <Box>
-      <ArticleContainer  />
+      <ArticleContainer rating={rating} />
 
   </Box>;
 }
