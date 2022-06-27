@@ -1,11 +1,11 @@
-import { Box } from "@mantine/core";
+import { Box, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
 export default function ArticleContainer({props, rating}) {
-  console.log(data.articles[0]);
-  const articles  = data.articles[0]
-  console.log(rating);
-  return <Box>{
+  console.log(data);
+  const articles  = data.articles
+  console.log(articles);
+  return <SimpleGrid cols={3}>{
       articles.map((article)=>{
         return(
           <Article key={article.title} title={article.title} type={article.type} />
@@ -14,7 +14,7 @@ export default function ArticleContainer({props, rating}) {
         )
       })
     
-    }</Box>;
+    }</SimpleGrid>;
 }
 
 import data from "../public/articles/dm.json";
@@ -23,6 +23,6 @@ export async function getStaticProps() {
   const rating = localStorage.getItem("rating");
   console.log("jahggy" + rating);
   return {
-    props: {data },
+    props: {data},
   };
 }

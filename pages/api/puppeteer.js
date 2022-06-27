@@ -22,6 +22,7 @@ function extractFox() {
         element.querySelector(".title a") != null
           ? element.querySelector(".title a").href
           : "NONE",
+          source:"fox"
     };
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
@@ -49,6 +50,7 @@ function extractWSJ() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
+          source:"wsj"
     };
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
@@ -74,6 +76,7 @@ function extractNYT() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
+          source:"nyt"
     };
 
     if(memo.type.length>70){
@@ -103,6 +106,7 @@ function extractABC() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
+          source:"abc"
     };
 
     if(memo.type.length>70){
@@ -132,6 +136,7 @@ function extractDM() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
+          source:"dm"
     };
 
     if(memo.type.length>70){
@@ -162,6 +167,7 @@ function extractR() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
+          source:"r"
     };
 
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
@@ -174,21 +180,10 @@ function extractR() {
 async function scrapeInfiniteScrollItems(
   page,
   getNews,
-  itemTargetCount,
-  scrollDelay = 1000
 ) {
   let items = [];
   try {
-    let previousHeight;
-    while (items.length < itemTargetCount) {
       items = await page.evaluate(getNews);
-      previousHeight = await page.evaluate("document.body.scrollHeight");
-      await page.evaluate("window.scrollTo(0, document.body.scrollHeight)");
-      await page.waitForFunction(
-        `document.body.scrollHeight > ${previousHeight}`
-      );
-      await page.waitFor(scrollDelay);
-    }
   } catch (e) {
     console.log(e);
   }
@@ -203,29 +198,29 @@ export default async function handler(req, res) {
   page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 926 });
 
-  //await page.goto("https://www.foxnews.com/politics");
-  //let items = await scrapeInfiniteScrollItems(page, extractFox, 10);
-  //fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  await page.goto("https://www.foxnews.com/politics");
+  let items = await scrapeInfiniteScrollItems(page, extractFox);
+  fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
-  //await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
-  //items = await scrapeInfiniteScrollItems(page, extractWSJ, 10);
-  //fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
+  items = await scrapeInfiniteScrollItems(page, extractWSJ);
+  fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
-  //await page.goto("https://www.nytimes.com/section/politics");
-  //items = await scrapeInfiniteScrollItems(page, extractNYT, 10);
-  //fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  await page.goto("https://www.nytimes.com/section/politics");
+  items = await scrapeInfiniteScrollItems(page, extractNYT);
+  fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
-  //await page.goto("https://abcnews.go.com/Politics");
-  //items = await scrapeInfiniteScrollItems(page, extractABC, 10);
-  //fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  await page.goto("https://abcnews.go.com/Politics");
+  items = await scrapeInfiniteScrollItems(page, extractABC);
+  fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
-  let items = await scrapeInfiniteScrollItems(page, extractDM, 10);
+  items = await scrapeInfiniteScrollItems(page, extractDM);
   fs.writeFileSync("./public/articles/dm.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
-  //await page.goto("https://reason.com/latest/")
-  //items = await scrapeInfiniteScrollItems(page, extractR, 10);
-  //fs.writeFileSync("./public/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  await page.goto("https://reason.com/latest/")
+  items = await scrapeInfiniteScrollItems(page, extractR);
+  fs.writeFileSync("./public/articles/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await browser.close();
 
