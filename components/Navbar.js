@@ -15,7 +15,7 @@ import {
   Image,
 } from "@mantine/core";
 import Link from "next/link";
-import useStyles from "../pages/styles";
+import useStyles from "../public/styles";
 import { useEffect, useState } from "react";
 const NavLink = ({ children, href }) => {
   const theme = useMantineTheme();
