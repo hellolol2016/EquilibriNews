@@ -192,8 +192,8 @@ async function scrapeInfiniteScrollItems(
 
 export default async function handler(req, res) {
   const browser = await puppeteer.launch({
-    args:["--no-sandbox"],
-    headless: false,
+    args:["--no-sandbox","--disable-setuid-sandbox"],
+    
   });
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
