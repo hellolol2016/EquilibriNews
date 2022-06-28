@@ -1,6 +1,72 @@
 {
   "articles": [
     {
+      "title": "Glenn Youngkin's Proposed 15-Week Abortion Ban Speaks to Abortion Moderates",
+      "type": "ABORTION",
+      "url": "https://reason.com/2022/06/27/glenn-youngkins-proposed-15-week-abortion-ban-speaks-to-abortion-moderates/",
+      "source": "r"
+    },
+    {
+      "title": "A New Jersey Town Wants To Charge This Woman $5,000 To Sell Cookies",
+      "type": "FOOD FREEDOM",
+      "url": "https://reason.com/2022/06/27/a-new-jersey-town-wants-to-charge-this-woman-5000-to-sell-cookies/",
+      "source": "r"
+    },
+    {
+      "title": "What's Wrong With Abortion Federalism?",
+      "type": "REASON PODCAST",
+      "url": "https://reason.com/podcast/2022/06/27/whats-wrong-with-abortion-federalism/",
+      "source": "r"
+    },
+    {
+      "title": "SCOTUS Rules That Doctors Who Write Prescriptions in Good Faith Can't Be Convicted of Drug Trafficking",
+      "type": "CRIMINAL JUSTICE",
+      "url": "https://reason.com/2022/06/27/scotus-rules-that-doctors-who-write-prescriptions-in-good-faith-cant-be-convicted-of-drug-trafficking/",
+      "source": "r"
+    },
+    {
+      "title": "The Supreme Court's Dobbs Decision Threatens Assisted Reproduction",
+      "type": "ABORTION",
+      "url": "https://reason.com/2022/06/27/the-supreme-courts-dobbs-decision-threatens-assisted-reproduction/",
+      "source": "r"
+    },
+    {
+      "title": "Supreme Court Says High School Coach's Postgame Prayers Are Protected Free Speech",
+      "type": "SUPREME COURT",
+      "url": "https://reason.com/2022/06/27/supreme-court-says-high-school-coachs-postgame-prayers-are-protected-free-speech/",
+      "source": "r"
+    },
+    {
+      "title": "New Complaint Challenges Limits to Corporate Speech Enacted by Florida's 'Stop WOKE Act'",
+      "type": "FLORIDA",
+      "url": "https://reason.com/2022/06/27/new-complaint-challenges-limits-to-corporate-speech-enacted-by-floridas-stop-woke-act/",
+      "source": "r"
+    },
+    {
+      "title": "Some States Restrict Abortion After Dobbs, Others Rush To Protect Access",
+      "type": "REASON ROUNDUP",
+      "url": "https://reason.com/2022/06/27/some-states-restrict-abortion-after-dobbs-others-rush-to-protect-access/",
+      "source": "r"
+    },
+    {
+      "title": "Enforcing Abortion Bans Is Much Harder Than Winning in Court",
+      "type": "ABORTION",
+      "url": "https://reason.com/2022/06/27/enforcing-abortion-bans-is-much-harder-than-winning-in-court/",
+      "source": "r"
+    },
+    {
+      "title": "Obamacare and SCOTUS, 10 Years Later",
+      "type": "HEALTH CARE",
+      "url": "https://reason.com/2022/06/27/obamacare-and-scotus-10-years-later/",
+      "source": "r"
+    },
+    {
+      "title": "Brickbat: And You Thought the Pollsters Were a Pain",
+      "type": "BRICKBATS",
+      "url": "https://reason.com/2022/06/27/brickbat-and-you-thought-the-pollsters-were-a-pain/",
+      "source": "r"
+    },
+    {
       "title": "John Roberts and the Path SCOTUS Did Not Take on Abortion",
       "type": "ABORTION",
       "url": "https://reason.com/2022/06/26/john-roberts-and-the-path-scotus-did-not-take-on-abortion/",
@@ -112,72 +178,6 @@
       "title": "Review: Gran Turismo 7",
       "type": "CULTURE",
       "url": "https://reason.com/2022/06/24/gran-turismo-7/",
-      "source": "r"
-    },
-    {
-      "title": "Brickbat: Broken Record",
-      "type": "BRICKBATS",
-      "url": "https://reason.com/2022/06/24/brickbat-broken-record/",
-      "source": "r"
-    },
-    {
-      "title": "Greg Abbott Spent $1,400 a Head To Bus Migrants to D.C. for a Political Stunt",
-      "type": "GOVERNMENT SPENDING",
-      "url": "https://reason.com/2022/06/23/greg-abbott-spent-1400-a-head-to-bus-migrants-to-d-c-for-a-political-stunt/",
-      "source": "r"
-    },
-    {
-      "title": "Blame Congress for Pandemic Fraud",
-      "type": "GOVERNMENT SPENDING",
-      "url": "https://reason.com/2022/06/23/blame-congress-for-pandemic-fraud/",
-      "source": "r"
-    },
-    {
-      "title": "5 Ways Biden's New Title IX Rules Will Eviscerate Due Process on Campus",
-      "type": "TITLE IX",
-      "url": "https://reason.com/2022/06/23/title-ix-rules-cardona-biden-sexual-misconduct-campus/",
-      "source": "r"
-    },
-    {
-      "title": "Is the Nation's Harshest Rent Control Law Unconstitutional, or Just Counterproductive?",
-      "type": "HOUSING POLICY",
-      "url": "https://reason.com/2022/06/23/nations-harshest-rent-control-law-unconstitutional-or-just-stupid/",
-      "source": "r"
-    },
-    {
-      "title": "As the ACLU Recedes From Its Core Mission, FIRE Expands To Fill the Void",
-      "type": "FREE SPEECH",
-      "url": "https://reason.com/latest/#",
-      "source": "r"
-    },
-    {
-      "title": "'The Second Amendment Is Not Unlimited,' Brett Kavanaugh Stresses in SCOTUS Gun Case",
-      "type": "SECOND AMENDMENT",
-      "url": "https://reason.com/2022/06/23/the-second-amendment-is-not-unlimited-brett-kavanaugh-stresses-in-scotus-gun-case/",
-      "source": "r"
-    },
-    {
-      "title": "SCOTUS Says You Can't Sue the Cops for Violating Your Miranda Rights",
-      "type": "SUPREME COURT",
-      "url": "https://reason.com/2022/06/23/scotus-says-you-cant-sue-the-cops-for-violating-your-miranda-rights/",
-      "source": "r"
-    },
-    {
-      "title": "Title IX's 50th Anniversary Is a Dark Day for Due Process on Campus",
-      "type": "TITLE IX",
-      "url": "https://reason.com/2022/06/23/title-ix-due-process-50th-anniversary-biden-campus/",
-      "source": "r"
-    },
-    {
-      "title": "In Landmark 2nd Amendment Ruling, SCOTUS Affirms Right 'To Carry a Handgun for Self-Defense Outside the Home'",
-      "type": "SECOND AMENDMENT",
-      "url": "https://reason.com/2022/06/23/in-landmark-2nd-amendment-ruling-scotus-affirms-right-to-carry-a-handgun-for-self-defense-outside-the-home/",
-      "source": "r"
-    },
-    {
-      "title": "California's Competitors",
-      "type": "TECHNOLOGY",
-      "url": "https://reason.com/2022/06/23/californias-competitors/",
       "source": "r"
     }
   ]

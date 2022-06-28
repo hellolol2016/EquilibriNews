@@ -43,7 +43,7 @@ export default function Nav() {
 
   return (
     <Box p="">
-      <Box fixed sx={{ position: "absolute" }}>
+      <Box fixed="true" sx={{ position: "absolute" }}>
         <Link href="/">
         <Image src={"/media/en.png"} alt="en" height={"45px"} /> 
         </Link>

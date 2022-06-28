@@ -1,6 +1,54 @@
 {
   "articles": [
     {
+      "title": "Jan. 6 committee unexpectedly adds hearing for Tuesday",
+      "type": "The committee had revised its schedule to continue hearings in several...",
+      "url": "https://abcnews.go.com/Politics/jan-committee-adds-hearing-tuesday/story?id=85797232",
+      "source": "abc"
+    },
+    {
+      "title": "Supreme Court sides with coach in public school prayer case",
+      "type": "The case involved a high school football coach praying at the 50-yard ...",
+      "url": "https://abcnews.go.com/Politics/supreme-court-sides-coach-public-school-prayer-case/story?id=85369666",
+      "source": "abc"
+    },
+    {
+      "title": "US to purchase advanced missile system for Ukraine's defense",
+      "type": "The surface-to-air missile system can reach targets 100 miles away.",
+      "url": "https://abcnews.go.com/Politics/us-purchase-advanced-missile-system-ukraines-defense/story?id=85791000",
+      "source": "abc"
+    },
+    {
+      "title": "Supreme Court rules on Kennedy v. Bremmerton School District case",
+      "type": "In a 6-3 decision, the Supreme Court ruled that a high school football...",
+      "url": "https://abcnews.go.com/Politics/video/supreme-court-rules-kennedy-bremmerton-school-district-case-85792869",
+      "source": "abc"
+    },
+    {
+      "title": "President Biden meets with America’s major allies in Austria",
+      "type": "A missile strike hit a city in central Ukraine, while the U.S. is fina...",
+      "url": "https://abcnews.go.com/Politics/video/president-biden-meets-americas-major-allies-austria-85792979",
+      "source": "abc"
+    },
+    {
+      "title": "How Supreme Court’s abortion decision will impact midterm elections",
+      "type": "ABC News' Averi Harper talks about how the Supreme Court’s decision to...",
+      "url": "https://abcnews.go.com/Politics/video/supreme-courts-abortion-decision-impact-midterm-elections-85792945",
+      "source": "abc"
+    },
+    {
+      "title": "34 Senators urge Biden to 'take every step available' to help women access abortions",
+      "type": "The Biden administration is promising to fight Republican efforts in t...",
+      "url": "https://abcnews.go.com/Politics/video/34-senators-urge-biden-step-women-access-abortions-85792889",
+      "source": "abc"
+    },
+    {
+      "title": "State-by-state scramble defines the immediate post-Roe future: The Note",
+      "type": "The fallout won't be national -- and, indeed, will be intensely person...",
+      "url": "https://abcnews.go.com/Politics/state-state-scramble-defines-post-roe-future-note/story?id=85745205",
+      "source": "abc"
+    },
+    {
       "title": "GOP Rep. Mary Miller calls SCOTUS ruling 'victory for white life'",
       "type": "Illinois Congresswoman Mary Miller said the Supreme Court's decision t...",
       "url": "https://abcnews.go.com/Politics/video/gop-rep-mary-miller-calls-scotus-ruling-victory-85748490",
@@ -130,54 +178,6 @@
       "title": "Sen. Elizabeth Warren, Gov. Kristi Noem & Rep. Jamie Raskin Sunday on \"This Week\"",
       "type": "This is a listing for \"This Week\" airing Sunday, June 26, 2022.",
       "url": "https://abcnews.go.com/Politics/sen-elizabeth-warren-gov-kristi-noem-rep-jamie/story?id=85662698",
-      "source": "abc"
-    },
-    {
-      "title": "Supreme Court overturns Roe v. Wade in landmark case on abortion rights",
-      "type": "The justices ruled that it is up to the states to decide abortion acce...",
-      "url": "https://abcnews.go.com/Politics/supreme-court-overturns-roe-wade-landmark-case-abortion/story?id=85160781",
-      "source": "abc"
-    },
-    {
-      "title": "Abortion ruling is ‘a dark day for women,’ NY governor says",
-      "type": "Democrat Kathy Hochul said the ruling by the Supreme Court was “repuls...",
-      "url": "https://abcnews.go.com/Politics/video/abortion-ruling-dark-day-women-ny-governor-85659722",
-      "source": "abc"
-    },
-    {
-      "title": "GOP leader on abortion ruling: ‘The people have won a victory’",
-      "type": "“The right to life has been vindicated,” House Minority Leader Kevin M...",
-      "url": "https://abcnews.go.com/Politics/video/gop-leader-abortion-ruling-people-won-victory-85659401",
-      "source": "abc"
-    },
-    {
-      "title": "Supreme Court abortion ruling leaves Democrats with scant options",
-      "type": "Any effort to codify abortion rights needs to clear the Senate filibus...",
-      "url": "https://abcnews.go.com/Politics/democrats-congress-protect-abortion-rights-now/story?id=85647505",
-      "source": "abc"
-    },
-    {
-      "title": "Politicians react to Supreme Court decision overturning Roe v. Wade",
-      "type": "The landmark case decided nearly 50 years ago was overturned in the Su...",
-      "url": "https://abcnews.go.com/Politics/video/politicians-react-supreme-court-decision-overturning-roe-wade-85656968",
-      "source": "abc"
-    },
-    {
-      "title": "Public reacts to Supreme Court abortion decision",
-      "type": "Protesters from both sides of the issue gathered outside the Supreme C...",
-      "url": "https://abcnews.go.com/Politics/video/public-reacts-supreme-court-abortion-decision-85656351",
-      "source": "abc"
-    },
-    {
-      "title": "House passes LGBTQ data collection bill to address community needs",
-      "type": "The bill is now heading to the Senate.",
-      "url": "https://abcnews.go.com/Politics/house-passes-lgbtq-data-collection-bill-address-community/story?id=85637357",
-      "source": "abc"
-    },
-    {
-      "title": "Gun safety package heads to Biden's desk after House passage",
-      "type": "The measure is the first major gun control bill to clear Congress in d...",
-      "url": "https://abcnews.go.com/Politics/gun-safety-package-heads-bidens-desk-house-passage/story?id=85645239",
       "source": "abc"
     }
   ]

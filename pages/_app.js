@@ -1,6 +1,6 @@
 import { createStyles, MantineProvider,Global, Box, Button } from "@mantine/core";
 import "../styles/globals.css";
-import theme from "./theme"; 
+import theme from "../public/theme"; 
 function MyApp({ Component, pageProps }) {
 
 

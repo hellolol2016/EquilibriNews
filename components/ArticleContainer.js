@@ -2,9 +2,7 @@ import { Box, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
 export default function ArticleContainer({props, rating}) {
-  console.log(data);
   const articles  = data.articles
-  console.log(articles);
   return <SimpleGrid cols={3}>{
       articles.map((article)=>{
         return(

@@ -45,7 +45,7 @@ export default function Home() {
       </Head> 
     <Stack>
       <Center sx={{color:"white"}}>
-        <BackgroundImage src="/media/background.jpg" opacity>
+        <BackgroundImage src="/media/background.jpg">
           <Navbar/>
           <Stack align="center" sx={{ height: "85vh" }} justify="center">
             <Title className={classes.whiteFont}>EquilibriNews</Title> 
