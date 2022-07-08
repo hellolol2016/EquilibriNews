@@ -225,5 +225,5 @@ export default async function handler(req, res) {
 
   await browser.close();
 
-  res.status(200).json({ hello: "i love rm" });
+  res.status(200).json({success:"true"});
 }

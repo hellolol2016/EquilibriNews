@@ -1,12 +1,23 @@
 import { Box } from "@mantine/core";
 import { useRouter } from "next/router";
-import { useEffect,useState } from "react";
-import ArticleContainer from "../components/ArticleContainer" 
+import { useEffect, useState } from "react";
+import ArticleContainer from "../components/ArticleContainer";
 export default function Page(props) {
-  const [rating,setRating] = useState(""); 
-  
+  const [rating, setRating] = useState("");
+
+  async function handleNewsClick() {
+    setLoading(true);
+    const res = await fetch("/api/puppeteer");
+    const data = await res.json();
+    setLoading(false);
+    console.log(data);
+  }
+
+  const [isLoading, setLoading] = useState(false);
+
   useEffect(function () {
-     setRating(window.localStorage.getItem("rating"))
+    setRating(window.localStorage.getItem("rating"));
+    handleNewsClick();
   }, []);
 
   if (rating > 0) {
@@ -25,8 +36,7 @@ export default function Page(props) {
     }
   }
 
-  return <Box>
-      <ArticleContainer rating={rating} />
-
-  </Box>;
+  return (
+    <Box>{isLoading ? "LOADDING" : <ArticleContainer rating={rating} />}</Box>
+  );
 }

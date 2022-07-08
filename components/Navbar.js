@@ -17,40 +17,44 @@ import {
 import Link from "next/link";
 import useStyles from "../public/styles";
 import { useEffect, useState } from "react";
-const NavLink = ({ children, href }) => {
+const NavLink = ({ children, href, ...props }) => {
   const theme = useMantineTheme();
 
   const { classes } = useStyles();
   return (
     <Link href={href} passHref>
-      <Text
-        style={{ color: theme.colors.gray[0] }}
-        className={classes.noSelect}
-      >
-        {children}
-      </Text>
+      <a {...props}>
+        <Text
+          style={{ color: theme.colors.gray[0] }}
+          className={classes.noSelect}
+        >
+          {children}
+        </Text>
+      </a>
     </Link>
   );
 };
 
 export default function Nav() {
-
-
-  const [rating, setRating] = useState("")
-  let user = useEffect(function() {
-  setRating(localStorage.getItem("rating"))
-},[]);
+  const [rating, setRating] = useState("");
+  let user = useEffect(function () {
+    setRating(localStorage.getItem("rating"));
+  }, []);
 
   return (
     <Box p="">
       <Box fixed="true" sx={{ position: "absolute" }}>
         <Link passHref href="/">
-        <Image src={"/media/en.png"} alt="en" height={"45px"} /> 
+          <Image src={"/media/en.png"} alt="en" height={"45px"} />
         </Link>
       </Box>
       <Stack height={100} justify={"flex-end"} sx={{ flexDirection: "row" }}>
-        <NavLink href="/about">About</NavLink>\
-        <NavLink href={rating!==null ? `/product?rating=${rating}`:"/tutorial"}>Get Started</NavLink>
+        <NavLink href="/about">About</NavLink>
+        {rating !== null ? (
+          <NavLink href={"/product"}>My News</NavLink>
+        ) : (
+          <NavLink href="/tutorial">Tutorial</NavLink>
+        )}
       </Stack>
     </Box>
   );

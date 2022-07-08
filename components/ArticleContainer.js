@@ -19,7 +19,6 @@ import data from "../public/articles/dm.json";
 
 export async function getStaticProps() {
   const rating = localStorage.getItem("rating");
-  console.log("jahggy" + rating);
   return {
     props: {data},
   };
