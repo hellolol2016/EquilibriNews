@@ -14,10 +14,16 @@ export default function Page(props) {
   }
 
   const [isLoading, setLoading] = useState(false);
-
+  const rn = new Date();
   useEffect(function () {
     setRating(window.localStorage.getItem("rating"));
-    handleNewsClick();
+    let last =  window.localStorage.getItem("lastCheck")
+    if ( last == null||last - rn > 10800000) {
+      handleNewsClick();
+      window.localStorage.setItem("lastCheck",rn)
+    }else{
+      console.log("less than 3 hr");
+    }
   }, []);
 
   if (rating > 0) {
