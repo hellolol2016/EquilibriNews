@@ -1,18 +1,18 @@
 import { Box, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
+
 export default function ArticleContainer({props, rating}) {
   const articles  = abc.articles
   return <SimpleGrid cols={3}>{
       articles.map((article)=>{
         return(
-          <Article key={article.title} title={article.title} type={article.type} />
-
-
+        <Article key={article.title} title={article.title} type={article.type} />
         )
-      })
-    
-    }</SimpleGrid>;
+        })
+      }
+    </SimpleGrid>
+  );
 }
 
 import dm from "../public/articles/dm.json";

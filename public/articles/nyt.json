@@ -25,9 +25,16 @@
       "source": "nyt"
     },
     {
-      "title": "Eight U.S. House Offices File for the Right to Unionize",
-      "type": "The petitions are the first step for congressional aides to negotiate ...",
-      "url": "https://www.nytimes.com/2022/07/18/us/politics/us-house-unions-congress.html",
+      "title": "Biden Remembers the Assassinated Shinzo Abe",
+      "type": "President Biden paid tribute to former Prime Minister Shinzo Abe after...",
+      "url": "https://www.nytimes.com/video/us/politics/100000008436600/biden-shinzo-abe-assassination.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Russia Votes to Shut Down Last U.N. Aid Route Into Syria",
+      "type": "Millions of Syrians whose lives have already been shattered by more th...",
+      "url": "https://www.nytimes.com/2022/07/08/us/politics/russia-syria-refugees-un.html",
+
       "source": "nyt"
     },
     {
@@ -76,12 +83,6 @@
       "title": "As Russia Runs Low on Drones, Iran Plans to Step In, U.S. Officials Say",
       "type": "The potential delivery of hundreds of Iranian drones would help the Kr...",
       "url": "https://www.nytimes.com/2022/07/17/us/politics/drones-ukraine-russia-iran.html",
-      "source": "nyt"
-    },
-    {
-      "title": "As the Planet Cooks, Climate Stalls as a Political Issue",
-      "type": "Joe Manchin’s rejection of a compromise climate bill tells a familiar ...",
-      "url": "https://www.nytimes.com/2022/07/17/us/politics/climate-change-manchin-biden.html",
       "source": "nyt"
     }
   ]
