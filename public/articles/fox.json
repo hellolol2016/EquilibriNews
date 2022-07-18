@@ -1,57 +1,70 @@
 {
   "articles": [
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "China",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
+      "title": "Donald Trump's ex-wife Ivana Trump dead at 73, former president announces",
+      "type": "Donald Trump",
+      "url": "https://www.foxnews.com/politics/donald-trumps-ex-wife-ivana-trump-dead-former-president-announces",
       "source": "fox"
     },
     {
-      "title": "White House mum on education union's proposal to change 'mother' to 'birthing parent,' defends First Lady, VP",
-      "type": "White House",
-      "url": "https://www.foxnews.com/politics/white-house-mum-education-unions-proposal-change-mother-birthing-parent-defends-first-lady-vp",
+      "title": "Special Counsel Durham requests 30 subpoenas issued in Danchenko case",
+      "type": "Durham Probe",
+      "url": "https://www.foxnews.com/politics/special-counsel-durham-requests-30-subpoenas-issued-danchenko-case",
       "source": "fox"
     },
     {
-      "title": "Biden falsely claims he 'never said a negative thing' about John McCain, despite attacking him in 2008",
-      "type": "Joe Biden",
-      "url": "https://www.foxnews.com/politics/biden-falsely-claims-never-said-negative-john-mccain-attacking-2008",
+      "title": "House Democratic caucus leader claims climate change is 'largest national security threat' facing US, world",
+      "type": "Climate Change",
+      "url": "https://www.foxnews.com/politics/house-democratic-caucus-leader-claims-climate-change-largest-national-security-threat-facint-us-world",
       "source": "fox"
     },
     {
-      "title": "The gruesomeness of being stabbed to death could be prevented with a gun: Johnny ‘Joey’ Jones",
+      "title": "Hillary Clinton PAC pours thousands into vulnerable Dem races",
+      "type": "DEMOCRATS",
+      "url": "https://www.foxnews.com/politics/hillary-clinton-pac-pours-thousands-vulnerable-dem-races",
+      "source": "fox"
+    },
+    {
+      "title": "Texas Gov. Abbott’s office says Biden may 'finally do his job' and secure border now that it's in his backyard",
+      "type": "POLITICS",
+      "url": "https://www.foxnews.com/politics/texas-gov-abbott-biden-secure-border-crisis-backyard",
+      "source": "fox"
+    },
+    {
+      "title": "Biden at all-time low approval rating: Fox News poll",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299694112",
+      "url": "https://video.foxnews.com/v/6309689020112",
       "source": "fox"
     },
     {
-      "title": "Johnny ‘Joey’ Jones: People will not put up with lawlessness",
+      "title": "Iran has been emboldened under Biden's watch: Sen. Cotton",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309298755112",
+      "url": "https://video.foxnews.com/v/6309689942112",
       "source": "fox"
     },
     {
-      "title": "Couple arrested after 9-month-old daughter ingests fentanyl",
+      "title": "Sen. Cotton: Biden 'didn't have the nerve' to stand up to Iran",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309300467112",
+      "url": "https://video.foxnews.com/v/6309689650112",
       "source": "fox"
     },
     {
-      "title": "Gutfeld: This should disgust everyone",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309298073112",
+      "title": "Putin to travel to Tehran for meetings with Iranian, Turkish leaders",
+      "type": "VLADIMIR PUTIN",
+      "url": "https://www.foxnews.com/politics/putin-travel-tehran-meetings-iranian-turkish-leaders",
       "source": "fox"
     },
     {
-      "title": "Inflation nearing 40-year high, outpacing wage growth",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299653112",
+      "title": "Our American flag: How to fold it properly and other courteous care tips",
+      "type": "PROUD AMERICAN",
+      "url": "https://www.foxnews.com/lifestyle/american-flag-properly-fold-care-tips",
       "source": "fox"
     },
     {
-      "title": "'The Five' react to Border Patrol investigation debunking 'whipping' hoax",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299834112",
+      "title": "NY man cycling to all 50 states reveals why Iowa is 'best-kept secret'",
+      "type": "BIKING ACROSS AMERICA",
+      "url": "https://www.foxnews.com/lifestyle/ny-man-cycling-50-states-iowa-best-secret",
+
       "source": "fox"
     },
     {
@@ -67,42 +80,43 @@
       "source": "fox"
     },
     {
-      "title": "K9 dogs 'can see beyond the flesh': K9 project manager",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309155441112",
+      "title": "Texas Gov. Abbott’s office says Biden may 'finally do his job' and secure border now that it's in his backyard",
+      "type": "POLITICS",
+      "url": "https://www.foxnews.com/politics/texas-gov-abbott-biden-secure-border-crisis-backyard",
       "source": "fox"
     },
     {
-      "title": "From past to present: Fox Nation's 'Building on the American Heritage' traces the history, foundation of US",
-      "type": "FOX NATION",
-      "url": "https://www.foxnews.com/media/fox-nation-building-american-heritage-traces-history-foundation-us",
+      "title": "Steve Hilton slams Paul Pelosi's stock purchase: 'This is so endemic in Washington'",
+      "type": "NANCY PELOSI",
+      "url": "https://www.foxnews.com/media/steve-hilton-slams-paul-pelosis-stock-purchase-this-is-so-endemic-in-washington",
       "source": "fox"
     },
     {
-      "title": "McCarthy says Biden should apologize to Border Patrol agents after CBP finds they didn’t whip migrants",
-      "type": "REPUBLICANS",
-      "url": "https://www.foxnews.com/politics/mccarthy-says-biden-should-apologize-border-patrol-agents-cbp-finds-didnt-whip-migrants",
+      "title": "Mayor Bowser won't say who is tricking migrants into bus rides from Texas to DC",
+      "type": "IMMIGRATION",
+      "url": "https://www.foxnews.com/politics/mayor-bowser-wont-say-tricking-migrants-bus-rides-from-texas-dc",
       "source": "fox"
     },
     {
-      "title": "US Appeals Court rules Trump financial records must be turned over to House Oversight Committee",
-      "type": "DONALD TRUMP",
-      "url": "https://www.foxnews.com/politics/us-appeals-court-rules-trump-financial-records-house-oversight-committee",
+      "title": "Kick Joe Manchin out of the Democratic Party, ex-Labor Secretary Robert Reich says: 'Already lost control'",
+      "type": "MEDIA",
+      "url": "https://www.foxnews.com/media/kick-joe-manchin-democratic-party-labor-secretary-robert-reich-already-lost-control",
       "source": "fox"
     },
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
+      "title": "Florida AG Moody urges Biden to declare fentanyl a weapon of mass destruction",
+      "type": "DRUGS",
+      "url": "https://www.foxnews.com/politics/florida-ag-moody-urges-biden-declare-fentanyl-weapon-mass-destruction",
       "source": "fox"
     },
     {
-      "title": "Democratic Party leadership silent on teachers union plan to replace 'mother' with 'birthing parent'",
-      "type": "DEMOCRATS",
-      "url": "https://www.foxnews.com/politics/democratic-party-leadership-silent-teachers-union-plan-replace-mother-birthing-parent",
+      "title": "2024 Watch: Former Vice President Mike Pence returning to New Hampshire next month",
+      "type": "MIKE PENCE",
+      "url": "https://www.foxnews.com/politics/2024-watch-former-vice-president-mike-pence-returning-new-hampshire",
       "source": "fox"
     },
     {
+
       "title": "McCarthy says Biden should apologize to Border Patrol agents after CBP finds they didn’t whip migrants",
       "type": "REPUBLICANS",
       "url": "https://www.foxnews.com/politics/mccarthy-says-biden-should-apologize-border-patrol-agents-cbp-finds-didnt-whip-migrants",
@@ -124,61 +138,57 @@
       "title": "White House grilled on protesters targeting Justice Kavanaugh at DC restaurant",
       "type": "SUPREME COURT",
       "url": "https://www.foxnews.com/politics/white-house-grilled-protesters-targeting-justice-kavanaugh-dc-restaurant",
+
       "source": "fox"
     },
     {
-      "title": "Mike Pompeo on assassination of Shinzo Abe: 'This is horrific'",
+      "title": "Biden administration streamlines SIV program for Afghans who worked alongside US troops in Afghanistan",
+      "type": "AFGHANISTAN",
+      "url": "https://www.foxnews.com/politics/biden-administration-streamlines-siv-program-afghans-worked-alongside-us-troops-afghanistan",
+      "source": "fox"
+    },
+    {
+      "title": "Sen. John Kennedy: This inflation was made in Washington",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309297305112",
+      "url": "https://video.foxnews.com/v/6309690690112",
       "source": "fox"
     },
     {
-      "title": "Mike Pompeo: 'No perfect plan' to push back against China",
+      "title": "Sen. John Kennedy: Biden is already a lame duck",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309295241112",
+      "url": "https://video.foxnews.com/v/6309690992112",
       "source": "fox"
     },
     {
-      "title": "US Appeals Court rules Trump financial records must be turned over to House Oversight Committee",
-      "type": "DONALD TRUMP",
-      "url": "https://www.foxnews.com/politics/us-appeals-court-rules-trump-financial-records-house-oversight-committee",
+      "title": "Fox News Flash top headlines for July 18",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309689794112",
       "source": "fox"
     },
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
-      "source": "fox"
-    },
-    {
-      "title": "Sen. Steve Daines introduces bill to block Biden from adding 'woke' requirements to US retirement plans",
-      "type": "JOE BIDEN",
-      "url": "https://www.foxnews.com/politics/steve-daines-introduces-bill-block-biden-politicizing-american-retirement-plans",
-      "source": "fox"
-    },
-    {
-      "title": "White House claims Abbott causing border chaos, states should butt out of immigration",
-      "type": "WHITE HOUSE",
-      "url": "https://www.foxnews.com/politics/white-house-claims-abbott-border-chaos",
-      "source": "fox"
-    },
-    {
-      "title": "ShutDownDC group offers bounties on Twitter for public sightings of conservative Supreme Court justices",
+      "title": "Justice Breyer to teach at Harvard Law School after leaving SCOTUS bench",
       "type": "SUPREME COURT",
-      "url": "https://www.foxnews.com/politics/shutdowndc-group-offers-bounties-twitter-public-sightings-conservative-supreme-court-justices",
+      "url": "https://www.foxnews.com/politics/justice-breyer-teach-harvard-law-school-leaving-scotus-bench",
       "source": "fox"
     },
     {
-      "title": "Wage growth unable to keep pace with inflation",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309294758112",
+      "title": "VP Harris: 'We will not let the filibuster stand in our way' in protecting voting rights, abortion access",
+      "type": "KAMALA HARRIS",
+      "url": "https://www.foxnews.com/politics/harris-not-let-filibuster-stand-our-way-protecting-voting-rights-abortion-access",
       "source": "fox"
     },
     {
-      "title": "Arizona bill an end to the 'K-12 cartel': Former public school teacher",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309293242112",
+      "title": "NH GOP candidate speaking for 24 hours to 'save the filibuster', after Biden reveals support to end procedure",
+      "type": "MIDTERM ELECTIONS",
+      "url": "https://www.foxnews.com/politics/nh-gop-candidate-speaking-24-hours-save-filibuster-biden",
       "source": "fox"
+    },
+    {
+      "title": "Biden administration 'sending mixed signals' with Middle East policy: Sen. Cornyn",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309685323112",
+      "source": "fox"
+
     }
   ]
 }
