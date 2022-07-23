@@ -1,7 +1,8 @@
-import { Box } from "@mantine/core";
+import { Box, Center } from "@mantine/core";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ArticleContainer from "../components/ArticleContainer";
+import { Bars } from "react-loading-icons";
 export default function Page(props) {
   const [rating, setRating] = useState("");
 
@@ -43,6 +44,14 @@ export default function Page(props) {
   }
 
   return (
-    <Box>{isLoading ? "LOADDING" : <ArticleContainer rating={rating} />}</Box>
+    <Box>
+      {isLoading ? (
+        <Center sx={{ height: "100vh" }}>
+          <Bars stroke="#000000" />
+        </Center>
+      ) : (
+        <ArticleContainer rating={rating} />
+      )}
+    </Box>
   );
 }

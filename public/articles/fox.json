@@ -1,57 +1,69 @@
 {
   "articles": [
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "China",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
+      "title": "Intel Republicans visiting El Paso warn of 'astronomical' threats, terrorist surge across 'porous' border",
+      "type": "Border security",
+      "url": "https://www.foxnews.com/politics/intel-republicans-warn-astronomical-threats-terrorist-surge-porous-border-el-paso",
       "source": "fox"
     },
     {
-      "title": "White House mum on education union's proposal to change 'mother' to 'birthing parent,' defends First Lady, VP",
-      "type": "White House",
-      "url": "https://www.foxnews.com/politics/white-house-mum-education-unions-proposal-change-mother-birthing-parent-defends-first-lady-vp",
+      "title": "Newsom signs gun control bill modeled after Texas abortion law",
+      "type": "Gavin Newsom",
+      "url": "https://www.foxnews.com/politics/newsom-signs-gun-control-bill-modeled-texas-abortion-law",
       "source": "fox"
     },
     {
-      "title": "Biden falsely claims he 'never said a negative thing' about John McCain, despite attacking him in 2008",
-      "type": "Joe Biden",
-      "url": "https://www.foxnews.com/politics/biden-falsely-claims-never-said-negative-john-mccain-attacking-2008",
+      "title": "Ted Cruz says Trump announcing 2024 run would 'significantly' clear GOP field",
+      "type": "Ted Cruz",
+      "url": "https://www.foxnews.com/politics/ted-cruz-trump-announcing-presidency-significantly-clear-gop-field",
       "source": "fox"
     },
     {
-      "title": "The gruesomeness of being stabbed to death could be prevented with a gun: Johnny ‘Joey’ Jones",
+      "title": "Jill Biden heckled at Connecticut ice cream shop: 'Your husband is the worst'",
+      "type": "JOE BIDEN",
+      "url": "https://www.foxnews.com/politics/jill-biden-heckled-connecticut-ice-cream-shop",
+      "source": "fox"
+    },
+    {
+      "title": "Lee Zeldin attack suspect arrested on federal assault charge",
+      "type": "JUSTICE DEPARTMENT",
+      "url": "https://www.foxnews.com/politics/lee-zeldin-attack-suspect-hit-federal-assault-charge",
+      "source": "fox"
+    },
+    {
+      "title": "ELECTION SPOTLIGHT: Ohio Senate candidate's talks key midterm issues, heated race",
+      "type": "MIDTERM ELECTIONS",
+      "url": "https://www.foxnews.com/politics/election-ohio-senate-candidates-midterm-race",
+      "source": "fox"
+    },
+    {
+      "title": "Biden COVID-19 symptoms now include sore throat, body aches: doctor",
+      "type": "JOE BIDEN",
+      "url": "https://www.foxnews.com/politics/biden-covid-19-symptoms-now-include-sore-throat-body-aches-doctor",
+      "source": "fox"
+    },
+    {
+      "title": "Secretary Mayorkas is ‘bragging’ about 270,000 migrant encounters: Former acting ICE chief",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299694112",
+      "url": "https://video.foxnews.com/v/6309929118112",
       "source": "fox"
     },
     {
-      "title": "Johnny ‘Joey’ Jones: People will not put up with lawlessness",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309298755112",
+      "title": "Congress should restrict stock purchases by lawmakers' family members, Americans say",
+      "type": "DIGITAL ORIGINALS",
+      "url": "https://www.foxnews.com/politics/family-of-congress-should-have-some-restrictions-trading-stocks-americans-say",
       "source": "fox"
     },
     {
-      "title": "Couple arrested after 9-month-old daughter ingests fentanyl",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309300467112",
+      "title": "Our American flag: How to fold it properly and other courteous care tips",
+      "type": "PROUD AMERICAN",
+      "url": "https://www.foxnews.com/lifestyle/american-flag-properly-fold-care-tips",
       "source": "fox"
     },
     {
-      "title": "Gutfeld: This should disgust everyone",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309298073112",
-      "source": "fox"
-    },
-    {
-      "title": "Inflation nearing 40-year high, outpacing wage growth",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299653112",
-      "source": "fox"
-    },
-    {
-      "title": "'The Five' react to Border Patrol investigation debunking 'whipping' hoax",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309299834112",
+      "title": "NY man cycling to all 50 states reveals why Iowa is 'best-kept secret'",
+      "type": "BIKING ACROSS AMERICA",
+      "url": "https://www.foxnews.com/lifestyle/ny-man-cycling-50-states-iowa-best-secret",
       "source": "fox"
     },
     {
@@ -67,117 +79,105 @@
       "source": "fox"
     },
     {
-      "title": "K9 dogs 'can see beyond the flesh': K9 project manager",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309155441112",
+      "title": "Lee Zeldin attack suspect arrested on federal assault charge",
+      "type": "JUSTICE DEPARTMENT",
+      "url": "https://www.foxnews.com/politics/lee-zeldin-attack-suspect-hit-federal-assault-charge",
       "source": "fox"
     },
     {
-      "title": "From past to present: Fox Nation's 'Building on the American Heritage' traces the history, foundation of US",
-      "type": "FOX NATION",
-      "url": "https://www.foxnews.com/media/fox-nation-building-american-heritage-traces-history-foundation-us",
+      "title": "Intel Republicans visiting El Paso warn of 'astronomical' threats, terrorist surge across 'porous' border",
+      "type": "BORDER SECURITY",
+      "url": "https://www.foxnews.com/politics/intel-republicans-warn-astronomical-threats-terrorist-surge-porous-border-el-paso",
       "source": "fox"
     },
     {
-      "title": "McCarthy says Biden should apologize to Border Patrol agents after CBP finds they didn’t whip migrants",
-      "type": "REPUBLICANS",
-      "url": "https://www.foxnews.com/politics/mccarthy-says-biden-should-apologize-border-patrol-agents-cbp-finds-didnt-whip-migrants",
-      "source": "fox"
-    },
-    {
-      "title": "US Appeals Court rules Trump financial records must be turned over to House Oversight Committee",
+      "title": "Bannon warns fate of US at stake after 'lawless' conviction",
       "type": "DONALD TRUMP",
-      "url": "https://www.foxnews.com/politics/us-appeals-court-rules-trump-financial-records-house-oversight-committee",
+      "url": "https://www.foxnews.com/media/bannon-warns-fate-us-stake-lawless-conviction",
       "source": "fox"
     },
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
+      "title": "NY candidate for lieutenant governor gives first-hand account of Zeldin attack",
+      "type": "FOX NEWS FLASH",
+      "url": "https://www.foxnews.com/media/ny-candidate-lieutenant-governor-gives-first-hand-account-zeldin-attack",
       "source": "fox"
     },
     {
-      "title": "Democratic Party leadership silent on teachers union plan to replace 'mother' with 'birthing parent'",
-      "type": "DEMOCRATS",
-      "url": "https://www.foxnews.com/politics/democratic-party-leadership-silent-teachers-union-plan-replace-mother-birthing-parent",
-      "source": "fox"
-    },
-    {
-      "title": "McCarthy says Biden should apologize to Border Patrol agents after CBP finds they didn’t whip migrants",
-      "type": "REPUBLICANS",
-      "url": "https://www.foxnews.com/politics/mccarthy-says-biden-should-apologize-border-patrol-agents-cbp-finds-didnt-whip-migrants",
-      "source": "fox"
-    },
-    {
-      "title": "Are Biden White House staffers 'running for the exits'?",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309298262112",
-      "source": "fox"
-    },
-    {
-      "title": "FBI Director calls increasing Chinese Cyber Attacks a threat to Wall Street and Main Street",
-      "type": "FBI",
-      "url": "https://www.foxnews.com/politics/fbi-director-calls-increasing-chinese-cyber-attacks-a-threat-wall-street-main-street",
-      "source": "fox"
-    },
-    {
-      "title": "White House grilled on protesters targeting Justice Kavanaugh at DC restaurant",
-      "type": "SUPREME COURT",
-      "url": "https://www.foxnews.com/politics/white-house-grilled-protesters-targeting-justice-kavanaugh-dc-restaurant",
-      "source": "fox"
-    },
-    {
-      "title": "Mike Pompeo on assassination of Shinzo Abe: 'This is horrific'",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309297305112",
-      "source": "fox"
-    },
-    {
-      "title": "Mike Pompeo: 'No perfect plan' to push back against China",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309295241112",
-      "source": "fox"
-    },
-    {
-      "title": "US Appeals Court rules Trump financial records must be turned over to House Oversight Committee",
+      "title": "Trump touts growing GOP in call with TPUSA activists, says Hispanics 'cascading' into Republican Party",
       "type": "DONALD TRUMP",
-      "url": "https://www.foxnews.com/politics/us-appeals-court-rules-trump-financial-records-house-oversight-committee",
+      "url": "https://www.foxnews.com/politics/trump-touts-growing-gop-call-tpusa-activists-hispanics-cascading-republican-party",
       "source": "fox"
     },
     {
-      "title": "Top Democratic Rep. Thompson joins Chinese-owned TikTok despite voting to keep app off DHS devices",
-      "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/top-democratic-rep-thompson-joins-chinese-owned-tiktok-despite-voting-ban-dhs-employees",
+      "title": "Intel Republicans visiting El Paso warn of 'astronomical' threats, terrorist surge across 'porous' border",
+      "type": "BORDER SECURITY",
+      "url": "https://www.foxnews.com/politics/intel-republicans-warn-astronomical-threats-terrorist-surge-porous-border-el-paso",
       "source": "fox"
     },
     {
-      "title": "Sen. Steve Daines introduces bill to block Biden from adding 'woke' requirements to US retirement plans",
-      "type": "JOE BIDEN",
-      "url": "https://www.foxnews.com/politics/steve-daines-introduces-bill-block-biden-politicizing-american-retirement-plans",
-      "source": "fox"
-    },
-    {
-      "title": "White House claims Abbott causing border chaos, states should butt out of immigration",
-      "type": "WHITE HOUSE",
-      "url": "https://www.foxnews.com/politics/white-house-claims-abbott-border-chaos",
-      "source": "fox"
-    },
-    {
-      "title": "ShutDownDC group offers bounties on Twitter for public sightings of conservative Supreme Court justices",
-      "type": "SUPREME COURT",
-      "url": "https://www.foxnews.com/politics/shutdowndc-group-offers-bounties-twitter-public-sightings-conservative-supreme-court-justices",
-      "source": "fox"
-    },
-    {
-      "title": "Wage growth unable to keep pace with inflation",
+      "title": "Bongino calls out leftist hypocrisy: ‘Is this a big joke?’",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309294758112",
+      "url": "https://video.foxnews.com/v/6309925193112",
       "source": "fox"
     },
     {
-      "title": "Arizona bill an end to the 'K-12 cartel': Former public school teacher",
+      "title": "Gas prices are dropping because oil speculators anticipate a recession: Jackie Deangelis",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309293242112",
+      "url": "https://video.foxnews.com/v/6309928144112",
+      "source": "fox"
+    },
+    {
+      "title": "Congress should restrict stock purchases by lawmakers' family members, Americans say",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309924295112",
+      "source": "fox"
+    },
+    {
+      "title": "Enlistments drops as U.S. military goes ‘woke’ with new ad campaign: Former U.S. Army captain",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309927431112",
+      "source": "fox"
+    },
+    {
+      "title": "Democrats continue to push for China’s ‘morally wrong’ clean energy: Helen Raleigh",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309923588112",
+      "source": "fox"
+    },
+    {
+      "title": "Newsom signs gun control bill modeled after Texas abortion law",
+      "type": "GAVIN NEWSOM",
+      "url": "https://www.foxnews.com/politics/newsom-signs-gun-control-bill-modeled-texas-abortion-law",
+      "source": "fox"
+    },
+    {
+      "title": "Pence, Trump headline separate rallies for competing Republican governor candidates Robson, Lake",
+      "type": "POLITICS",
+      "url": "https://www.foxnews.com/politics/pence-trump-headline-separate-rallies-republican-governor-candidates-robson-lake",
+      "source": "fox"
+    },
+    {
+      "title": "Trump tells 'Save America' rally crowd in Arizona: 'Americans kneel to God and no one else'",
+      "type": "POLITICS",
+      "url": "https://www.foxnews.com/politics/trump-save-america-rally-arizona-kneel-god-no-one-else",
+      "source": "fox"
+    },
+    {
+      "title": "Should dogs be allowed in restaurants?",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309915297112",
+      "source": "fox"
+    },
+    {
+      "title": "Fridays mean 'Notable Quotables' on 'Special Report': Here are this week's best bits",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309916660112",
+      "source": "fox"
+    },
+    {
+      "title": "Recent events illuminate justice system failures",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6309915949112",
       "source": "fox"
     }
   ]
