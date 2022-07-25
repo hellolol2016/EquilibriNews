@@ -19,7 +19,7 @@ export default function Page(props) {
   useEffect(function () {
     setRating(window.localStorage.getItem("rating"));
     let last = window.localStorage.getItem("lastCheck");
-    if (last == null || last - rn > 10800000) {
+    if (last == null || rn - new Date(last) > 10800000) {
       handleNewsClick();
       window.localStorage.setItem("lastCheck", rn);
     } else {

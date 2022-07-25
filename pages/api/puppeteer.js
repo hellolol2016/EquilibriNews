@@ -177,6 +177,34 @@ function extractR() {
   return items;
 }
 
+
+function extractVOX() {
+  const column = document.querySelectorAll(".c-compact-river__entry");
+  const items = [];
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText
+          : "NONE",
+      type:
+        element.querySelectorAll("time") != null
+          ? element.querySelector("time").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+          source:"vox"
+    };
+
+    if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
+      items.push(memo);
+    }
+  }
+  return items;
+}
+
 async function scrapeInfiniteScrollItems(
   page,
   getNews,
@@ -222,6 +250,10 @@ export default async function handler(req, res) {
   await page.goto("https://reason.com/latest/")
   items = await scrapeInfiniteScrollItems(page, extractR);
   fs.writeFileSync("./public/articles/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
+
+  await page.goto("https://www.vox.com/policy-and-politics")
+  items = await scrapeInfiniteScrollItems(page, extractVOX);
+  fs.writeFileSync("./public/articles/vox.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await browser.close();
 

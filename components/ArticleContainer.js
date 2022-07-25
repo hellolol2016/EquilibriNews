@@ -4,7 +4,7 @@ import Article from "./Article";
 
 export default function ArticleContainer({props, rating}) {
   const barticles  = abc.articles
-  let farticle = {};
+  let farticle = [];
   if (rating >= 0) {
     if (rating < 2) {
       console.log("far left");
@@ -22,7 +22,6 @@ export default function ArticleContainer({props, rating}) {
       console.log("neutral");
       farticle.push(r.articles) 
       farticle.push(wsj.articles)
-      farticle.push(r.articles) 
       farticle.push(nyt.articles) 
     } else if (rating < 9) {
       console.log("mid right");

@@ -1,6 +1,108 @@
 {
   "articles": [
     {
+      "title": "The country has a major microchip problem -- and the Senate has a $52B solution",
+      "type": "The commerce secretary said the U.S. must spur development of the cruc...",
+      "url": "https://abcnews.go.com/Politics/country-major-microchip-problem-senate-52-billion-solution/story?id=87366441",
+      "source": "abc"
+    },
+    {
+      "title": "Biden 'feels great' while recovering from COVID",
+      "type": "The president said he \"feels better every day\" despite mild symptoms l...",
+      "url": "https://abcnews.go.com/Politics/video/biden-feels-great-recovering-covid-87389685",
+      "source": "abc"
+    },
+    {
+      "title": "Biden holds virtual meeting on the CHIPS Act while recovering from COVID",
+      "type": "Democratic Sen. Joe Manchin tests positive for COVID-19 as Senate Demo...",
+      "url": "https://abcnews.go.com/Politics/video/biden-holds-virtual-meeting-chips-act-recovering-covid-87390107",
+      "source": "abc"
+    },
+    {
+      "title": "Jan. 6 committee releases new clips from interviews with Trump aides, advisers",
+      "type": "Committee members say the footage shows former President Donald Trump ...",
+      "url": "https://abcnews.go.com/Politics/video/jan-committee-releases-clips-interviews-trump-aides-advisers-87389686",
+      "source": "abc"
+    },
+    {
+      "title": "Trump removed lines in post-insurrection speech about prosecuting rioters: Committee",
+      "type": "On Jan. 7, 2021, he did say rioters had defiled “the seat of ... democ...",
+      "url": "https://abcnews.go.com/Politics/trump-removed-lines-post-insurrection-speech-prosecuting-rioters/story?id=87373758",
+      "source": "abc"
+    },
+    {
+      "title": "Biden's COVID symptoms 'almost completely resolved,' doctor says",
+      "type": "The president is noting \"some residual nasal congestion and minimal ho...",
+      "url": "https://abcnews.go.com/Politics/bidens-covid-symptoms-completely-resolved-doctor/story?id=87365357",
+      "source": "abc"
+    },
+    {
+      "title": "Buffalo mayor addresses the economic impact of mass shooting",
+      "type": "Byron Brown said city has not yet received financial support from Whit...",
+      "url": "https://abcnews.go.com/Politics/buffalo-mayor-addresses-mass-shooting-plans-recovery/story?id=87367429",
+      "source": "abc"
+    },
+    {
+      "title": "Harris hammers 'outrageous' abortion ruling, notes case of 10-year-old rape victim",
+      "type": "Harris is expected to keep traveling to tout the need for abortion acc...",
+      "url": "https://abcnews.go.com/Politics/vice-president-harris-hammers-outrageous-abortion-ruling/story?id=87365737",
+      "source": "abc"
+    },
+    {
+      "title": "Arizona Republicans weigh in on governor's primary",
+      "type": "While some locals dinged Pence over 2020, others worried Trump was tox...",
+      "url": "https://abcnews.go.com/Politics/arizona-governors-primary-sets-gop-split-trump-pence/story?id=87345472",
+      "source": "abc"
+    },
+    {
+      "title": "Senate to vote on marriage equality",
+      "type": "ABC News’ Zohreen Shah discusses the latest on President Biden’s recov...",
+      "url": "https://abcnews.go.com/Politics/video/senate-vote-marriage-equality-87367902",
+      "source": "abc"
+    },
+    {
+      "title": "GOP shows three-way split over past and future: The Note",
+      "type": "One anti-Trump lawmaker offered a tempered assessment of the party's f...",
+      "url": "https://abcnews.go.com/Politics/gop-shows-split-past-future-note/story?id=87322926",
+      "source": "abc"
+    },
+    {
+      "title": "Pete Buttigieg chastises Rubio, other Republicans opposing same-sex marriage bill",
+      "type": "The transportation chief is the first openly gay person confirmed to a...",
+      "url": "https://abcnews.go.com/Politics/buttigieg-gops-split-view-gay-marriage-bill-hard/story?id=87323157",
+      "source": "abc"
+    },
+    {
+      "title": "Cheney knows Jan. 6 work could cost her seat; says panel may subpoena Ginni Thomas",
+      "type": "The Wyoming Republican faces a Trump-backed primary challenge next mon...",
+      "url": "https://abcnews.go.com/Politics/liz-cheney-jan-work-worth-losing-house-seat/story?id=87327833",
+      "source": "abc"
+    },
+    {
+      "title": "Trump announcing 2024 bid before the midterms would 'damage' GOP: Larry Hogan",
+      "type": "\"In competitive places and purple battlefields, it’s going to cost us....",
+      "url": "https://abcnews.go.com/Politics/gop-concerned-damage-trump-launches-2024-bid-midterms/story?id=87298324",
+      "source": "abc"
+    },
+    {
+      "title": "Biden's COVID-19 symptoms have 'diminished considerably,' his doctor says",
+      "type": "\"His pulse, blood pressure, respiratory rate and temperature all remai...",
+      "url": "https://abcnews.go.com/Politics/bidens-covid-19-symptoms-diminished-considerably-doctor/story?id=87321042",
+      "source": "abc"
+    },
+    {
+      "title": "Crimes over Jan. 6 go 'all the way up to Donald Trump,' Adam Kinzinger says",
+      "type": "Amid the Capitol riot investigations, the ex-president has teased a 20...",
+      "url": "https://abcnews.go.com/Politics/crimes-jan-donald-trump-adam-kinzinger/story?id=87298273",
+      "source": "abc"
+    },
+    {
+      "title": "'This Week' Transcript 7-24-22: Rep. Kinzinger, Gov. Hogan, Al Gore & Dr. Jha",
+      "type": "This is a rush transcript of \"This Week\" airing Sunday, July 24.",
+      "url": "https://abcnews.go.com/Politics/week-transcript-24-22-rep-adam-kinzinger-gov/story?id=87301140",
+      "source": "abc"
+    },
+    {
       "title": "Hawley 'won't apologize' for Jan. 6 after he takes flack for running from Capitol",
       "type": "The Jan. 6 committee showed surveillance video of the GOP senator flee...",
       "url": "https://abcnews.go.com/Politics/hawley-takes-flack-running-capitol-encouraging-jan-protesters/story?id=87255762",
@@ -76,108 +178,6 @@
       "title": "Jan. 6 hearings: Day 8 key moments",
       "type": "The House Jan. 6 committee focused on what it said was then-President ...",
       "url": "https://abcnews.go.com/Politics/video/jan-hearings-day-key-moments-87226215",
-      "source": "abc"
-    },
-    {
-      "title": "Ex-DHS official on Jan. 6 response",
-      "type": "John Cohen, a former Department of Homeland Security official and memb...",
-      "url": "https://abcnews.go.com/Politics/video/dhs-official-jan-response-87222603",
-      "source": "abc"
-    },
-    {
-      "title": "Jan. 6 committee member: 'We're laying out the facts and evidence' for Americans",
-      "type": "Rep. Stephanie Murphy, a Democrat from Florida, previews Thursday's he...",
-      "url": "https://abcnews.go.com/Politics/video/jan-committee-member-laying-facts-evidence-americans-87222413",
-      "source": "abc"
-    },
-    {
-      "title": "Are the Jan. 6 hearings impacting politics and how people vote?",
-      "type": "Former Sen. Heidi Heitkamp, a Democrat, and former Rep. Barbara Comsto...",
-      "url": "https://abcnews.go.com/Politics/video/jan-hearings-impacting-politics-people-vote-87218455",
-      "source": "abc"
-    },
-    {
-      "title": "House committee lays out Trump activity in White House during Jan. 6",
-      "type": "The focus of the House Jan. 6 committee's second prime-time hearing is...",
-      "url": "https://abcnews.go.com/Politics/video/house-committee-lays-trump-activity-white-house-jan-87216842",
-      "source": "abc"
-    },
-    {
-      "title": "President Biden has runny nose, cough after testing positive for COVID",
-      "type": "Biden, 79, is taking the antiviral pill Paxlovid.",
-      "url": "https://abcnews.go.com/Politics/president-biden-tests-positive-covid-19/story?id=87184049",
-      "source": "abc"
-    },
-    {
-      "title": "Senate Democrats unveil long-awaited marijuana legalization bill",
-      "type": "The sweeping reform faces an uphill battle in the Senate.",
-      "url": "https://abcnews.go.com/Politics/senate-democrats-unveil-long-awaited-marijuana-legalization-bill/story?id=87197357",
-      "source": "abc"
-    },
-    {
-      "title": "DHS inspector general opens criminal probe into deleted Secret Service texts",
-      "type": "The texts were were from around the time of the Jan. 6 Capitol attack.",
-      "url": "https://abcnews.go.com/Politics/dhs-inspector-general-opens-criminal-probe-deleted-secret/story?id=87198495",
-      "source": "abc"
-    },
-    {
-      "title": "White House holds press briefing following Biden's COVID-19 diagnosis",
-      "type": "\"Because the president is vaccinated, double boosted, his risk of seri...",
-      "url": "https://abcnews.go.com/Politics/video/white-house-holds-press-briefing-bidens-covid-19-87198961",
-      "source": "abc"
-    },
-    {
-      "title": "ABC News Live: Biden tests positive for COVID-19",
-      "type": "President Joe Biden tests positive for COVID-19 and is experiencing mi...",
-      "url": "https://abcnews.go.com/Politics/video/abc-news-live-biden-tests-positive-covid-19-87195813",
-      "source": "abc"
-    },
-    {
-      "title": "House votes to guarantee contraception access in federal law",
-      "type": "Eight Republicans voted in support while 195 voted against the measure...",
-      "url": "https://abcnews.go.com/Politics/house-votes-guarantee-contraception-access-federal-law/story?id=87183852",
-      "source": "abc"
-    },
-    {
-      "title": "Jan. 6 hearing to show what Trump was doing as attack unfolded",
-      "type": "Two former White House staffers are expected to appear.",
-      "url": "https://abcnews.go.com/Politics/prime-time-jan-hearing-focus-trumps-riot-response/story?id=87137865",
-      "source": "abc"
-    },
-    {
-      "title": "President Biden tests positive for COVID-19",
-      "type": "The president is experiencing mild symptoms and is isolating at the Wh...",
-      "url": "https://abcnews.go.com/Politics/video/president-biden-tests-positive-covid-19-87184343",
-      "source": "abc"
-    },
-    {
-      "title": "Schumer wants a vote on same-sex marriage bill",
-      "type": "Senate Majority Leader Chuck Schumer said during a floor speech that h...",
-      "url": "https://abcnews.go.com/Politics/video/schumer-vote-sex-marriage-bill-87171430",
-      "source": "abc"
-    },
-    {
-      "title": "Potential rivals seem to make moves in light of Trump's weak spots: The Note",
-      "type": "It's becoming a busy time for those with possible ambitions in 2024.",
-      "url": "https://abcnews.go.com/Politics/potential-rivals-make-moves-light-trumps-weak-spots/story?id=87134612",
-      "source": "abc"
-    },
-    {
-      "title": "Biden to unveil $37B budget request for funding law enforcement, crime prevention",
-      "type": "The president's request is aspirational.",
-      "url": "https://abcnews.go.com/Politics/biden-unveil-37b-budget-request-funding-law-enforcement/story?id=87167327",
-      "source": "abc"
-    },
-    {
-      "title": "Mural spotlights Americans held abroad as families say, 'This doesn't go away'",
-      "type": "The families want to raise awareness and pressure the Biden administra...",
-      "url": "https://abcnews.go.com/Politics/mural-calls-attention-americans-held-abroad-loved/story?id=87135301",
-      "source": "abc"
-    },
-    {
-      "title": "Sen. John Thune speaks about inflation and other issues facing voters",
-      "type": "\"People are going to be focusing on... pocketbook economic issues,\" he...",
-      "url": "https://abcnews.go.com/Politics/sen-john-thune-speaks-inflation-house-vote-protect/story?id=87121474",
       "source": "abc"
     }
   ]
