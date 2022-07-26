@@ -27,14 +27,19 @@ export default function ArticleContainer({ props, rating }) {
     } else if (rating < 9) {
       console.log("mid right");
       farticle = [
-        ...ws.articles,
+        ...wsj.articles,
         ...abc.articles,
         ...r.articles,
         ...nyt.articles,
       ];
     } else if (rating < 11) {
       console.log("far right");
-      farticle = [...nyt.articles, ...ws.articles, ...abc.articles];
+      farticle = [
+        ...nyt.articles,
+        ...wsj.articles,
+        ...abc.articles,
+        ...vox.articles,
+      ];
     } else {
       console.log("errror");
     }
@@ -63,9 +68,10 @@ import fox from "../public/articles/fox.json";
 import nyt from "../public/articles/nyt.json";
 import r from "../public/articles/r.json";
 import wsj from "../public/articles/wsj.json";
+import vox from "../public/articles/vox.json";
 export async function getStaticProps() {
   const rating = localStorage.getItem("rating");
   return {
-    props: { dm, abc, fox, nyt, r, wsj },
+    props: { dm, abc, fox, nyt, r, wsj, vox },
   };
 }
