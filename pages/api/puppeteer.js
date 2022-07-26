@@ -52,6 +52,9 @@ function extractWSJ() {
           : "NONE",
           source:"wsj"
     };
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }

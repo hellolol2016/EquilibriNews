@@ -1,27 +1,9 @@
 {
   "articles": [
     {
-      "title": "Sharp Contrasts With Other Jan. 6 Inquiries Increase Pressure on Garland",
-      "type": "The continued revelations from the House select committee and the rapi...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/jan-6-justice-department-garland.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Former Top Pence Aide Testifies to Grand Jury in Jan. 6 Investigation",
-      "type": "Marc Short, who was chief of staff to Vice President Mike Pence, was s...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/marc-short-pence-jan-6.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Kushner Says He Was Treated for Thyroid Cancer While in White House",
-      "type": "In a memoir to be published next month, former President Donald Trump’...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/jared-kushner-thyroid-cancer.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Biden Feeling Better as He Seeks to Show He Is Still Working Despite Covid",
-      "type": "The president’s symptoms “have now almost completely resolved,” the Wh...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-covid.html",
+      "title": "Biden’s Drug Czar Is Leading the Charge for a ‘Harm Reduction’ Approach",
+      "type": "Experts describe the president’s drug control strategy as the most pro...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/biden-drug-czar-rahul-gupta.html",
       "source": "nyt"
     },
     {
@@ -31,57 +13,75 @@
       "source": "nyt"
     },
     {
-      "title": "A Trump-Backed Veteran Ran Hard to the Right, Only to Be Outflanked",
-      "type": "Joe Kent, a decorated retired Green Beret and House candidate in Washi...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/joe-kent-house-trump.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Biden Says He’s on His Way to a ‘Full, Total Recovery’ from Covid",
-      "type": "President Biden held virtual meetings as he recovered from Covid-19, t...",
-      "url": "https://www.nytimes.com/video/us/politics/100000008459911/biden-covid-recovery.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Kushner Says He Was Treated for Thyroid Cancer While in White House",
-      "type": "In a memoir to be published next month, former President Donald Trump’...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/jared-kushner-thyroid-cancer.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Former Top Pence Aide Testifies to Grand Jury in Jan. 6 Investigation",
-      "type": "Marc Short, who was chief of staff to Vice President Mike Pence, was s...",
+      "title": "Top Pence Aides Testify to Grand Jury in Jan. 6 Investigation",
+      "type": "Marc Short, who was chief of staff to Vice President Mike Pence, and G...",
       "url": "https://www.nytimes.com/2022/07/25/us/politics/marc-short-pence-jan-6.html",
       "source": "nyt"
     },
     {
-      "title": "Energy Department will lend G.M. and LG $2.5 billion to build battery factories.",
-      "type": "The loan will help the automaker and its supplier build electric vehic...",
-      "url": "https://www.nytimes.com/2022/07/25/business/energy-department-gm-lg-battery-loan.html",
+      "title": "Biden Lashes Trump Over Jan. 6, Saying He ‘Lacked the Courage to Act’",
+      "type": "In rare comments on the investigation unfolding in the House, Presiden...",
+      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-trump-jan-6.html",
       "source": "nyt"
     },
     {
-      "title": "Biden Feeling Better as He Seeks to Show He Is Still Working Despite Covid",
-      "type": "The president’s symptoms “have now almost completely resolved,” the Wh...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-covid.html",
+      "title": "Senate Advances Expansive Industrial Policy Bill to Counter China",
+      "type": "The vote indicated bipartisan support for the legislation, which had b...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/senate-industrial-policy-bill.html",
       "source": "nyt"
     },
     {
-      "title": "The Hosts of ‘5-4’ Never Trusted the Supreme Court",
-      "type": "With public confidence in the top judicial body at a record low, a lef...",
-      "url": "https://www.nytimes.com/2022/07/25/arts/5-4-supreme-court-podcast.html",
+      "title": "Senator Raphael Warnock uses a new ad to pressure Herschel Walker to commit to a debate.",
+      "type": "Mr. Walker has repeatedly pledged to debate Mr. Warnock, but his campa...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/senator-raphael-warnock-herschel-debates.html",
       "source": "nyt"
     },
     {
-      "title": "Sharp Contrasts With Other Jan. 6 Inquiries Increase Pressure on Garland",
-      "type": "The continued revelations from the House select committee and the rapi...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/jan-6-justice-department-garland.html",
+      "title": "Mike Pence urges conservatives to look forward as a Trump-shaped cloud hovers behind him.",
+      "type": "Mr. Pence, speaking in Washington hours before Donald Trump was set to...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/mike-pence-trump-speech-washington.html",
       "source": "nyt"
     },
     {
-      "title": "2020 Election Deniers Seek Out Powerful Allies: County Sheriffs",
-      "type": "Conservative activists are working to recruit the law enforcement offi...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/election-sheriffs-voting-trump.html",
+      "title": "Democrats Aid Far-Right Candidate Against Republican Who Backed Impeachment",
+      "type": "A new ad for John Gibbs in his primary against Representative Peter Me...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/democrats-john-gibbs-peter-meijer.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Republicans Confront Unexpected Online Money Slowdown",
+      "type": "In an otherwise favorable political climate, small-dollar donations ha...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/online-fundraising-republicans-democrats.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Biden’s Drug Czar Is Leading the Charge for a ‘Harm Reduction’ Approach",
+      "type": "Experts describe the president’s drug control strategy as the most pro...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/biden-drug-czar-rahul-gupta.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Biden Lashes Trump Over Jan. 6, Saying He ‘Lacked the Courage to Act’",
+      "type": "In rare comments on the investigation unfolding in the House, Presiden...",
+      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-trump-jan-6.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Biden Rule Would Strengthen Health Protections for Gay and Transgender People",
+      "type": "The proposed rule would prohibit discrimination on the basis of sexual...",
+      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-gay-transgender-health.html",
+      "source": "nyt"
+    },
+    {
+      "title": "Sandy Hook Parents to Testify Against Alex Jones, and a Culture of Lies",
+      "type": "The families of 10 victims have waited years to hold the Infowars cons...",
+      "url": "https://www.nytimes.com/2022/07/25/us/politics/alex-jones-sandy-hook.html",
+      "source": "nyt"
+    },
+    {
+      "title": "U.S. Officials Grow More Concerned About Potential Action by China on Taiwan",
+      "type": "The Biden administration is watching for any moves by China to close o...",
+      "url": "https://www.nytimes.com/2022/07/25/us/politics/china-taiwan-biden-pelosi.html",
       "source": "nyt"
     }
   ]

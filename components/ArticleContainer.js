@@ -1,4 +1,4 @@
-import { Box, SimpleGrid } from "@mantine/core";
+import { Box, Center, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
 export default function ArticleContainer({ props, rating }) {
@@ -47,15 +47,21 @@ export default function ArticleContainer({ props, rating }) {
   console.log(farticle);
   console.log(barticles);
   return (
-    <SimpleGrid cols={3}>
+    <SimpleGrid cols={3} breakpoints={[
+        { maxWidth: 1080, cols: 3, spacing: 'md' },
+        { maxWidth: 955, cols: 2, spacing: 'sm' },
+        { maxWidth: 650, cols: 1, spacing: 'sm' },
+      ]}>
       {farticle.map((article) => {
         return (
-          <Article
-            key={article.title}
-            title={article.title}
-            type={article.type}
-            source={article.source}
-          />
+          <Center key={article.title}>
+            <Article
+              key={article.title}
+              title={article.title}
+              type={article.type}
+              source={article.source}
+            />
+          </Center>
         );
       })}
     </SimpleGrid>

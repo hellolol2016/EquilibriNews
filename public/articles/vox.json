@@ -1,6 +1,12 @@
 {
   "articles": [
     {
+      "title": "9 questions about the January 6 committee, answered",
+      "type": "July 25",
+      "url": "https://www.vox.com/23268754/january-6-committee-trump-liz-cheney",
+      "source": "vox"
+    },
+    {
       "title": "A worldwide monkeypox outbreak",
       "type": "July 25",
       "url": "https://www.vox.com/2022/7/25/23277404/worldwide-monkeypox-outbreak-2022",
@@ -28,6 +34,12 @@
       "title": "Sri Lanka’s new president is already cracking down on protests",
       "type": "July 23",
       "url": "https://www.vox.com/2022/7/23/23275396/sri-lanka-president-cracking-down-on-protests-wickremesinghe",
+      "source": "vox"
+    },
+    {
+      "title": "The January 6 committee is holding a series of public hearings",
+      "type": "July 23",
+      "url": "https://www.vox.com/2022/6/9/23161364/january-6-committee-capitol-congress-public-hearings",
       "source": "vox"
     },
     {
@@ -109,12 +121,6 @@
       "source": "vox"
     },
     {
-      "title": "The January 6 committee is holding a series of public hearings",
-      "type": "July 21",
-      "url": "https://www.vox.com/2022/6/9/23161364/january-6-committee-capitol-congress-public-hearings",
-      "source": "vox"
-    },
-    {
       "title": "Biden’s dismal poll numbers, explained in 9 charts",
       "type": "July 21",
       "url": "https://www.vox.com/2022/7/21/23220696/joe-biden-bad-polls-approval-rating-economy-inflation",
@@ -172,12 +178,6 @@
       "title": "Biden sought to end endless wars. So what’s the military doing in Somalia?",
       "type": "July 18",
       "url": "https://www.vox.com/23204510/somalia-us-troops-return-shabaab-biden",
-      "source": "vox"
-    },
-    {
-      "title": "Why the US doesn’t want Turkey to invade Syria",
-      "type": "July 17",
-      "url": "https://www.vox.com/2022/7/17/23259615/why-the-us-doesnt-want-turkey-to-invade-syria",
       "source": "vox"
     }
   ]
