@@ -1,51 +1,58 @@
 import { Box, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
-
-export default function ArticleContainer({props, rating}) {
-  const barticles  = abc.articles
+export default function ArticleContainer({ props, rating }) {
+  const barticles = abc.articles;
   let farticle = [];
   if (rating >= 0) {
     if (rating < 2) {
       console.log("far left");
-      farticle.push(r.articles) 
-      farticle.push(fox.articles)
-      farticle.push(dm.articles)
-      farticle.push(wsj.articles)
+      farticle = [
+        ...r.articles,
+        ...fox.articles,
+        ...dm.articles,
+        ...wsj.articles,
+      ];
     } else if (rating < 4) {
       console.log("mid left");
-      farticle.push(r.articles) 
-      farticle.push(fox.articles)
-      farticle.push(dm.articles)
-      farticle.push(wsj.articles)
+      farticle = [
+        ...r.articles,
+        ...fox.articles,
+        ...dm.articles,
+        ...wsj.articles,
+      ];
     } else if (rating < 7) {
       console.log("neutral");
-      farticle.push(r.articles) 
-      farticle.push(wsj.articles)
-      farticle.push(nyt.articles) 
+      farticle = [...r.articles, ...wsj.articles, ...nyt.articles];
     } else if (rating < 9) {
       console.log("mid right");
-      farticle.push(wsj.articles)
-      farticle.push(abc.articles)
-      farticle.push(r.articles) 
-      farticle.push(nyt.articles) 
+      farticle = [
+        ...ws.articles,
+        ...abc.articles,
+        ...r.articles,
+        ...nyt.articles,
+      ];
     } else if (rating < 11) {
       console.log("far right");
-      farticle.push(nyt.articles) 
-      farticle.push(wsj.articles)
-      farticle.push(abc.articles)
+      farticle = [...nyt.articles, ...ws.articles, ...abc.articles];
     } else {
       console.log("errror");
     }
   }
-
-  return (<SimpleGrid cols={3}>{
-      barticles.map((article)=>{
-        return(
-        <Article key={article.title} title={article.title} type={article.type} />
-        )
-        })
-      }
+  console.log(farticle);
+  console.log(barticles);
+  return (
+    <SimpleGrid cols={3}>
+      {farticle.map((article) => {
+        return (
+          <Article
+            key={article.title}
+            title={article.title}
+            type={article.type}
+            source={article.source}
+          />
+        );
+      })}
     </SimpleGrid>
   );
 }
@@ -59,6 +66,6 @@ import wsj from "../public/articles/wsj.json";
 export async function getStaticProps() {
   const rating = localStorage.getItem("rating");
   return {
-    props: {dm,abc,fox,nyt,r,wsj},
+    props: { dm, abc, fox, nyt, r, wsj },
   };
 }
