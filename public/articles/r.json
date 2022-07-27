@@ -1,8 +1,80 @@
 {
   "articles": [
     {
-      "title": "Poll: Tech Regulation Should Focus on Privacy and Security—Not Breaking Up Big Tech Companies",
+      "title": "San Francisco Fines Businesses for Getting Vandalized",
+      "type": "SAN FRANCISCO",
+      "url": "https://reason.com/2022/07/27/san-francisco-fines-businesses-for-getting-vandalized/",
+      "source": "r"
+    },
+    {
+      "title": "Don't Give U.S. Chipmakers a $76 Billion Government Handout",
+      "type": "CONGRESS",
+      "url": "https://reason.com/2022/07/27/dont-give-u-s-chipmakers-a-76-billion-government-handout/",
+      "source": "r"
+    },
+    {
+      "title": "Federal Courts Greenlight State Abortion Bans While State Courts Halt Enforcement",
       "type": "REASON ROUNDUP",
+      "url": "https://reason.com/2022/07/27/abortion-bans-mixed-results-in-court/",
+      "source": "r"
+    },
+    {
+      "title": "Democrats Say Hulu Has Censored 'the Truth.' Hulu Says It's Within Its Rights To Refuse Political Ads.",
+      "type": "DISNEY",
+      "url": "https://reason.com/2022/07/27/hulu-within-rights-to-refuse-political-ads/",
+      "source": "r"
+    },
+    {
+      "title": "If You Care About Democracy, Don't Ask Biden To Invoke Emergency Powers",
+      "type": "CLIMATE CHANGE",
+      "url": "https://reason.com/2022/07/27/if-you-care-about-democracy-dont-ask-biden-to-invoke-emergency-powers/",
+      "source": "r"
+    },
+    {
+      "title": "Brickbat: Quenching the Holy Spirit",
+      "type": "BRICKBATS",
+      "url": "https://reason.com/2022/07/27/brickbat-quenching-the-holy-spirit/",
+      "source": "r"
+    },
+    {
+      "title": "Chuck Schumer Learned Nothing From the Failure of Pot Legalization in California",
+      "type": "MARIJUANA",
+      "url": "https://reason.com/2022/07/27/chuck-schumer-learned-nothing-from-the-failure-of-pot-legalization-in-california/",
+      "source": "r"
+    },
+    {
+      "title": "The Time Has Come for a Transpartisan 'Repeal' Caucus",
+      "type": "MARIJUANA",
+      "url": "https://reason.com/2022/07/26/the-time-has-come-for-a-transpartisan-repeal-caucus/",
+      "source": "r"
+    },
+    {
+      "title": "Elizabeth Warren Wants To Stop Airline Mergers, Despite Evidence That They Lower Airfares",
+      "type": "REGULATION",
+      "url": "https://reason.com/2022/07/26/elizabeth-warren-wants-to-stop-airline-mergers-despite-evidence-that-they-lower-airfares/",
+      "source": "r"
+    },
+    {
+      "title": "Police Can Access Your Ring Camera Footage Without a Warrant",
+      "type": "SURVEILLANCE",
+      "url": "https://reason.com/2022/07/26/police-can-access-your-ring-camera-footage-without-a-warrant/",
+      "source": "r"
+    },
+    {
+      "title": "What Is the FBI Trying To Hide About Its Raid on Innocent Americans' Safe Deposit Boxes?",
+      "type": "FOURTH AMENDMENT",
+      "url": "https://reason.com/2022/07/26/what-is-the-fbi-hiding-about-its-raid-on-innocent-americans-safe-deposit-boxes/",
+      "source": "r"
+    },
+    {
+      "title": "Do You Have a Right To Run Subway Ads Criticizing High Subway Fares?",
+      "type": "PUBLIC TRANSPORTATION",
+      "url": "https://reason.com/2022/07/26/do-you-have-a-right-to-run-subway-ads-criticizing-high-subway-fares/",
+      "source": "r"
+    },
+    {
+      "title": "Poll: Tech Regulation Should Focus on Privacy and Security—Not Breaking Up Big Tech Companies",
+      "type": "TECHNOLOGY",
       "url": "https://reason.com/2022/07/26/poll-tech-regulation-should-focus-on-privacy-and-security-not-breaking-up-big-tech-companies/",
       "source": "r"
     },
@@ -49,7 +121,7 @@
       "source": "r"
     },
     {
-      "title": "My Baby Needed Special Formula From Europe. U.S Trade Policy Made It Almost Unobtainable.",
+      "title": "My Baby Needed Special Formula From Europe. U.S. Trade Policy Made It Almost Unobtainable.",
       "type": "BABY",
       "url": "https://reason.com/2022/07/25/my-baby-needed-special-formula-from-europe-u-s-trade-policy-made-it-almost-unobtainable/",
       "source": "r"
@@ -106,78 +178,6 @@
       "title": "New Jersey Breweries Push Back Against Crushing New Rules",
       "type": "BEER",
       "url": "https://reason.com/2022/07/23/new-jersey-breweries-push-back-against-crushing-new-rules/",
-      "source": "r"
-    },
-    {
-      "title": "Little Libraries, Free at Last?",
-      "type": "PROPERTY RIGHTS",
-      "url": "https://reason.com/2022/07/23/little-libraries-free-at-last/",
-      "source": "r"
-    },
-    {
-      "title": "A Houston Drug Cop's Lies Sent This Man to Prison for 25 Years",
-      "type": "POLICE ABUSE",
-      "url": "https://reason.com/2022/07/22/a-houston-drug-cops-lies-sent-this-man-to-prison-for-25-years/",
-      "source": "r"
-    },
-    {
-      "title": "A Black Family's Property Was Seized via Eminent Domain. A Century Later, Their Descendants Just Got It Back.",
-      "type": "EMINENT DOMAIN",
-      "url": "https://reason.com/2022/07/22/a-black-familys-property-was-seized-via-eminent-domain-a-century-later-their-descendants-just-got-it-back/",
-      "source": "r"
-    },
-    {
-      "title": "Will Britain's Next Prime Minister Champion Free Markets?",
-      "type": "UNITED KINGDOM",
-      "url": "https://reason.com/2022/07/22/will-britains-next-prime-minister-champion-free-markets/",
-      "source": "r"
-    },
-    {
-      "title": "January 6 Committee Wraps Summer Hearings With Footage of Hawley Fleeing, Detailed Account of Trump's Day",
-      "type": "REASON ROUNDUP",
-      "url": "https://reason.com/2022/07/22/january-6-committee-wraps-summer-hearings-with-footage-of-hawley-fleeing-detailed-account-of-trumps-day/",
-      "source": "r"
-    },
-    {
-      "title": "Russia's Imprisonment of Britney Griner Has Some Unfortunate American Parallels",
-      "type": "WAR ON DRUGS",
-      "url": "https://reason.com/2022/07/22/russias-imprisonment-of-britney-griner-has-some-unfortunate-american-parallels/",
-      "source": "r"
-    },
-    {
-      "title": "How Demands for 'Local Control' Become an Excuse for NIMBYism",
-      "type": "PROPERTY RIGHTS",
-      "url": "https://reason.com/2022/07/22/how-demands-for-local-control-become-an-excuse-for-nimbyism/",
-      "source": "r"
-    },
-    {
-      "title": "Review: Nope",
-      "type": "MOVIES",
-      "url": "https://reason.com/2022/07/22/review-nope/",
-      "source": "r"
-    },
-    {
-      "title": "Biden and Trump Repulse Voters as GOP Shows Signs of Becoming Normal Again",
-      "type": "POLITICS",
-      "url": "https://reason.com/2022/07/22/biden-and-trump-repulse-voters-as-gop-shows-signs-of-becoming-normal-again/",
-      "source": "r"
-    },
-    {
-      "title": "Review: The FDA's Awful Labeling Regulations Made the Baby Formula Shortage Worse",
-      "type": "DRINK",
-      "url": "https://reason.com/2022/07/22/baby-formula/",
-      "source": "r"
-    },
-    {
-      "title": "Eric Boehm: Georgia Ballot Access Is Insane",
-      "type": "CONSPIRACY THEORIES",
-      "url": "https://reason.com/podcast/2022/07/22/eric-boehm-georgia-ballot-access-is-insane/",
-      "source": "r"
-    },
-    {
-      "title": "Brickbat: A Bite Out of Crime",
-      "type": "BRICKBATS",
-      "url": "https://reason.com/2022/07/22/brickbat-a-bite-out-of-crime/",
       "source": "r"
     }
   ]

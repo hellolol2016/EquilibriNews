@@ -1,9 +1,117 @@
 {
   "articles": [
     {
-      "title": "GOP congressman votes against same-sex marriage bill then attends gay son's wedding",
-      "type": "Glenn Thompson was one of 157 House Republicans to vote against the pr...",
-      "url": "https://abcnews.go.com/Politics/gop-congressman-votes-sex-marriage-bill-attends-gay/story?id=87425127",
+      "title": "Biden addresses public from Rose Garden after negative COVID tests, ending isolation",
+      "type": "The president said he \"got through it with no fear [and] very mild dis...",
+      "url": "https://abcnews.go.com/Politics/president-biden-tests-negative-covid-19/story?id=87487134",
+      "source": "abc"
+    },
+    {
+      "title": "Sec. Blinken meets with family of slain journalist",
+      "type": "Journalist Shireen Abu Akleh was killed while on assignment for Al Jaz...",
+      "url": "https://abcnews.go.com/Politics/video/sec-blinken-meets-family-slain-journalist-87493681",
+      "source": "abc"
+    },
+    {
+      "title": "Biden tests negative for COVID-19: ‘I’m feeling great’",
+      "type": "The president delivered remarks from the White House Rose Garden after...",
+      "url": "https://abcnews.go.com/Politics/video/biden-tests-negative-covid-19-im-feeling-great-87492590",
+      "source": "abc"
+    },
+    {
+      "title": "Top gun CEOs testifying on Capitol Hill, blame 'erosion of personal responsibility'",
+      "type": "The committee chair told ABC News it should be a \"wakeup call\" for Con...",
+      "url": "https://abcnews.go.com/Politics/top-gun-ceos-testifying-capitol-hill-wake-mass/story?id=87485548",
+      "source": "abc"
+    },
+    {
+      "title": "Blinken meets family of slain Al Jazeera journalist",
+      "type": "Shireen Abu Akleh's family is demanding justice for her killing.",
+      "url": "https://abcnews.go.com/Politics/blinken-meets-family-slain-al-jazeera-journalist/story?id=87476083",
+      "source": "abc"
+    },
+    {
+      "title": "Trump, Pence rally GOP behind activist agenda: The Note",
+      "type": "Trump and Pence gave separate speeches in Washington, D.C., on Tuesday...",
+      "url": "https://abcnews.go.com/Politics/trump-pence-rally-gop-activist-agenda-note/story?id=87422438",
+      "source": "abc"
+    },
+    {
+      "title": "Why do voters say they want anyone but Biden and Trump in 2024?",
+      "type": "As one pollster put it, \"Voters in general are looking for change.\"",
+      "url": "https://abcnews.go.com/Politics/biden-trump-set-2024-rematch-bases/story?id=86833583",
+      "source": "abc"
+    },
+    {
+      "title": "Mike Pence is trying to define ‘his own political future’: Sarah Isgur",
+      "type": "ABC News’ Linsey Davis spoke with former Trump administrator Sarah Isg...",
+      "url": "https://abcnews.go.com/Politics/video/mike-pence-define-political-future-sarah-isgur-87455861",
+      "source": "abc"
+    },
+    {
+      "title": "Trump evades question on Saudi-backed golf event at his NJ club",
+      "type": "Donald Trump on grieving 9/11 families' frustration with LIV Golf tour...",
+      "url": "https://abcnews.go.com/Politics/trump-evades-question-saudi-backed-golf-event-nj/story?id=87442301",
+      "source": "abc"
+    },
+    {
+      "title": "Trump returns to Washington, assailing Democrats, Jan. 6 committee and more",
+      "type": "Meanwhile, the House panel investigating the Capitol mob vows more hea...",
+      "url": "https://abcnews.go.com/Politics/trump-returns-washington-1st-time-leaving-office-insurrections/story?id=87365866",
+      "source": "abc"
+    },
+    {
+      "title": "House sergeant-at-arms will pay thousands for lawmakers' home security",
+      "type": "Authorities have said threats to Congress are on the rise.",
+      "url": "https://abcnews.go.com/Politics/house-sergeant-arms-pay-thousands-lawmakers-home-security/story?id=87419189",
+      "source": "abc"
+    },
+    {
+      "title": "China targeted Fed employees for years, GOP Senate report says; chairman pushes back",
+      "type": "The committee is concerned the central banking system may still be vul...",
+      "url": "https://abcnews.go.com/Politics/china-targeted-fed-employees-decade-gop-senate-report/story?id=87446202",
+      "source": "abc"
+    },
+    {
+      "title": "In return to DC, Trump remarks focus on crime, barely mentions Jan. 6 hearings",
+      "type": "In his roughly hour and a half long remarks in Washington, D.C., forme...",
+      "url": "https://abcnews.go.com/Politics/video/return-dc-trump-remarks-focus-crime-barely-mentions-87454251",
+      "source": "abc"
+    },
+    {
+      "title": "Rep. Carolyn Maloney speaks on gun control efforts",
+      "type": "An oversight committee hearing on Wednesday will hear gun manufacturer...",
+      "url": "https://abcnews.go.com/Politics/rep-carolyn-maloney-speaks-gun-control-efforts/story?id=87427459",
+      "source": "abc"
+    },
+    {
+      "title": "Indiana's restrictive abortion bill advances despite protests",
+      "type": "More restrictions were added despite pleas from Democrats.",
+      "url": "https://abcnews.go.com/Politics/indianas-restrictive-abortion-bill-advances-protests/story?id=87432410",
+      "source": "abc"
+    },
+    {
+      "title": "Ga. prison 'lacked regard for human life,' probe shows; BOP director testifies",
+      "type": "From 2012-2020, 12 inmates at the U.S. Penitentiary in Atlanta died by...",
+      "url": "https://abcnews.go.com/Politics/senate-panel-presses-federal-prisons-director-atlanta-corruption/story?id=87419059",
+      "source": "abc"
+    },
+    {
+      "title": "Pence swipes at Trump's 'focus' as he details his own agenda for the country",
+      "type": "\"Elections are about the future,\" the former vice president said.",
+      "url": "https://abcnews.go.com/Politics/pence-swipes-trumps-focus-details-agenda-country/story?id=87425196",
+      "source": "abc"
+    },
+    {
+      "title": "Biden administration announces funding for subway, rail station accessibility",
+      "type": "The administration announced Tuesday that about $343 million is earmar...",
+      "url": "https://abcnews.go.com/Politics/video/biden-administration-announces-funding-subway-rail-station-accessibility-87433739",
+      "source": "abc"
+    },
+    {
+      "title": "Anti-gay marriage congressman attends gay son's wedding",
+      "type": "Rep. Glenn Thompson attended his gay son's wedding on Friday, just day...",
+      "url": "https://abcnews.go.com/Politics/video/anti-gay-marriage-congressman-attends-gay-sons-wedding-87433674",
       "source": "abc"
     },
     {
@@ -13,15 +121,15 @@
       "source": "abc"
     },
     {
-      "title": "Ga. penitentiary rife with 'impunity,' lack of 'regard for human life': Senate panel",
-      "type": "Between 2012 to 2020, a total of 12 inmates died by suicide.",
-      "url": "https://abcnews.go.com/Politics/senate-panel-presses-federal-prisons-director-atlanta-corruption/story?id=87419059",
+      "title": "President Biden says he hopes to return to work in-person by the end of the week",
+      "type": "ABC News’ Zohreen Shah discusses President Biden’s recovery from COVID...",
+      "url": "https://abcnews.go.com/Politics/video/president-biden-hopes-return-work-person-end-week-87424808",
       "source": "abc"
     },
     {
-      "title": "Trump, Pence share split-screen in return to D.C. after leaving in Jan. 6's shadow",
-      "type": "Meanwhile, the House Jan. 6 committee vows more hearings on the Capito...",
-      "url": "https://abcnews.go.com/Politics/trump-returns-washington-1st-time-leaving-office-insurrections/story?id=87365866",
+      "title": "GOP congressman votes against same-sex marriage bill then attends gay son's wedding",
+      "type": "Glenn Thompson was one of 157 House Republicans to vote against the pr...",
+      "url": "https://abcnews.go.com/Politics/gop-congressman-votes-sex-marriage-bill-attends-gay/story?id=87425127",
       "source": "abc"
     },
     {
@@ -70,114 +178,6 @@
       "title": "Biden's COVID symptoms 'almost completely resolved,' doctor says",
       "type": "The president is noting \"some residual nasal congestion and minimal ho...",
       "url": "https://abcnews.go.com/Politics/bidens-covid-symptoms-completely-resolved-doctor/story?id=87365357",
-      "source": "abc"
-    },
-    {
-      "title": "Buffalo mayor addresses the economic impact of mass shooting",
-      "type": "Byron Brown said city has not yet received financial support from Whit...",
-      "url": "https://abcnews.go.com/Politics/buffalo-mayor-addresses-mass-shooting-plans-recovery/story?id=87367429",
-      "source": "abc"
-    },
-    {
-      "title": "Harris hammers 'outrageous' abortion ruling, notes case of 10-year-old rape victim",
-      "type": "Harris is expected to keep traveling to tout the need for abortion acc...",
-      "url": "https://abcnews.go.com/Politics/vice-president-harris-hammers-outrageous-abortion-ruling/story?id=87365737",
-      "source": "abc"
-    },
-    {
-      "title": "Arizona Republicans weigh in on governor's primary",
-      "type": "While some locals dinged Pence over 2020, others worried Trump was tox...",
-      "url": "https://abcnews.go.com/Politics/arizona-governors-primary-sets-gop-split-trump-pence/story?id=87345472",
-      "source": "abc"
-    },
-    {
-      "title": "Senate to vote on marriage equality",
-      "type": "ABC News’ Zohreen Shah discusses the latest on President Biden’s recov...",
-      "url": "https://abcnews.go.com/Politics/video/senate-vote-marriage-equality-87367902",
-      "source": "abc"
-    },
-    {
-      "title": "GOP shows three-way split over past and future: The Note",
-      "type": "One anti-Trump lawmaker offered a tempered assessment of the party's f...",
-      "url": "https://abcnews.go.com/Politics/gop-shows-split-past-future-note/story?id=87322926",
-      "source": "abc"
-    },
-    {
-      "title": "Pete Buttigieg chastises Rubio, other Republicans opposing same-sex marriage bill",
-      "type": "The transportation chief is the first openly gay person confirmed to a...",
-      "url": "https://abcnews.go.com/Politics/buttigieg-gops-split-view-gay-marriage-bill-hard/story?id=87323157",
-      "source": "abc"
-    },
-    {
-      "title": "Cheney knows Jan. 6 work could cost her seat; says panel may subpoena Ginni Thomas",
-      "type": "The Wyoming Republican faces a Trump-backed primary challenge next mon...",
-      "url": "https://abcnews.go.com/Politics/liz-cheney-jan-work-worth-losing-house-seat/story?id=87327833",
-      "source": "abc"
-    },
-    {
-      "title": "Trump announcing 2024 bid before the midterms would 'damage' GOP: Larry Hogan",
-      "type": "\"In competitive places and purple battlefields, it’s going to cost us....",
-      "url": "https://abcnews.go.com/Politics/gop-concerned-damage-trump-launches-2024-bid-midterms/story?id=87298324",
-      "source": "abc"
-    },
-    {
-      "title": "Biden's COVID-19 symptoms have 'diminished considerably,' his doctor says",
-      "type": "\"His pulse, blood pressure, respiratory rate and temperature all remai...",
-      "url": "https://abcnews.go.com/Politics/bidens-covid-19-symptoms-diminished-considerably-doctor/story?id=87321042",
-      "source": "abc"
-    },
-    {
-      "title": "Crimes over Jan. 6 go 'all the way up to Donald Trump,' Adam Kinzinger says",
-      "type": "Amid the Capitol riot investigations, the ex-president has teased a 20...",
-      "url": "https://abcnews.go.com/Politics/crimes-jan-donald-trump-adam-kinzinger/story?id=87298273",
-      "source": "abc"
-    },
-    {
-      "title": "'This Week' Transcript 7-24-22: Rep. Kinzinger, Gov. Hogan, Al Gore & Dr. Jha",
-      "type": "This is a rush transcript of \"This Week\" airing Sunday, July 24.",
-      "url": "https://abcnews.go.com/Politics/week-transcript-24-22-rep-adam-kinzinger-gov/story?id=87301140",
-      "source": "abc"
-    },
-    {
-      "title": "Hawley 'won't apologize' for Jan. 6 after he takes flack for running from Capitol",
-      "type": "The Jan. 6 committee showed surveillance video of the GOP senator flee...",
-      "url": "https://abcnews.go.com/Politics/hawley-takes-flack-running-capitol-encouraging-jan-protesters/story?id=87255762",
-      "source": "abc"
-    },
-    {
-      "title": "New details about the U.S. Capitol attack revealed in the Jan. 6 hearings",
-      "type": "More are coming in September as the probe into the Capitol attack cont...",
-      "url": "https://abcnews.go.com/Politics/learned-jan-committee-hearings/story?id=87065276",
-      "source": "abc"
-    },
-    {
-      "title": "Rep. Adam Kinzinger, Gov. Larry Hogan, Al Gore & Dr. Ashish Jha Sunday on \"This Week\"",
-      "type": "This is a listing for \"This Week\" airing Sunday, July 24, 2022.",
-      "url": "https://abcnews.go.com/Politics/rep-adam-kinzinger-gov-larry-hogan-vice-president/story?id=87261556",
-      "source": "abc"
-    },
-    {
-      "title": "Tracking: The path to insurrection",
-      "type": "Donald Trump is at the center of a lengthy investigation tracking his ...",
-      "url": "https://abcnews.go.com/Politics/video/tracking-path-insurrection-87268574",
-      "source": "abc"
-    },
-    {
-      "title": "ABC News Live: Former Trump White House adviser Steve Bannon found guilty",
-      "type": "Former Trump adviser Steve Bannon was found guilty on two counts of co...",
-      "url": "https://abcnews.go.com/Politics/video/abc-news-live-trump-white-house-adviser-steve-87267009",
-      "source": "abc"
-    },
-    {
-      "title": "Steve Bannon found guilty on all counts of contempt of Congress",
-      "type": "Former Trump adviser Steve Bannon was found guilty on two counts of co...",
-      "url": "https://abcnews.go.com/Politics/video/steve-bannon-found-guilty-counts-contempt-congress-87267011",
-      "source": "abc"
-    },
-    {
-      "title": "Steve Bannon convicted on 2 counts of contempt of Congress",
-      "type": "Bannon, who was on trial for defying a subpoena from the Jan. 6 commit...",
-      "url": "https://abcnews.go.com/Politics/video/steve-bannon-convicted-counts-contempt-congress-87265965",
       "source": "abc"
     }
   ]

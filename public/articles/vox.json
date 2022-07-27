@@ -1,15 +1,39 @@
 {
   "articles": [
     {
-      "title": "9 questions about the January 6 committee, answered",
-      "type": "July 25",
-      "url": "https://www.vox.com/23268754/january-6-committee-trump-liz-cheney",
+      "title": "Young Americans are sticking close to their hometowns",
+      "type": "July 27",
+      "url": "https://www.vox.com/future-perfect/2022/7/27/23279166/young-adults-moving-sprung-keyser-hendren-porter-census",
       "source": "vox"
     },
     {
-      "title": "A worldwide monkeypox outbreak",
+      "title": "The first big test for reproductive rights post-Roe is next week in Kansas",
+      "type": "July 27",
+      "url": "https://www.vox.com/23273455/kansas-abortion-roe-dobbs-ballot-initiative-constitutional-amendment",
+      "source": "vox"
+    },
+    {
+      "title": "The January 6 hearings brought politics into the TikTok age",
+      "type": "July 27",
+      "url": "https://www.vox.com/recode/23279601/january-6-hearings-capitol-riot-trump-media-tv-twitter-peter-kafka",
+      "source": "vox"
+    },
+    {
+      "title": "4 ways Americans are still getting abortion pills",
+      "type": "July 26",
+      "url": "https://www.vox.com/videos/23279290/medication-abortion-pill-obtain-ban",
+      "source": "vox"
+    },
+    {
+      "title": "Democrats are taking what they can get on Build Back Better",
       "type": "July 25",
-      "url": "https://www.vox.com/2022/7/25/23277404/worldwide-monkeypox-outbreak-2022",
+      "url": "https://www.vox.com/2022/7/6/23197398/build-back-better-prescription-drug-prices",
+      "source": "vox"
+    },
+    {
+      "title": "9 questions about the January 6 committee, answered",
+      "type": "July 25",
+      "url": "https://www.vox.com/23268754/january-6-committee-trump-liz-cheney",
       "source": "vox"
     },
     {
@@ -19,33 +43,9 @@
       "source": "vox"
     },
     {
-      "title": "Will the pro-abortion rights billionaires please stand up?",
-      "type": "July 25",
-      "url": "https://www.vox.com/recode/23274476/abortion-rights-billionaire-donors",
-      "source": "vox"
-    },
-    {
-      "title": "We’ve all got Covid-19 fatigue, but BA.5 shows it’s not over",
-      "type": "July 24",
-      "url": "https://www.vox.com/2022/7/24/23275962/ba-5-covid-variant-strain-public-health-response",
-      "source": "vox"
-    },
-    {
       "title": "Sri Lanka’s new president is already cracking down on protests",
       "type": "July 23",
       "url": "https://www.vox.com/2022/7/23/23275396/sri-lanka-president-cracking-down-on-protests-wickremesinghe",
-      "source": "vox"
-    },
-    {
-      "title": "The January 6 committee is holding a series of public hearings",
-      "type": "July 23",
-      "url": "https://www.vox.com/2022/6/9/23161364/january-6-committee-capitol-congress-public-hearings",
-      "source": "vox"
-    },
-    {
-      "title": "Democrats have been boosting ultra-right candidates. It could backfire.",
-      "type": "July 23",
-      "url": "https://www.vox.com/23274469/democrats-extremist-republicans-mastriano-cox-bailey",
       "source": "vox"
     },
     {
@@ -67,12 +67,6 @@
       "source": "vox"
     },
     {
-      "title": "Finally, some good news in the fight to end robocalls",
-      "type": "July 22",
-      "url": "https://www.vox.com/recode/23274677/robocalls-fcc-car-warranty",
-      "source": "vox"
-    },
-    {
       "title": "Rape and incest abortion exceptions don’t really exist",
       "type": "July 22",
       "url": "https://www.vox.com/23271352/rape-and-incest-abortion-exception",
@@ -82,12 +76,6 @@
       "title": "The bill that could make it harder to overturn an election",
       "type": "July 22",
       "url": "https://www.vox.com/2022/7/22/23274312/electoral-count-act-congress-election-january-6",
-      "source": "vox"
-    },
-    {
-      "title": "Amazon wants to be your doctor now, too",
-      "type": "July 22",
-      "url": "https://www.vox.com/recode/2022/7/21/23273207/amazon-one-medical-merger-telehealth-antitrust",
       "source": "vox"
     },
     {
@@ -139,12 +127,6 @@
       "source": "vox"
     },
     {
-      "title": "What you need to know about birth control post-Roe",
-      "type": "July 20",
-      "url": "https://www.vox.com/even-better/23271306/birth-control-roe-v-wade-america",
-      "source": "vox"
-    },
-    {
       "title": "Democrats got what they wanted in Maryland: a Trump-backed GOP nominee for governor",
       "type": "July 20",
       "url": "https://www.vox.com/2022/7/20/23270772/maryland-primaries-governor-hogan-trump-cox-moore",
@@ -178,6 +160,24 @@
       "title": "Biden sought to end endless wars. So what’s the military doing in Somalia?",
       "type": "July 18",
       "url": "https://www.vox.com/23204510/somalia-us-troops-return-shabaab-biden",
+      "source": "vox"
+    },
+    {
+      "title": "Why the US doesn’t want Turkey to invade Syria",
+      "type": "July 17",
+      "url": "https://www.vox.com/2022/7/17/23259615/why-the-us-doesnt-want-turkey-to-invade-syria",
+      "source": "vox"
+    },
+    {
+      "title": "What is Steve Bannon planning in his war room?",
+      "type": "July 17",
+      "url": "https://www.vox.com/2022/7/17/23217452/steve-bannon-january-6-trump-propaganda-election",
+      "source": "vox"
+    },
+    {
+      "title": "How can Sri Lanka move forward?",
+      "type": "July 16",
+      "url": "https://www.vox.com/explainers/2022/7/16/23228128/sri-lanka-president-gotabaya-rajapaksa-resignation-future",
       "source": "vox"
     }
   ]

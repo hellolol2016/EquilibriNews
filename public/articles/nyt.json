@@ -1,87 +1,63 @@
 {
   "articles": [
     {
-      "title": "Biden’s Drug Czar Is Leading the Charge for a ‘Harm Reduction’ Approach",
-      "type": "Experts describe the president’s drug control strategy as the most pro...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/biden-drug-czar-rahul-gupta.html",
+      "title": "Senate Passes $280 Billion Industrial Policy Bill to Counter China",
+      "type": "The lopsided bipartisan vote reflected a rare consensus in the otherwi...",
+      "url": "https://www.nytimes.com/2022/07/27/us/politics/senate-chips-china.html",
       "source": "nyt"
     },
     {
-      "title": "U.S. Officials Grow More Concerned About Potential Action by China on Taiwan",
-      "type": "The Biden administration is watching for any moves by China to close o...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/china-taiwan-biden-pelosi.html",
+      "title": "Alex Lasry, a son of the Milwaukee Bucks’ co-owner, ends his Senate bid in Wisconsin.",
+      "type": "The departure of Mr. Lasry, who largely self-funded his campaign to ch...",
+      "url": "https://www.nytimes.com/2022/07/27/us/politics/alex-lasry-senate-wisconsin.html",
       "source": "nyt"
     },
     {
-      "title": "Top Pence Aides Testify to Grand Jury in Jan. 6 Investigation",
-      "type": "Marc Short, who was chief of staff to Vice President Mike Pence, and G...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/marc-short-pence-jan-6.html",
+      "title": "Biden Tests Negative for Covid and Will End Isolation",
+      "type": "The president’s symptoms are “almost completely resolved,” his physici...",
+      "url": "https://www.nytimes.com/2022/07/27/us/politics/biden-negative-covid.html",
       "source": "nyt"
     },
     {
-      "title": "Biden Lashes Trump Over Jan. 6, Saying He ‘Lacked the Courage to Act’",
-      "type": "In rare comments on the investigation unfolding in the House, Presiden...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-trump-jan-6.html",
+      "title": "Special Military Cell Flows Weapons and Equipment Into Ukraine",
+      "type": "A little-known group at U.S. European Command in Germany fills Ukraine...",
+      "url": "https://www.nytimes.com/2022/07/27/us/politics/ukraine-weapons-center.html",
       "source": "nyt"
     },
     {
-      "title": "Senate Advances Expansive Industrial Policy Bill to Counter China",
-      "type": "The vote indicated bipartisan support for the legislation, which had b...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/senate-industrial-policy-bill.html",
+      "title": "Assault Weapons Makers Pulled In Over $1 Billion as Violence Surged, Report Says",
+      "type": "A House panel found that the companies have thrived in the past decade...",
+      "url": "https://www.nytimes.com/2022/07/27/us/politics/assault-weapons-revenue.html",
       "source": "nyt"
     },
     {
-      "title": "Senator Raphael Warnock uses a new ad to pressure Herschel Walker to commit to a debate.",
-      "type": "Mr. Walker has repeatedly pledged to debate Mr. Warnock, but his campa...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/senator-raphael-warnock-herschel-debates.html",
+      "title": "Biden Insists There’s No Recession as He Confronts Latest Economic Risk",
+      "type": "Officials have tried to ditch a shorthand definition for what constitu...",
+      "url": "https://www.nytimes.com/2022/07/27/business/biden-recession-us-economy.html",
       "source": "nyt"
     },
     {
-      "title": "Mike Pence urges conservatives to look forward as a Trump-shaped cloud hovers behind him.",
-      "type": "Mr. Pence, speaking in Washington hours before Donald Trump was set to...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/mike-pence-trump-speech-washington.html",
+      "title": "Justice Dept. Asking Witnesses About Trump in Its Jan. 6 Investigation",
+      "type": "Federal prosecutors sought information about the former president’s ro...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/trump-jan-6-justice-department.html",
       "source": "nyt"
     },
     {
-      "title": "Democrats Aid Far-Right Candidate Against Republican Who Backed Impeachment",
-      "type": "A new ad for John Gibbs in his primary against Representative Peter Me...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/democrats-john-gibbs-peter-meijer.html",
+      "title": "Parents of Sandy Hook Victim at Alex Jones Trial Seek $150 Million in Damages",
+      "type": "The figure represents the first time the family of a victim has put a ...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/sandy-hook-alex-jones.html",
       "source": "nyt"
     },
     {
-      "title": "Republicans Confront Unexpected Online Money Slowdown",
-      "type": "In an otherwise favorable political climate, small-dollar donations ha...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/online-fundraising-republicans-democrats.html",
+      "title": "How Can Democrats Persuade Voters They’re Not a Party of Rich Elites?",
+      "type": "That big question was the focus of a Tuesday gathering of progressive ...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/democrats-working-class-voters.html",
       "source": "nyt"
     },
     {
-      "title": "Biden’s Drug Czar Is Leading the Charge for a ‘Harm Reduction’ Approach",
-      "type": "Experts describe the president’s drug control strategy as the most pro...",
-      "url": "https://www.nytimes.com/2022/07/26/us/politics/biden-drug-czar-rahul-gupta.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Biden Lashes Trump Over Jan. 6, Saying He ‘Lacked the Courage to Act’",
-      "type": "In rare comments on the investigation unfolding in the House, Presiden...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-trump-jan-6.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Biden Rule Would Strengthen Health Protections for Gay and Transgender People",
-      "type": "The proposed rule would prohibit discrimination on the basis of sexual...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/biden-gay-transgender-health.html",
-      "source": "nyt"
-    },
-    {
-      "title": "Sandy Hook Parents to Testify Against Alex Jones, and a Culture of Lies",
-      "type": "The families of 10 victims have waited years to hold the Infowars cons...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/alex-jones-sandy-hook.html",
-      "source": "nyt"
-    },
-    {
-      "title": "U.S. Officials Grow More Concerned About Potential Action by China on Taiwan",
-      "type": "The Biden administration is watching for any moves by China to close o...",
-      "url": "https://www.nytimes.com/2022/07/25/us/politics/china-taiwan-biden-pelosi.html",
+      "title": "Prison Personnel Describe Horrific Conditions, and Cover-Up, at Atlanta Prison",
+      "type": "The conditions at the prison, while extreme, reflect wider problems in...",
+      "url": "https://www.nytimes.com/2022/07/26/us/politics/atlanta-federal-prisons-corruption.html",
       "source": "nyt"
     }
   ]

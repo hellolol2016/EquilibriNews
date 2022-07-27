@@ -63,7 +63,7 @@ function extractWSJ() {
 }
 
 function extractNYT() {
-  const extractedItems = document.querySelectorAll("li");
+  const extractedItems = document.querySelectorAll("#stream-panel li");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
@@ -180,7 +180,6 @@ function extractR() {
   return items;
 }
 
-
 function extractVOX() {
   const column = document.querySelectorAll(".c-compact-river__entry");
   const items = [];
@@ -211,12 +210,14 @@ function extractVOX() {
 async function scrapeInfiniteScrollItems(
   page,
   getNews,
+  src
 ) {
   let items = [];
   try {
       items = await page.evaluate(getNews);
   } catch (e) {
     console.log(e);
+    console.log("bad source" , src );
   }
   return items;
 }
@@ -231,31 +232,31 @@ export default async function handler(req, res) {
   page.setViewport({ width: 1280, height: 926 });
 
   await page.goto("https://www.foxnews.com/politics");
-  let items = await scrapeInfiniteScrollItems(page, extractFox);
+  let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
   fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
-  items = await scrapeInfiniteScrollItems(page, extractWSJ);
+  items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
   fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.nytimes.com/section/politics");
-  items = await scrapeInfiniteScrollItems(page, extractNYT);
+  items = await scrapeInfiniteScrollItems(page, extractNYT,"nyt");
   fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://abcnews.go.com/Politics");
-  items = await scrapeInfiniteScrollItems(page, extractABC);
+  items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
   fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
-  items = await scrapeInfiniteScrollItems(page, extractDM);
+  items = await scrapeInfiniteScrollItems(page, extractDM,"dm");
   fs.writeFileSync("./public/articles/dm.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://reason.com/latest/")
-  items = await scrapeInfiniteScrollItems(page, extractR);
+  items = await scrapeInfiniteScrollItems(page, extractR,"r");
   fs.writeFileSync("./public/articles/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await page.goto("https://www.vox.com/policy-and-politics")
-  items = await scrapeInfiniteScrollItems(page, extractVOX);
+  items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
   fs.writeFileSync("./public/articles/vox.json", JSON.stringify({articles:items}, null, 2) + "\n");
 
   await browser.close();

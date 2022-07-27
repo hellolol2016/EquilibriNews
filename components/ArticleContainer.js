@@ -2,7 +2,6 @@ import { Box, Center, SimpleGrid } from "@mantine/core";
 import Article from "./Article";
 
 export default function ArticleContainer({ props, rating }) {
-  const barticles = abc.articles;
   let farticle = [];
   if (rating >= 0) {
     if (rating < 2) {
@@ -23,7 +22,7 @@ export default function ArticleContainer({ props, rating }) {
       ];
     } else if (rating < 7) {
       console.log("neutral");
-      farticle = [...r.articles, ...wsj.articles, ...nyt.articles];
+      farticle = [...wsj.articles,...r.articles, ...nyt.articles];
     } else if (rating < 9) {
       console.log("mid right");
       farticle = [
@@ -45,7 +44,10 @@ export default function ArticleContainer({ props, rating }) {
     }
   }
   console.log(farticle);
-  console.log(barticles);
+
+  console.log(Object.keys(r.articles).length);
+  console.log(Object.keys(wsj.articles).length);
+  console.log(Object.keys(nyt.articles).length);
   return (
     <SimpleGrid cols={3} breakpoints={[
         { maxWidth: 1080, cols: 3, spacing: 'md' },
@@ -76,7 +78,6 @@ import r from "../public/articles/r.json";
 import wsj from "../public/articles/wsj.json";
 import vox from "../public/articles/vox.json";
 export async function getStaticProps() {
-  const rating = localStorage.getItem("rating");
   return {
     props: { dm, abc, fox, nyt, r, wsj, vox },
   };
