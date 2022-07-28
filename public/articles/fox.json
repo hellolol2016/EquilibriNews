@@ -1,57 +1,63 @@
 {
   "articles": [
     {
-      "title": "Ron Johnson demands probe of 'scheme' to suppress Hunter Biden info",
-      "type": "Hunter Biden",
-      "url": "https://www.foxnews.com/politics/ron-johnson-demands-probe-scheme-suppress-hunter-biden-info-says-fbi-weaponized-against-senators",
+      "title": "Manchin, Schumer agree to vastly pared back version of Build Back Better",
+      "type": "SENATE",
+      "url": "https://www.foxnews.com/politics/manchin-schumer-agree-reconciliation-deal-after-more-than-year-talks",
       "source": "fox"
     },
     {
-      "title": "Top Senate Democratic candidates refuse to say whether men can get pregnant, or define the word 'woman'",
-      "type": "Abortion",
-      "url": "https://www.foxnews.com/politics/top-senate-democratic-candidates-refuse-say-whether-men-can-get-pregnant-define-word-woman",
+      "title": "Joe Biden met with at least 14 of Hunter’s business associates while vice president",
+      "type": "Joe Biden",
+      "url": "https://www.foxnews.com/politics/joe-biden-met-14-hunters-business-associates-vice-president",
       "source": "fox"
     },
     {
-      "title": "AG Garland refuses to rule out prosecuting Trump for Jan. 6",
-      "type": "Capitol Protests",
-      "url": "https://www.foxnews.com/politics/ag-garland-refuses-rule-out-prosecuting-trump-jan-6",
+      "title": "Jim Jordan says new whistleblower disclosures reveal 'scandalous' push by FBI to pad domestic terrorism data",
+      "type": "FBI",
+      "url": "https://www.foxnews.com/politics/jim-jordan-says-new-whistleblower-disclosures-reveal-scandalous-push-fbi-pad-domestic-terrorism-data",
       "source": "fox"
     },
     {
-      "title": "DeSantis spox pushes back following accusations in lawsuit over Florida parental rights law",
-      "type": "FLORIDA",
-      "url": "https://www.foxnews.com/politics/desantis-spox-pushes-back-following-accusations-lawsuit-florida-parental-rights-law",
+      "title": "Senate campaign chairs spar over impact of Manchin inflation bill: 'It's all lies'",
+      "type": "ECONOMY",
+      "url": "https://www.foxnews.com/politics/senate-campaign-chairs-spar-over-impact-manchin-inflation-bill-all-lies",
       "source": "fox"
     },
     {
-      "title": "Senate passes China, semiconductor bill with House set to quickly take up measure",
+      "title": "Democrats deflect on supporting Biden in 2024",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310122531112",
+      "source": "fox"
+    },
+    {
+      "title": "US offers Russian arm dealer in exchange for Brittney Griner, Paul Whelan",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310121724112",
+      "source": "fox"
+    },
+    {
+      "title": "DCCC chair under fire for 'wasting' Democratic donors' money on 'far-right republicans'",
+      "type": "MIDTERM ELECTIONS",
+      "url": "https://www.foxnews.com/politics/dccc-chair-under-fire-wasting-democratic-donors-money-far-right-republicans",
+      "source": "fox"
+    },
+    {
+      "title": "Trump will lose RNC funding for legal bills if he announces 2024 candidacy: Report",
+      "type": "DONALD TRUMP",
+      "url": "https://www.foxnews.com/politics/trump-lose-rnc-funding-legal-bills-announces-2024-candidacy-report",
+      "source": "fox"
+    },
+    {
+      "title": "Biden-Xi call lasts more than 2 hours",
       "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/senate-passes-china-semiconductor-bill-house-set-quickly-take-measure",
+      "url": "https://www.foxnews.com/politics/biden-xi-call-take-place-thursday-morning",
       "source": "fox"
     },
     {
-      "title": "Alex Lasry drops out of Wisconsin Democratic Senate primary, clearing way for Mandela Barnes",
-      "type": "WISCONSIN",
-      "url": "https://www.foxnews.com/politics/alex-lasry-drops-wisconsin-democratic-senate-primary-clearing-way-mandela-barnes",
-      "source": "fox"
-    },
-    {
-      "title": "VP Harris supports whatever will bring her more power: Timpf",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310072493112",
-      "source": "fox"
-    },
-    {
-      "title": "Ernst, GOP senators slam 'Bidenomics' in floor speech as fiscal cliff climb 'getting steeper and steeper'",
-      "type": "POLITICS",
-      "url": "https://www.foxnews.com/politics/ernst-gop-senators-slam-bidenomics-floor-speech-steeper-steeper",
-      "source": "fox"
-    },
-    {
-      "title": "Sean Duffy: Kamala Harris has ‘fallen flat on her face,’ wasted her opportunity",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310070906112",
+      "title": "On this day in history, July 28, the 14th Amendment was certified, assuring equality for all Americans",
+      "type": "LIFESTYLE",
+      "url": "https://www.foxnews.com/lifestyle/this-day-history-july-28-14th-amendment-certified-assuring-equality-americans",
       "source": "fox"
     },
     {
@@ -73,111 +79,105 @@
       "source": "fox"
     },
     {
-      "title": "McEnany: Love of country is 'paramount' in politics",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6309209826112",
+      "title": "Senate campaign chairs spar over impact of Manchin inflation bill: 'It's all lies'",
+      "type": "ECONOMY",
+      "url": "https://www.foxnews.com/politics/senate-campaign-chairs-spar-over-impact-manchin-inflation-bill-all-lies",
       "source": "fox"
     },
     {
-      "title": "Ron Johnson goes off on the left's 'jaw-dropping hypocrisy' on Hunter Biden, Jan. 6 hearings",
-      "type": "FOX NEWS FLASH",
-      "url": "https://www.foxnews.com/media/ron-johnson-goes-off-lefts-jaw-dropping-hypocrisy-hunter-biden-jan-6-hearings",
+      "title": "Sen. Dick Durbin of Illinois tests positive for COVID-19",
+      "type": "ILLINOIS",
+      "url": "https://www.foxnews.com/us/sen-dick-durbin-illinois-tests-positive-covid-19",
       "source": "fox"
     },
     {
-      "title": "Senate passes China, semiconductor bill with House set to quickly take up measure",
+      "title": "Biden-Xi call lasts more than 2 hours",
       "type": "CHINA",
-      "url": "https://www.foxnews.com/politics/senate-passes-china-semiconductor-bill-house-set-quickly-take-measure",
+      "url": "https://www.foxnews.com/politics/biden-xi-call-take-place-thursday-morning",
       "source": "fox"
     },
     {
-      "title": "Florida weapon licenses will now include gun safety tips",
-      "type": "FLORIDA",
-      "url": "https://www.foxnews.com/us/florida-weapon-licenses-will-include-gun-safety-tips",
+      "title": "Sen. Kennedy torches DC overspending following GDP report: Bottom line is the economy sucks",
+      "type": "ECONOMY",
+      "url": "https://www.foxnews.com/media/sen-kennedy-torches-dc-overspending-following-gdp-report-bottom-line-economy-sucks",
       "source": "fox"
     },
     {
-      "title": "Ernst, GOP senators slam 'Bidenomics' in floor speech as fiscal cliff climb 'getting steeper and steeper'",
+      "title": "Russian trade deal to bring Americans home is ‘dangerous precedent’: Pompeo",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310117665112",
+      "source": "fox"
+    },
+    {
+      "title": "Clay Travis: Democrats are pushing Biden 'off the stage' ahead of 2024",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310117752112",
+      "source": "fox"
+    },
+    {
+      "title": "Clay Travis predicts Hunter Biden 'will be charged' in federal investigation",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310115575112",
+      "source": "fox"
+    },
+    {
+      "title": "Rick Scott targets Joe Manchin over 'reckless spending' bill, says Biden sent 'America into a recession'",
+      "type": "ECONOMY",
+      "url": "https://www.foxnews.com/politics/rick-scott-targets-reckless-spending-democrats-biden-sent-america-recession",
+      "source": "fox"
+    },
+    {
+      "title": "Boebert introducing resolution honoring Indiana mall hero, no Democrats sign on",
       "type": "POLITICS",
-      "url": "https://www.foxnews.com/politics/ernst-gop-senators-slam-bidenomics-floor-speech-steeper-steeper",
+      "url": "https://www.foxnews.com/politics/boebert-introducing-resolution-honoring-indiana-mall-hero-no-democrats-sign",
       "source": "fox"
     },
     {
-      "title": "Out-of-state donors spending millions to protect abortion in Kansas ahead of statewide vote",
-      "type": "KANSAS",
-      "url": "https://www.foxnews.com/politics/out-state-donors-spending-millions-protect-abortion-kansas-ahead-statewide-vote",
-      "source": "fox"
-    },
-    {
-      "title": "More than 50 Republicans call for Biden to take cognitive test, amid Dem concerns about president's age",
-      "type": "JOE BIDEN",
-      "url": "https://www.foxnews.com/politics/more-than-50-republicans-call-biden-take-cognitive-test-dem-concerns-about-presidents-age",
-      "source": "fox"
-    },
-    {
-      "title": "House GOP Leader McCarthy meets with caucus on 'Commitment to America' midterm strategy",
-      "type": "REPUBLICANS",
-      "url": "https://www.foxnews.com/politics/house-gop-leader-mccarthy-meets-republicans-commitment-america-plan",
-      "source": "fox"
-    },
-    {
-      "title": "Biden tests negative for COVID-19, will end isolation, White House physician says",
-      "type": "JOE BIDEN",
-      "url": "https://www.foxnews.com/politics/biden-tests-negative-covid-19-will-end-isolation-white-house-physician-says",
-      "source": "fox"
-    },
-    {
-      "title": "Georgia showdowns: Kemp tops Abrams, Warnock edges Walker, in new poll",
-      "type": "GEORGIA",
-      "url": "https://www.foxnews.com/politics/georgia-showdowns-kemp-tops-abrams-warnock-edges-walker-poll",
-      "source": "fox"
-    },
-    {
-      "title": "People should have confidence in the FBI: Sen. Grassley",
+      "title": "Joe Concha on Biden’s 2024 chances: I don’t see how you run this horse again",
       "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310064283112",
+      "url": "https://video.foxnews.com/v/6310117324112",
       "source": "fox"
     },
     {
-      "title": "Michigan GOP gubernatorial candidate Tudor Dixon hits back at Democrat election meddling following ad attacks",
+      "title": "House Republicans move to reject China competition bill after Manchin, Schumer agree to reconciliation deal",
+      "type": "HOUSE OF REPRESENTATIVES",
+      "url": "https://www.foxnews.com/politics/house-republicans-move-reject-china-competition-bill-manchin-schumer-agree-reconciliation-deal",
+      "source": "fox"
+    },
+    {
+      "title": "ON THE TRAIL: Congressional candidates fight for right to represent hotly contested Arizona district",
+      "type": "DIGITAL ORIGINALS",
+      "url": "https://www.foxnews.com/politics/congressional-candidates-fight-right-to-represent-hotly-contested-arizona-district",
+      "source": "fox"
+    },
+    {
+      "title": "US aircraft carrier, strike group move into South China Sea as Pelosi plans possible Taiwan visit",
+      "type": "CHINA",
+      "url": "https://www.foxnews.com/politics/us-aircraft-carrier-strike-group-move-south-china-sea-pelosi-plans-possible-taiwan-visit",
+      "source": "fox"
+    },
+    {
+      "title": "Rep. Scalise recalls being shot at congressional baseball game: 'God performed miracles'",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310111360112",
+      "source": "fox"
+    },
+    {
+      "title": "Lawmakers sound alarm over US military recruitment crisis: ‘Why would I join?’",
+      "type": "MILITARY",
+      "url": "https://www.foxnews.com/politics/lawmakers-sound-alarm-us-military-recruitment-crisis-why-join",
+      "source": "fox"
+    },
+    {
+      "title": "Justice Clarence Thomas no longer teaching law at George Washington University following protests",
+      "type": "VIDEO",
+      "url": "https://video.foxnews.com/v/6310110470112",
+      "source": "fox"
+    },
+    {
+      "title": "Arizona gubernatorial hopeful Karrin Taylor Robson blasts 'fraud' Kari Lake ahead of primary: 'An opportunist'",
       "type": "MIDTERM ELECTIONS",
-      "url": "https://www.foxnews.com/politics/michigan-gop-gubernatorial-candidate-tudor-dixon-hits-back-democrat-election-meddling-ad-attacks",
-      "source": "fox"
-    },
-    {
-      "title": "Kellyanne Conway: Only Democrats in the White House think Biden is successful",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310064664112",
-      "source": "fox"
-    },
-    {
-      "title": "Turley sounds off on ramped up criminal investigation into Trump: 'This is a very different situation'",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310065454112",
-      "source": "fox"
-    },
-    {
-      "title": "Kellyanne Conway: Americans don't have confidence in Biden's leadership",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310063862112",
-      "source": "fox"
-    },
-    {
-      "title": "House GOP leaders urge Biden not to 'reward' Russia, OPEC with energy policies",
-      "type": "JOE BIDEN",
-      "url": "https://www.foxnews.com/politics/house-gop-leaders-urge-biden-not-reward-russia-opec-energy-policies",
-      "source": "fox"
-    },
-    {
-      "title": "Guy Benson on AG Garland's lukewarm response: 'I don't know who they think they're fooling'",
-      "type": "VIDEO",
-      "url": "https://video.foxnews.com/v/6310064944112",
-      "source": "fox"
-    },
-    {
-      "title": "Dem governor of landlocked Colorado touts state's lack of shark attacks in fundraising push",
-      "type": "COLORADO",
-      "url": "https://www.foxnews.com/politics/dem-governor-landlocked-colorado-touts-states-lack-shark-attacks-fundraising-push",
+      "url": "https://www.foxnews.com/politics/arizona-gop-gubernatorial-hopeful-karrin-robson-blasts-fraud-kari-lake-primary",
       "source": "fox"
     }
   ]

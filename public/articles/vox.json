@@ -1,13 +1,61 @@
 {
   "articles": [
     {
-      "title": "Young Americans are sticking close to their hometowns",
+      "title": "What the strong dollar means for you",
+      "type": "July 28",
+      "url": "https://www.vox.com/23280472/strong-dollar-euro-economy",
+      "source": "vox"
+    },
+    {
+      "title": "What GDP does and doesn’t tell us",
+      "type": "July 28",
+      "url": "https://www.vox.com/the-goods/2022/7/28/23280969/gdp-report-recession-economy-climate-change-happiness",
+      "source": "vox"
+    },
+    {
+      "title": "The rise of land acknowledgments — and their limitations",
+      "type": "July 28",
+      "url": "https://www.vox.com/the-highlight/23200329/land-acknowledgments-indigenous-landback",
+      "source": "vox"
+    },
+    {
+      "title": "Biden’s agenda is, in fact, back",
+      "type": "July 27",
+      "url": "https://www.vox.com/23281547/build-back-better-joe-manchin",
+      "source": "vox"
+    },
+    {
+      "title": "Republicans have a nonsensical argument against the same-sex marriage bill",
+      "type": "July 27",
+      "url": "https://www.vox.com/23274491/senate-republicans-same-sex-marriage-bill-respect-for-marriage-act",
+      "source": "vox"
+    },
+    {
+      "title": "The CHIPS Act won’t solve the chip shortage",
+      "type": "July 27",
+      "url": "https://www.vox.com/recode/2022/7/27/23277664/chips-act-solve-chip-shortage-biden-manufacturing",
+      "source": "vox"
+    },
+    {
+      "title": "Democrats have been boosting ultra-right candidates. It could backfire.",
+      "type": "July 27",
+      "url": "https://www.vox.com/23274469/democrats-extremist-republicans-mastriano-cox-bailey",
+      "source": "vox"
+    },
+    {
+      "title": "The January 6 committee is holding a series of public hearings",
+      "type": "July 27",
+      "url": "https://www.vox.com/2022/6/9/23161364/january-6-committee-capitol-congress-public-hearings",
+      "source": "vox"
+    },
+    {
+      "title": "The great millennial migration that wasn’t",
       "type": "July 27",
       "url": "https://www.vox.com/future-perfect/2022/7/27/23279166/young-adults-moving-sprung-keyser-hendren-porter-census",
       "source": "vox"
     },
     {
-      "title": "The first big test for reproductive rights post-Roe is next week in Kansas",
+      "title": "The big upcoming vote on abortion rights in Kansas, explained",
       "type": "July 27",
       "url": "https://www.vox.com/23273455/kansas-abortion-roe-dobbs-ballot-initiative-constitutional-amendment",
       "source": "vox"
@@ -130,54 +178,6 @@
       "title": "Democrats got what they wanted in Maryland: a Trump-backed GOP nominee for governor",
       "type": "July 20",
       "url": "https://www.vox.com/2022/7/20/23270772/maryland-primaries-governor-hogan-trump-cox-moore",
-      "source": "vox"
-    },
-    {
-      "title": "Campaigns may have lost their most effective — and annoying — outreach tool",
-      "type": "July 19",
-      "url": "https://www.vox.com/2022/7/19/23268260/midterms-texting-10dlc-campaigns-optin-mobile",
-      "source": "vox"
-    },
-    {
-      "title": "What Biden wanted in the Middle East — and what he actually got",
-      "type": "July 19",
-      "url": "https://www.vox.com/2022/7/19/23220600/biden-middle-east-policy-human-rights",
-      "source": "vox"
-    },
-    {
-      "title": "A deadly elementary school shooting in Uvalde, Texas",
-      "type": "July 18",
-      "url": "https://www.vox.com/2022/5/24/23140552/robb-elementary-school-shooting-uvalde-texas",
-      "source": "vox"
-    },
-    {
-      "title": "3 takeaways from Texas’s investigation of the Uvalde school shooting",
-      "type": "July 18",
-      "url": "https://www.vox.com/23269195/uvalde-texas-investigation-shooting-police",
-      "source": "vox"
-    },
-    {
-      "title": "Biden sought to end endless wars. So what’s the military doing in Somalia?",
-      "type": "July 18",
-      "url": "https://www.vox.com/23204510/somalia-us-troops-return-shabaab-biden",
-      "source": "vox"
-    },
-    {
-      "title": "Why the US doesn’t want Turkey to invade Syria",
-      "type": "July 17",
-      "url": "https://www.vox.com/2022/7/17/23259615/why-the-us-doesnt-want-turkey-to-invade-syria",
-      "source": "vox"
-    },
-    {
-      "title": "What is Steve Bannon planning in his war room?",
-      "type": "July 17",
-      "url": "https://www.vox.com/2022/7/17/23217452/steve-bannon-january-6-trump-propaganda-election",
-      "source": "vox"
-    },
-    {
-      "title": "How can Sri Lanka move forward?",
-      "type": "July 16",
-      "url": "https://www.vox.com/explainers/2022/7/16/23228128/sri-lanka-president-gotabaya-rajapaksa-resignation-future",
       "source": "vox"
     }
   ]

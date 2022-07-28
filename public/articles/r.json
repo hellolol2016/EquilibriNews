@@ -1,6 +1,102 @@
 {
   "articles": [
     {
+      "title": "Don't Let Russia's Regime Change Plans Draw the U.S. Into War",
+      "type": "RUSSIA",
+      "url": "https://reason.com/2022/07/28/dont-let-russias-regime-change-plans-draw-the-u-s-into-war/",
+      "source": "r"
+    },
+    {
+      "title": "Meta Can't Buy V.R. Fitness Company, Must Make Its Own Competing App, Says FTC",
+      "type": "REASON ROUNDUP",
+      "url": "https://reason.com/2022/07/28/meta-cant-buy-v-r-fitness-company-must-make-its-own-competing-app-says-ftc/",
+      "source": "r"
+    },
+    {
+      "title": "Dobbs Opened Up an Attack on Doctors",
+      "type": "ABORTION",
+      "url": "https://reason.com/2022/07/28/dobbs-opened-up-an-attack-on-doctors/",
+      "source": "r"
+    },
+    {
+      "title": "Lady Chatterley's Lover Case Dealt a Blow to U.S. Book Censors",
+      "type": "FREE SPEECH",
+      "url": "https://reason.com/2022/07/28/lady-chatterleys-lover/",
+      "source": "r"
+    },
+    {
+      "title": "Brickbat: Wake Up, Sleepyhead",
+      "type": "BRICKBATS",
+      "url": "https://reason.com/2022/07/28/brickbat-wake-up-sleepyhead/",
+      "source": "r"
+    },
+    {
+      "title": "The CHIPS Act Is Corporate Welfare Disguised as Industrial Policy",
+      "type": "CORPORATE WELFARE",
+      "url": "https://reason.com/2022/07/28/the-chips-act-is-corporate-welfare-disguised-as-industrial-policy/",
+      "source": "r"
+    },
+    {
+      "title": "Schumer, Manchin Strike Deal To Raise Taxes, Cut the Deficit, Spend Billions on Climate Change",
+      "type": "SENATE",
+      "url": "https://reason.com/2022/07/27/schumer-manchin-strike-deal-to-raise-taxes-cut-the-deficit-spend-billions-on-climate-change/",
+      "source": "r"
+    },
+    {
+      "title": "Penn Jillette: Did His Libertarianism Survive Trump and COVID?",
+      "type": "DONALD TRUMP",
+      "url": "https://reason.com/podcast/2022/07/27/penn-jillette-did-his-libertarianism-survive-trump-and-covid/",
+      "source": "r"
+    },
+    {
+      "title": "Study: Huanan Market In Wuhan Was the 'Epicenter' of COVID-19 Outbreak",
+      "type": "CORONAVIRUS",
+      "url": "https://reason.com/2022/07/27/study-huanan-market-in-wuhan-was-the-epicenter-of-covid-19-outbreak/",
+      "source": "r"
+    },
+    {
+      "title": "NYC Has 98 Closed Playgrounds, Despite Mayor Eric Adams' Pledge",
+      "type": "FREE-RANGE KIDS",
+      "url": "https://reason.com/2022/07/27/eric-adams-nyc-closed-playgrounds-city/",
+      "source": "r"
+    },
+    {
+      "title": "Capitalism Killed the Choco Taco. It's Also Resurrecting It.",
+      "type": "FOOD",
+      "url": "https://reason.com/2022/07/27/capitalism-killed-the-choco-taco-its-also-resurrecting-it/",
+      "source": "r"
+    },
+    {
+      "title": "'Night of Terror': Lawsuit Alleges Female Inmates Were Sexually Assaulted for Hours in Indiana Jail",
+      "type": "CIVIL LIBERTIES",
+      "url": "https://reason.com/2022/07/27/female-inmates-sexually-assaulted-indiana-jail/",
+      "source": "r"
+    },
+    {
+      "title": "With Deception and Misdirection, House Democrats Vainly Try To Make the Case for Banning 'Assault Weapons'",
+      "type": "ASSAULT WEAPON BAN",
+      "url": "https://reason.com/2022/07/27/with-deception-and-misdirection-house-democrats-vainly-try-to-make-the-case-for-banning-assault-weapons/",
+      "source": "r"
+    },
+    {
+      "title": "We Don't Need a White House Monkeypox 'Coordinator.' We Just Need the Vaccines.",
+      "type": "PUBLIC HEALTH",
+      "url": "https://reason.com/2022/07/27/we-dont-need-a-white-house-monkeypox-coordinator-we-just-need-the-vaccines/",
+      "source": "r"
+    },
+    {
+      "title": "COVID Taught More Than 1 Million Parents the Value of School Choice",
+      "type": "SCHOOL CHOICE",
+      "url": "https://reason.com/2022/07/27/covid-taught-more-than-1-million-parents-the-value-of-school-choice/",
+      "source": "r"
+    },
+    {
+      "title": "No, Amazon Isn't Coming for Your Medical Data",
+      "type": "HEALTH",
+      "url": "https://reason.com/2022/07/27/no-amazon-isnt-coming-for-your-medical-data/",
+      "source": "r"
+    },
+    {
       "title": "San Francisco Fines Businesses for Getting Vandalized",
       "type": "SAN FRANCISCO",
       "url": "https://reason.com/2022/07/27/san-francisco-fines-businesses-for-getting-vandalized/",
@@ -56,13 +152,13 @@
     },
     {
       "title": "Police Can Access Your Ring Camera Footage Without a Warrant",
-      "type": "SURVEILLANCE",
+      "type": "POLICE",
       "url": "https://reason.com/2022/07/26/police-can-access-your-ring-camera-footage-without-a-warrant/",
       "source": "r"
     },
     {
       "title": "What Is the FBI Trying To Hide About Its Raid on Innocent Americans' Safe Deposit Boxes?",
-      "type": "FOURTH AMENDMENT",
+      "type": "CIVIL LIBERTIES",
       "url": "https://reason.com/2022/07/26/what-is-the-fbi-hiding-about-its-raid-on-innocent-americans-safe-deposit-boxes/",
       "source": "r"
     },
@@ -82,102 +178,6 @@
       "title": "The Biden Administration Can't Make Up Its Mind About Alcohol",
       "type": "ALCOHOL",
       "url": "https://reason.com/2022/07/26/the-biden-administration-cant-make-up-its-mind-about-alcohol/",
-      "source": "r"
-    },
-    {
-      "title": "Brickbat: When Time Is of the Essence",
-      "type": "BRICKBATS",
-      "url": "https://reason.com/2022/07/26/brickbat-when-time-is-of-the-essence/",
-      "source": "r"
-    },
-    {
-      "title": "Did Congress Just Attempt To Do Its Job?",
-      "type": "GAY MARRIAGE",
-      "url": "https://reason.com/podcast/2022/07/25/did-congress-just-attempt-to-do-its-job/",
-      "source": "r"
-    },
-    {
-      "title": "Anthony Fauci Says If We Could Do It Again, COVID-19 Restrictions Would Be 'Much, Much More Stringent'",
-      "type": "CORONAVIRUS",
-      "url": "https://reason.com/2022/07/25/anthony-fauci-interview-covid-restrictions-masks/",
-      "source": "r"
-    },
-    {
-      "title": "Don't Blame New York's Bail Reforms for Quick Release of Congressman's Attacker",
-      "type": "BAIL",
-      "url": "https://reason.com/2022/07/25/dont-blame-new-yorks-bail-reforms-for-quick-release-of-congressmans-attacker/",
-      "source": "r"
-    },
-    {
-      "title": "Should Libertarians Root for a National Divorce?",
-      "type": "PARTISANSHIP",
-      "url": "https://reason.com/latest/#",
-      "source": "r"
-    },
-    {
-      "title": "How Trump's Tariffs on Chinese Chemical Products Backfired",
-      "type": "FREE TRADE",
-      "url": "https://reason.com/2022/07/25/how-trumps-tariffs-on-chinese-chemical-products-backfired/",
-      "source": "r"
-    },
-    {
-      "title": "My Baby Needed Special Formula From Europe. U.S. Trade Policy Made It Almost Unobtainable.",
-      "type": "BABY",
-      "url": "https://reason.com/2022/07/25/my-baby-needed-special-formula-from-europe-u-s-trade-policy-made-it-almost-unobtainable/",
-      "source": "r"
-    },
-    {
-      "title": "San Francisco Mayor Slaps Down Clever Plot To Make Housing Crisis Worse",
-      "type": "HOUSING POLICY",
-      "url": "https://reason.com/2022/07/25/san-francisco-mayor-slaps-down-clever-plot-to-make-housing-crisis-worse/",
-      "source": "r"
-    },
-    {
-      "title": "Texas Lieutenant Governor Candidate Says 'Vouchers Are for Vultures'",
-      "type": "SCHOOL CHOICE",
-      "url": "https://reason.com/2022/07/25/texas-lieutenant-governor-candidate-says-vouchers-are-for-vultures/",
-      "source": "r"
-    },
-    {
-      "title": "Most Americans Think Government Is Corrupt, a Third Say Armed Revolution 'May Be Necessary' Soon",
-      "type": "PUBLIC OPINION",
-      "url": "https://reason.com/2022/07/25/most-americans-think-government-is-corrupt-a-third-say-armed-revolution-may-be-necessary-soon/",
-      "source": "r"
-    },
-    {
-      "title": "It's Becoming Easier To Get Permission To Work, But Not by Enough",
-      "type": "JOBS",
-      "url": "https://reason.com/2022/07/25/its-becoming-easier-to-get-permission-to-work-but-not-by-enough/",
-      "source": "r"
-    },
-    {
-      "title": "Biden Expands Dubious Subsidies for Manufacturers",
-      "type": "POLICY",
-      "url": "https://reason.com/2022/07/25/biden-expands-dubious-subsidies-for-manufacturers/",
-      "source": "r"
-    },
-    {
-      "title": "Hobbes' Leviathan and Thousands of Others Were Off-Limits to Catholics",
-      "type": "FREE SPEECH",
-      "url": "https://reason.com/2022/07/25/leviathan/",
-      "source": "r"
-    },
-    {
-      "title": "Brickbat: From Maine to Mexico, But Not California",
-      "type": "BRICKBATS",
-      "url": "https://reason.com/2022/07/25/brickbat-from-maine-to-mexico-but-not-california/",
-      "source": "r"
-    },
-    {
-      "title": "You Can't Stop Pirate Libraries",
-      "type": "FREE SPEECH",
-      "url": "https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/",
-      "source": "r"
-    },
-    {
-      "title": "New Jersey Breweries Push Back Against Crushing New Rules",
-      "type": "BEER",
-      "url": "https://reason.com/2022/07/23/new-jersey-breweries-push-back-against-crushing-new-rules/",
       "source": "r"
     }
   ]

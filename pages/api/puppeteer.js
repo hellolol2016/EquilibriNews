@@ -1,9 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-function truncate(str, n){
-  return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
-};
 
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
@@ -27,6 +24,9 @@ function extractFox() {
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
+    if(items.length>29){
+      return items;
+    }
   }
   return items;
 }
@@ -37,14 +37,14 @@ function extractWSJ() {
   for (let element of extractedItems) {
     const memo = {
       title:
-        element.querySelector("h3") != null
-          ? element.querySelector("h3").innerText
-          : element.querySelector("h4") != null
-          ? element.querySelector("h4").innerText
+        (element.querySelector("h3") != null && element.querySelector("h3").innerText.slice(-8)!=="min read")
+          ? element.querySelector(".WSJTheme--headlineText--He1ANr9C").innerText
+          : element.querySelector("h3") != null
+          ? element.querySelector("h3").innerText.slice(0,-10)
           : "NONE",
       type:
-        element.querySelector("p") != null
-          ? element.querySelector("p").innerText
+          element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ") != null
+          ? element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ").innerText
           : "NONE",
       url:
         element.querySelector("a") != null
@@ -57,6 +57,9 @@ function extractWSJ() {
     }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
+    }
+    if(items.length>29){
+      return items;
     }
   }
   return items;
@@ -88,6 +91,9 @@ function extractNYT() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
+    if(items.length>29){
+      return items;
+    }
   }
   return items;
 }
@@ -117,6 +123,9 @@ function extractABC() {
     }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
+    }
+    if(items.length>29){
+      return items;
     }
   }
   return items;
@@ -149,6 +158,9 @@ function extractDM() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
+    if(items.length>29){
+      return items;
+    }
   }
   return items;
 }
@@ -175,6 +187,9 @@ function extractR() {
 
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
+    }
+    if(items.length>29){
+      return items;
     }
   }
   return items;
@@ -203,6 +218,9 @@ function extractVOX() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
+    if(items.length>29){
+      return items;
+    }
   }
   return items;
 }
@@ -229,7 +247,7 @@ export default async function handler(req, res) {
   });
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
-  page.setViewport({ width: 1280, height: 926 });
+  page.setViewport({ width: 1280, height: 3000 });
 
   await page.goto("https://www.foxnews.com/politics");
   let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
