@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
-
+const allArticles =  {}
 
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
@@ -251,33 +251,33 @@ export default async function handler(req, res) {
 
   await page.goto("https://www.foxnews.com/politics");
   let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
-  fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.fox = items;
 
   await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
   items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
-  fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.wsj = items;
 
   await page.goto("https://www.nytimes.com/section/politics");
   items = await scrapeInfiniteScrollItems(page, extractNYT,"nyt");
-  fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.nyt = items;
 
   await page.goto("https://abcnews.go.com/Politics");
   items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
-  fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
-
+  allArticles.abc = items;
+  
   await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
   items = await scrapeInfiniteScrollItems(page, extractDM,"dm");
-  fs.writeFileSync("./public/articles/dm.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.dm = items;
 
   await page.goto("https://reason.com/latest/")
   items = await scrapeInfiniteScrollItems(page, extractR,"r");
-  fs.writeFileSync("./public/articles/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.r = items;
 
   await page.goto("https://www.vox.com/policy-and-politics")
   items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  fs.writeFileSync("./public/articles/vox.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.box = items;
 
   await browser.close();
 
-  res.status(200).json({success:"true"});
+  res.status(200).json(allArticles);
 }

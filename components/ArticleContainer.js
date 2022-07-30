@@ -1,53 +1,21 @@
 import { Box, Center, SimpleGrid } from "@mantine/core";
+import { useEffect } from "react";
 import Article from "./Article";
 
 export default function ArticleContainer({ props, rating }) {
-  let farticle = [];
-  if (rating >= 0) {
-    if (rating < 2) {
-      console.log("far left");
-      farticle = [
-        ...r.articles,
-        ...fox.articles,
-        ...dm.articles,
-        ...wsj.articles,
-      ];
-    } else if (rating < 4) {
-      console.log("mid left");
-      farticle = [
-        ...r.articles,
-        ...fox.articles,
-        ...dm.articles,
-        ...wsj.articles,
-      ];
-    } else if (rating < 7) {
-      console.log("neutral");
-      farticle = [...wsj.articles,...r.articles, ...nyt.articles];
-    } else if (rating < 9) {
-      console.log("mid right");
-      farticle = [
-        ...wsj.articles,
-        ...abc.articles,
-        ...r.articles,
-        ...nyt.articles,
-      ];
-    } else if (rating < 11) {
-      console.log("far right");
-      farticle = [
-        ...nyt.articles,
-        ...wsj.articles,
-        ...abc.articles,
-        ...vox.articles,
-      ];
-    } else {
-      console.log("errror");
-    }
-  }
+ useEffect(function(){
+  const dm = localStorage.getItem("dm")
+  const abc = localStorage.getItem("abc")
+  const fox = localStorage.getItem("fox")
+  const nyt = localStorage.getItem("nyt")
+  const r = localStorage.getItem("r")
+  const wsj = localStorage.getItem("wsj")
+  const vox = localStorage.getItem("vox")
+ }) 
+  console.log("heoolo"+props);
+  const farticle=[];
   console.log(farticle);
 
-  console.log(Object.keys(r.articles).length);
-  console.log(Object.keys(wsj.articles).length);
-  console.log(Object.keys(nyt.articles).length);
   return (
     <SimpleGrid cols={3} breakpoints={[
         { maxWidth: 1080, cols: 3, spacing: 'md' },
@@ -70,15 +38,15 @@ export default function ArticleContainer({ props, rating }) {
   );
 }
 
-import dm from "../public/articles/dm.json";
-import abc from "../public/articles/abc.json";
-import fox from "../public/articles/fox.json";
-import nyt from "../public/articles/nyt.json";
-import r from "../public/articles/r.json";
-import wsj from "../public/articles/wsj.json";
-import vox from "../public/articles/vox.json";
-export async function getStaticProps() {
-  return {
-    props: { dm, abc, fox, nyt, r, wsj, vox },
-  };
-}
+//export async function getStaticProps() {
+  //const dm = localStorage.getItem("dm")
+  //const abc = localStorage.getItem("abc")
+  //const fox = localStorage.getItem("fox")
+  //const nyt = localStorage.getItem("nyt")
+  //const r = localStorage.getItem("r")
+  //const wsj = localStorage.getItem("wsj")
+  //const vox = localStorage.getItem("vox")
+  //return {
+    //props: { dm:dm, abc:abc, fox:fox, nyt:nyt, r:r, wsj:wsj, vox:vox },
+  //};
+//}

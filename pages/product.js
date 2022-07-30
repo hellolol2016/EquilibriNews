@@ -5,12 +5,21 @@ import ArticleContainer from "../components/ArticleContainer";
 import { Bars } from "react-loading-icons";
 export default function Page(props) {
   const [rating, setRating] = useState("");
-
   async function handleNewsClick() {
+
     setLoading(true);
     const res = await fetch("/api/puppeteer");
     const data = await res.json();
+
+    window.localStorage.setItem("abc", JSON.stringify({"abc":data.abc}, null, 2));
+    window.localStorage.setItem("dm", JSON.stringify({"dm":data.dm}, null, 2));
+    window.localStorage.setItem("fox", JSON.stringify({"fox":data.fox}, null, 2));
+    window.localStorage.setItem("nyt", JSON.stringify({"nyt":data.nyt}, null, 2));
+    window.localStorage.setItem("r", JSON.stringify({"r":data.r}, null, 2));
+    window.localStorage.setItem("vox", JSON.stringify({"vox":data.vox}, null, 2));
+    window.localStorage.setItem("wsj", JSON.stringify({"wsj":data.wsj}, null, 2));
     setLoading(false);
+    console.log("data :"+data);
     console.log(data);
   }
 
