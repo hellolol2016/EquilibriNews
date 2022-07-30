@@ -1,6 +1,66 @@
 {
   "articles": [
     {
+      "title": "The smallpox vaccine stockpile isn’t the monkeypox solution we need — yet",
+      "type": "July 29",
+      "url": "https://www.vox.com/2022/7/29/23281407/monkeypox-vaccine-acam2000-jynneos-smallpox",
+      "source": "vox"
+    },
+    {
+      "title": "Georgia’s big Trump election investigation, explained",
+      "type": "July 29",
+      "url": "https://www.vox.com/policy-and-politics/2022/7/29/23281081/georgia-trump-fani-willis-investigation",
+      "source": "vox"
+    },
+    {
+      "title": "What think tank drama tells us about the US response to Russia’s war",
+      "type": "July 29",
+      "url": "https://www.vox.com/2022/7/29/23282729/koch-funded-initiative-moves-new-think-tank-washington-russia-ukraine-war",
+      "source": "vox"
+    },
+    {
+      "title": "Why the Inflation Reduction Act isn’t a sure thing",
+      "type": "July 29",
+      "url": "https://www.vox.com/policy-and-politics/23282983/inflation-reduction-act-kyrsten-sinema-josh-gottheimer",
+      "source": "vox"
+    },
+    {
+      "title": "Three bright spots for Democrats ahead of the 2022 midterms",
+      "type": "July 29",
+      "url": "https://www.vox.com/policy-and-politics/2022/7/29/23282657/democrats-midterms-predictions-polls-2022",
+      "source": "vox"
+    },
+    {
+      "title": "GDP declined again — but that might not mean we’re in a recession",
+      "type": "July 28",
+      "url": "https://www.vox.com/2022/7/28/23282473/gdp-recession-economy",
+      "source": "vox"
+    },
+    {
+      "title": "What Democrats’ big new bill would actually do",
+      "type": "July 28",
+      "url": "https://www.vox.com/policy-and-politics/2022/7/28/23282217/climate-bill-health-care-drugs-inflation-reduction-act",
+      "source": "vox"
+    },
+    {
+      "title": "How Democrats plan to overhaul taxes, climate spending, and health care before the midterms",
+      "type": "July 28",
+      "url": "https://www.vox.com/23281547/build-back-better-joe-manchin-inflation-reduction-act",
+      "source": "vox"
+    },
+    {
+      "title": "Stopping inflation is going to hurt",
+      "type": "July 28",
+      "url": "https://www.vox.com/the-goods/23169673/fed-interest-rate-hike-inflation-recession-stock-market-debt",
+      "source": "vox"
+    },
+    {
+      "title": "What’s in the “game changer” climate bill nobody saw coming",
+      "type": "July 28",
+      "url": "https://www.vox.com/policy-and-politics/2022/7/28/23281757/whats-in-climate-bill-inflation-reduction-act",
+      "source": "vox"
+    },
+    {
       "title": "What the strong dollar means for you",
       "type": "July 28",
       "url": "https://www.vox.com/23280472/strong-dollar-euro-economy",
@@ -16,12 +76,6 @@
       "title": "The rise of land acknowledgments — and their limitations",
       "type": "July 28",
       "url": "https://www.vox.com/the-highlight/23200329/land-acknowledgments-indigenous-landback",
-      "source": "vox"
-    },
-    {
-      "title": "Biden’s agenda is, in fact, back",
-      "type": "July 27",
-      "url": "https://www.vox.com/23281547/build-back-better-joe-manchin",
       "source": "vox"
     },
     {
@@ -124,60 +178,6 @@
       "title": "The bill that could make it harder to overturn an election",
       "type": "July 22",
       "url": "https://www.vox.com/2022/7/22/23274312/electoral-count-act-congress-election-january-6",
-      "source": "vox"
-    },
-    {
-      "title": "4 factors that could determine if gas prices will keep falling",
-      "type": "July 22",
-      "url": "https://www.vox.com/2022/7/22/23271456/gas-prices-falling-inflation",
-      "source": "vox"
-    },
-    {
-      "title": "5 takeaways from the January 6 hearing",
-      "type": "July 22",
-      "url": "https://www.vox.com/23273654/january-6-committee-trump-takeaways-capitol-attack",
-      "source": "vox"
-    },
-    {
-      "title": "The Supreme Court just let a Trump judge seize control of ICE, at least for now",
-      "type": "July 21",
-      "url": "https://www.vox.com/2022/7/21/23273467/supreme-court-ice-texas-united-states-biden-mayorkas",
-      "source": "vox"
-    },
-    {
-      "title": "6 battleground state attorney general races to watch in 2022",
-      "type": "July 21",
-      "url": "https://www.vox.com/2022/7/20/23270090/attorney-general-races-2022-georgia-texas-michigan",
-      "source": "vox"
-    },
-    {
-      "title": "President Biden just tested positive for Covid-19. What happens now?",
-      "type": "July 21",
-      "url": "https://www.vox.com/23014871/joe-biden-covid-19-case-positive-test",
-      "source": "vox"
-    },
-    {
-      "title": "Biden’s dismal poll numbers, explained in 9 charts",
-      "type": "July 21",
-      "url": "https://www.vox.com/2022/7/21/23220696/joe-biden-bad-polls-approval-rating-economy-inflation",
-      "source": "vox"
-    },
-    {
-      "title": "Congress failed on climate. What can Biden do now?",
-      "type": "July 20",
-      "url": "https://www.vox.com/23270518/biden-climate-manchin-executive-action",
-      "source": "vox"
-    },
-    {
-      "title": "Same-sex marriage could get historic protections — if the Senate votes on it",
-      "type": "July 20",
-      "url": "https://www.vox.com/2022/7/20/23271255/respect-for-marriage-act-house-vote-republicans-senate",
-      "source": "vox"
-    },
-    {
-      "title": "Democrats got what they wanted in Maryland: a Trump-backed GOP nominee for governor",
-      "type": "July 20",
-      "url": "https://www.vox.com/2022/7/20/23270772/maryland-primaries-governor-hogan-trump-cox-moore",
       "source": "vox"
     }
   ]

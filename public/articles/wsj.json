@@ -1,87 +1,93 @@
 {
   "articles": [
     {
-      "title": "Schumer Lobbies Democrats to Back Manchin Climate, Tax and Healthcare Deal",
-      "type": "5 min read",
-      "url": "https://www.wsj.com/articles/schumer-lobbies-democrats-to-back-manchin-climate-tax-and-healthcare-deal-11659015037?mod=politics_lead_pos1",
+      "title": "Eric Greitens Tries to Win Over Missouri’s GOP Voters After Scandals",
+      "type": "7 min read",
+      "url": "https://www.wsj.com/articles/eric-greitens-tries-to-win-over-missouris-gop-voters-after-scandals-11659190845?mod=politics_lead_pos1",
       "source": "wsj"
     },
     {
-      "title": "Biden, China’s Xi Talk as a Possible Pelosi Trip to Taiwan Looms",
+      "title": "Democrats’ Corporate Tax Plan Threatens Higher Bills for Manufacturers",
       "type": "6 min read",
-      "url": "https://www.wsj.com/articles/biden-chinas-xi-talk-as-a-pelosi-trip-to-taiwan-threatens-to-inject-new-tensions-11659013042?mod=politics_lead_pos2",
+      "url": "https://www.wsj.com/articles/democrats-corporate-tax-plan-threatens-higher-bills-for-manufacturers-11659173401?mod=politics_lead_pos2",
       "source": "wsj"
     },
     {
-      "title": "Kushner Reveals Rare Details of Ties With Saudi Prince",
-      "type": "7 min read",
-      "url": "https://www.wsj.com/articles/jared-kushner-reveals-rare-details-about-ties-with-saudi-crown-prince-11659003014?mod=politics_lead_pos3",
-      "source": "wsj"
-    },
-    {
-      "title": "Business Groups Sue SEC Over Proxy-Advisory Rules",
-      "type": "2 min read",
-      "url": "https://www.wsj.com/articles/business-groups-sue-sec-over-proxy-advisory-firm-rules-11659015976?mod=politics_lead_pos4",
-      "source": "wsj"
-    },
-    {
-      "title": "Biden Faces Recession Worries After Six Months of Economic Contraction",
+      "title": "Steve Bannon to Seek Delay in Serving Any Sentence for Contempt Conviction",
       "type": "4 min read",
-      "url": "https://www.wsj.com/articles/biden-faces-recession-worries-after-six-months-of-economic-contraction-11659015292?mod=politics_lead_pos5",
+      "url": "https://www.wsj.com/articles/steve-bannon-to-seek-delay-in-sentence-for-contempt-conviction-11659186837?mod=politics_lead_pos3",
       "source": "wsj"
     },
     {
-      "title": "Democratic Lawmakers Ask Biden to Extend Student Loan Payment Pause",
-      "type": "4 min read",
-      "url": "https://www.wsj.com/articles/democratic-lawmakers-ask-biden-to-extend-student-loan-payment-pause-11659020448?mod=politics_lead_pos6",
-      "source": "wsj"
-    },
-    {
-      "title": "Democrats Punt on Votes Amid Split on Police Funding",
-      "type": "5 min read",
-      "url": "https://www.wsj.com/articles/democrats-punt-on-votes-amid-split-on-police-funding-11658950934?mod=politics_lead_pos7",
-      "source": "wsj"
-    },
-    {
-      "title": "Arizona’s Republican Primary for Governor Tests Anger Over 2020",
-      "type": "5 min read",
-      "url": "https://www.wsj.com/articles/arizonas-republican-primary-for-governor-tests-anger-over-2020-11659013200?mod=politics_lead_pos10",
-      "source": "wsj"
-    },
-    {
-      "title": "Senate Approves $280 Billion Bill to Boost Chip Making, Technology",
-      "type": "7 min read",
-      "url": "https://www.wsj.com/articles/senate-approves-280-billion-bill-to-boost-u-s-science-chip-production-11658942295?mod=politics_lead_pos11",
-      "source": "wsj"
-    },
-    {
-      "title": "Washington Commanders Owner Dan Snyder to Testify Via Non-Public Zoom in Congressional Probe",
+      "title": "House Passes Bill to Ban Sale of Assault-Style Weapons",
       "type": "3 min read",
-      "url": "https://www.wsj.com/articles/dan-snyder-investigation-house-deposition-yacht-11659014728?mod=politics_lead_pos12",
+      "url": "https://www.wsj.com/articles/house-passes-bill-to-ban-sale-of-assault-style-weapons-11659134071?mod=politics_lead_pos4",
       "source": "wsj"
     },
     {
-      "title": "U.S. Presses Offer to Free Brittney Griner and Paul Whelan From Russian Detention",
+      "title": "Kate Bedingfield Will Stay as White House Communications Director",
+      "type": "1 min read",
+      "url": "https://www.wsj.com/articles/kate-bedingfield-will-stay-as-white-house-communications-director-reversing-decision-to-step-down-11659123039?mod=politics_lead_pos5",
+      "source": "wsj"
+    },
+    {
+      "title": "Biden Nominates Lawyer Who Argued Supreme Court Abortion Case to Judgeship",
+      "type": "2 min read",
+      "url": "https://www.wsj.com/articles/biden-nominates-lawyer-who-argued-supreme-court-abortion-case-to-judgeship-11659122157?mod=politics_lead_pos6",
+      "source": "wsj"
+    },
+    {
+      "title": "Pelosi to Travel to Asia With Possible Taiwan Stop, Despite China Warnings",
       "type": "6 min read",
-      "url": "https://www.wsj.com/articles/brittney-griner-russia-drug-trial-11658934296?mod=politics_lead_pos13",
+      "url": "https://www.wsj.com/articles/nancy-pelosi-to-travel-to-asia-with-possible-taiwan-stop-despite-china-warnings-11659122055?mod=politics_lead_pos7",
       "source": "wsj"
     },
     {
-      "title": "U.S. Economy Shrank Last Quarter",
+      "title": "Sinema Is Critical Vote on Manchin-Schumer Climate and Tax Deal",
       "type": "6 min read",
-      "url": "https://www.wsj.com/articles/us-q2-gdp-growth-economy-11658981184?mod=politics_featst_pos1",
+      "url": "https://www.wsj.com/articles/kyrsten-sinema-is-critical-vote-on-manchin-schumer-climate-and-tax-deal-11659110971?mod=politics_lead_pos10",
       "source": "wsj"
     },
     {
-      "title": "Manchin Reaches Deal With Schumer on Energy, Healthcare, Tax Package",
-      "type": "9 min read",
-      "url": "https://www.wsj.com/articles/joe-manchin-reaches-deal-with-chuck-schumer-on-energy-healthcare-package-11658957299?mod=politics_featst_pos2",
+      "title": "Federal Student-Loan Program Cost Estimate Was Off By $311 Billion, Government Watchdog Says",
+      "type": "3 min read",
+      "url": "https://www.wsj.com/articles/federal-student-loan-program-cost-estimate-was-off-by-311-billion-government-watchdog-says-11659099600?mod=politics_lead_pos11",
       "source": "wsj"
     },
     {
-      "title": "What’s in the Manchin-Schumer Reconciliation Deal?",
+      "title": "Democrats Ready Carried-Interest Tax Hike After 15-Year Lobbying Campaign",
+      "type": "6 min read",
+      "url": "https://www.wsj.com/articles/democrats-ready-carried-interest-tax-hike-after-15-year-lobbying-campaign-11659029989?mod=politics_lead_pos12",
+      "source": "wsj"
+    },
+    {
+      "title": "Schumer Lobbies Democrats to Back Manchin Climate, Tax and Healthcare Deal",
+      "type": "8 min read",
+      "url": "https://www.wsj.com/articles/schumer-lobbies-democrats-to-back-manchin-climate-tax-and-healthcare-deal-11659015037?mod=politics_lead_pos13",
+      "source": "wsj"
+    },
+    {
+      "title": "Biden Replaces Head of Project to Commemorate 250th Anniversary of U.S.",
+      "type": "3 min read",
+      "url": "https://www.wsj.com/articles/biden-replaces-head-of-project-to-commemorate-250th-anniversary-of-u-s-11659096002?mod=politics_featst_pos1",
+      "source": "wsj"
+    },
+    {
+      "title": "Justice Alito Warns of Secular Threats to Religious Liberty",
+      "type": "3 min read",
+      "url": "https://www.wsj.com/articles/justice-alito-warns-of-secular-threats-to-religious-liberty-11659131775?mod=politics_featst_pos2",
+      "source": "wsj"
+    },
+    {
+      "title": "Russian National Indicted for Co-opting U.S. Fringe Groups",
       "type": "5 min read",
-      "url": "https://www.wsj.com/articles/whats-in-joe-manchin-and-chuck-schumers-reconciliation-deal-on-climate-health-and-tax-policy-11658973323?mod=politics_featst_pos3",
+      "url": "https://www.wsj.com/articles/russian-national-incited-for-co-opting-u-s-fringe-groups-11659133274?mod=politics_featst_pos3",
+      "source": "wsj"
+    },
+    {
+      "title": "Recession or Not, the Recovery Has Ended",
+      "type": "4 min read",
+      "url": "https://www.wsj.com/articles/recession-or-not-the-recovery-has-ended-11659031090",
       "source": "wsj"
     },
     {
@@ -94,12 +100,6 @@
       "title": "Interest-Rate Pain From Higher Inflation Has Barely Begun ",
       "type": "4 min read",
       "url": "https://www.wsj.com/articles/interest-rate-pain-from-higher-inflation-has-barely-begun-11658327626",
-      "source": "wsj"
-    },
-    {
-      "title": "Beware Wishful Thinking About Inflation and Recession",
-      "type": "5 min read",
-      "url": "https://www.wsj.com/articles/beware-wishful-thinking-about-inflation-and-recession-11657719575",
       "source": "wsj"
     },
     {
