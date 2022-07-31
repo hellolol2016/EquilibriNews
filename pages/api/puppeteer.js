@@ -275,7 +275,7 @@ export default async function handler(req, res) {
 
   await page.goto("https://www.vox.com/policy-and-politics")
   items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  allArticles.box = items;
+  allArticles.vox = items;
 
   await browser.close();
 

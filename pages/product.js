@@ -19,6 +19,7 @@ export default function Page(props) {
     window.localStorage.setItem("vox", JSON.stringify({"vox":data.vox}, null, 2));
     window.localStorage.setItem("wsj", JSON.stringify({"wsj":data.wsj}, null, 2));
     setLoading(false);
+    window.localStorage.setItem("lastCheck", rn);
     console.log("data :"+data);
     console.log(data);
   }
@@ -30,7 +31,6 @@ export default function Page(props) {
     let last = window.localStorage.getItem("lastCheck");
     if (last == null || rn - new Date(last) > 10800000) {
       handleNewsClick();
-      window.localStorage.setItem("lastCheck", rn);
     } else {
       console.log("less than 3 hr");
     }
