@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set PORT=8000 && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,17 +13,17 @@
     "@mantine/form": "^4.2.7",
     "@mantine/hooks": "^4.2.7",
     "@mantine/next": "^4.2.7",
-    "next": "12.1.4",
-    "puppeteer": "^14.4.0",
+    "chrome-aws-lambda": "^10.1.0",
+    "next": "^13.1.2",
     "puppeteer-core": "^14.4.0",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-loading-icons": "^1.1.0",
     "react-toastify": "^9.0.5"
   },
   "devDependencies": {
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4"
+    "eslint-config-next": "^13.1.2"
   }
 }
