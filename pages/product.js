@@ -12,7 +12,7 @@ export default function Page(props) {
     const data = await res.json();
 
     window.localStorage.setItem("abc", JSON.stringify({"abc":data.abc}, null, 2));
-    window.localStorage.setItem("dm", JSON.stringify({"dm":data.dm}, null, 2));
+    window.localStorage.setItem("nm", JSON.stringify({"nm":data.nm}, null, 2));
     window.localStorage.setItem("fox", JSON.stringify({"fox":data.fox}, null, 2));
     window.localStorage.setItem("nyt", JSON.stringify({"nyt":data.nyt}, null, 2));
     window.localStorage.setItem("r", JSON.stringify({"r":data.r}, null, 2));

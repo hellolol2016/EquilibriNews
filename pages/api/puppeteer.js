@@ -1,4 +1,5 @@
 const puppeteer = require("puppeteer");
+const chrome = require("chrome-aws-lambda")
 const fs = require("fs");
 const allArticles =  {}
 
@@ -225,6 +226,39 @@ function extractVOX() {
   return items;
 }
 
+function extractNM() {
+  const column = document.querySelectorAll(".article_link");
+  const items = [];
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector("a").innerText != null
+          ? element.querySelector("a").innerText
+          : "NONE",
+      type:
+        element.querySelectorAll("#copy_small") != null
+          ? element.querySelector("#copy_small").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+          source:"nm"
+    };
+
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
+    if (items.length < 30 && memo.url !== "NONE") {
+      items.push(memo);
+    }
+    if(items.length>29){
+      return items;
+    }
+  }
+  return items;
+}
+
 async function scrapeInfiniteScrollItems(
   page,
   getNews,
@@ -243,7 +277,8 @@ async function scrapeInfiniteScrollItems(
 export default async function handler(req, res) {
   const browser = await puppeteer.launch({
     args:["--no-sandbox","--disable-setuid-sandbox"],
-    
+    executablePath: await chrome.executablePath,
+    headless : chrome.headless
   });
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
@@ -265,9 +300,9 @@ export default async function handler(req, res) {
   items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
   allArticles.abc = items;
   
-  await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
-  items = await scrapeInfiniteScrollItems(page, extractDM,"dm");
-  allArticles.dm = items;
+  await page.goto("https://www.newsmax.com/politics/");
+  items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
+  allArticles.nm = items;
 
   await page.goto("https://reason.com/latest/")
   items = await scrapeInfiniteScrollItems(page, extractR,"r");
@@ -276,6 +311,7 @@ export default async function handler(req, res) {
   await page.goto("https://www.vox.com/policy-and-politics")
   items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
   allArticles.vox = items;
+
 
   await browser.close();
 

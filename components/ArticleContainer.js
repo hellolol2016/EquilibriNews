@@ -5,22 +5,21 @@ import Article from "./Article";
 export default function ArticleContainer({ props, rating }) {
   const [allArticles, setAllArticles] = useState([]);
   useEffect(function () {
-    const dm = JSON.parse(localStorage.getItem("dm"))?.dm;
+    const nm = JSON.parse(localStorage.getItem("nm"))?.nm;
     const abc = JSON.parse(localStorage.getItem("abc"))?.abc;
     const fox = JSON.parse(localStorage.getItem("fox"))?.fox;
     const nyt = JSON.parse(localStorage.getItem("nyt"))?.nyt;
     const r = JSON.parse(localStorage.getItem("r"))?.r;
     const wsj = JSON.parse(localStorage.getItem("wsj"))?.wsj;
     const vox = JSON.parse(localStorage.getItem("vox"))?.vox;
-    console.log(typeof(dm));
-    setAllArticles([].concat(dm,abc))
+    console.log(typeof(nm));
     if (rating >= 0) {
       if (rating < 2) {
         console.log("far left");
-        setAllArticles([].concat(r,fox,dm,wsj))
+        setAllArticles([].concat(r,fox,nm,wsj))
       } else if (rating < 4) {
         console.log("mid left");
-        setAllArticles([].concat(r,fox,dm,wsj))
+        setAllArticles([].concat(r,fox,nm,wsj))
       } else if (rating < 7) {
         console.log("neutral");
         setAllArticles([].concat(r,nyt,wsj))
