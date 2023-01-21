@@ -1,5 +1,4 @@
-const puppeteer = require("puppeteer");
-const chrome = require("chrome-aws-lambda")
+import chromium from "chrome-aws-lambda";
 const fs = require("fs");
 const allArticles =  {}
 
@@ -275,10 +274,12 @@ async function scrapeInfiniteScrollItems(
 }
 
 export default async function handler(req, res) {
-  const browser = await puppeteer.launch({
-    args:["--no-sandbox","--disable-setuid-sandbox"],
-    executablePath: await chrome.executablePath,
-    headless : chrome.headless
+  const browser = await chromium.puppeteer.launch({
+    args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath,
+    headless: true,
+    ignoreHTTPSErrors: true,
   });
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
