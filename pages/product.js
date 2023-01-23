@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ArticleContainer from "../components/ArticleContainer";
 import { Bars } from "react-loading-icons";
+import Header from "../components/Header";
 export default function Page(props) {
   const [rating, setRating] = useState("");
   async function handleNewsClick() {
@@ -54,6 +55,7 @@ export default function Page(props) {
 
   return (
     <Box>
+      <Header />
       {isLoading ? (
         <Center sx={{ height: "100vh" }}>
           <Bars stroke="#000000" />

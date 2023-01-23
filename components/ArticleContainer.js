@@ -52,6 +52,7 @@ export default function ArticleContainer({ props, rating }) {
               key={article.title}
               title={article.title}
               type={article.type}
+              url={article.url}
               source={article.source}
             />
           </Center>
