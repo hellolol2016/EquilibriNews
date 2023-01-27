@@ -6,9 +6,9 @@ export default function Bottom(){
 <>
       <Footer></Footer>
           <Stack sx={{flexDirection:"row",justifyContent:"center"}} style={{fontSize:"40px", padding:"20px"}}>
-           <Link href="https://www.instagram.com/wennis_dang/"><BsInstagram ></BsInstagram></Link>
-           <Link href="https://github.com/hellolol2016"><BsGithub></BsGithub></Link>
-           <Link href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"><BsYoutube></BsYoutube></Link>
+           <Link passHref href="https://www.instagram.com/wennis_dang/"><BsInstagram ></BsInstagram></Link>
+           <Link passHref href="https://github.com/hellolol2016"><BsGithub></BsGithub></Link>
+           <Link passHref href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"><BsYoutube></BsYoutube></Link>
             </Stack> 
     </>
 )

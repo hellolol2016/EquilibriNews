@@ -9,8 +9,6 @@ import Header from "../components/Header";
 export default function Page(props) {
   const [rating, setRating] = useState("");
   const [isGallery, setIsGallery] = useState(true);
-  const [gallery, setGallery] = useState([]);
-  const four = [0, 1, 2, 3];
   async function handleNewsClick() {
     setLoading(true);
     const res = await fetch("/api/puppeteer");
@@ -38,13 +36,16 @@ export default function Page(props) {
       "wsj",
       JSON.stringify({ wsj: data.wsj }, null, 2)
     );
-    setLoading(false);
     window.localStorage.setItem("lastCheck", rn);
+    setLoading(false);
     console.log("data :" + data);
     console.log(data);
   }
+  const setGallery=(arr)=>{
+    window.localStorage.setItem("gal",JSON.stringify( arr, null, 2));
+  }
   const getFirstFour = (arr) => {
-    return(arr.slice(0,4));
+    return arr.slice(0, 4);
   };
   const [isLoading, setLoading] = useState(false);
   let rn = new Date();
@@ -75,12 +76,15 @@ export default function Page(props) {
       } else if (userRating < 4) {
         setGallery(
           getFirstFour(r).concat(
-          ...getFirstFour(fox),
-          ...getFirstFour(nm),
-          ...getFirstFour(wsj))
+            ...getFirstFour(fox),
+            ...getFirstFour(nm),
+            ...getFirstFour(wsj)
+          )
         );
       } else if (userRating < 7) {
-        setGallery(getFirstFour(r).concat( ...getFirstFour(nyt), ...getFirstFour(wsj)));
+        setGallery(
+          getFirstFour(r).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
+        );
       } else if (userRating < 9) {
         setGallery(
           ...getFirstFour(abc),
@@ -91,17 +95,17 @@ export default function Page(props) {
       } else if (userRating < 11) {
         setGallery(
           getFirstFour(abc).concat(
-          ...getFirstFour(nyt),
-          ...getFirstFour(wsj),
-          ...getFirstFour(vox))
+            ...getFirstFour(nyt),
+            ...getFirstFour(wsj),
+            ...getFirstFour(vox)
+          )
         );
       } else {
         console.log("errror");
       }
-    }else{
+    } else {
       console.log("rating wtf");
     }
-
   }, []);
   return (
     <Box>
@@ -111,7 +115,7 @@ export default function Page(props) {
           <Bars stroke="#000000" />
         </Center>
       ) : isGallery ? (
-        <Gallery gal={gallery}/>
+          <Gallery  />
       ) : (
         <ArticleContainer rating={rating} />
       )}

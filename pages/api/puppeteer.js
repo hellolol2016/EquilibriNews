@@ -21,6 +21,9 @@ function extractFox() {
           : "NONE",
           source:"fox"
     };
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
@@ -37,14 +40,14 @@ function extractWSJ() {
   for (let element of extractedItems) {
     const memo = {
       title:
-        (element.querySelector("h3") != null && element.querySelector("h3").innerText.slice(-8)!=="min read")
+        (element.querySelector("h2") != null && element.querySelector("h2").innerText.slice(-8)!=="min read")
           ? element.querySelector(".WSJTheme--headlineText--He1ANr9C").innerText
-          : element.querySelector("h3") != null
-          ? element.querySelector("h3").innerText.slice(0,-10)
+          : element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText.slice(0,-10)
           : "NONE",
       type:
-          element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ") != null
-          ? element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ").innerText
+          element.querySelector(".WSJTheme--summaryText--2LRaCWgJ") != null
+          ? element.querySelector(".WSJTheme--timestamp--22sfkNDv").innerText
           : "NONE",
       url:
         element.querySelector("a") != null
@@ -52,6 +55,9 @@ function extractWSJ() {
           : "NONE",
           source:"wsj"
     };
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -66,7 +72,7 @@ function extractWSJ() {
 }
 
 function extractNYT() {
-  const extractedItems = document.querySelectorAll("#stream-panel li");
+  const extractedItems = document.querySelectorAll(".css-112uytv");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
@@ -85,6 +91,9 @@ function extractNYT() {
           source:"nyt"
     };
 
+    //if(items.length < 5){
+      //memo.img= element.querySelector("img").src;
+    //}
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -126,6 +135,9 @@ function extractABC() {
     }
     if(items.length>29){
       return items;
+    }
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
     }
   }
   return items;
@@ -191,6 +203,9 @@ function extractR() {
     if(items.length>29){
       return items;
     }
+    if(items.length < 5){
+      memo.img= element.querySelector("noscript img").src;
+    }
   }
   return items;
 }
@@ -214,7 +229,9 @@ function extractVOX() {
           : "NONE",
           source:"vox"
     };
-
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
@@ -244,7 +261,9 @@ function extractNM() {
           : "NONE",
           source:"nm"
     };
-
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -257,6 +276,10 @@ function extractNM() {
   }
   return items;
 }
+
+//function extractImg(){
+  //return document.querySelector("img").src;
+//}
 
 async function scrapeInfiniteScrollItems(
   page,
@@ -272,6 +295,35 @@ async function scrapeInfiniteScrollItems(
   }
   return items;
 }
+
+
+//async function scrapeImage (page,algo,src){
+  //let imgsrc = "BOOHOO";
+  //try{
+    //imgsrc = await page.evaluate(algo);
+  //}catch(e){
+    //console.log(e);
+    //console.log("boohoo source" , src);
+  //}
+  //return imgsrc;
+//}
+
+//async function getImage(url){
+  //const browser = await chromium.puppeteer.launch({
+    //args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+    //defaultViewport: chromium.defaultViewport,
+    //executablePath: await chromium.executablePath,
+    //headless: true,
+    //ignoreHTTPSErrors: true,
+  //});
+  //const page = await browser.newPage();
+  //page.setJavaScriptEnabled(false);
+  //page.setViewport({ width: 1280, height: 3000 });
+
+  //await page.goto(url);
+  //let img = await scrapeImage(page, extractImg,"img source idk lool");
+  //return img;
+//}
 
 export default async function handler(req, res) {
   const browser = await chromium.puppeteer.launch({
@@ -289,7 +341,7 @@ export default async function handler(req, res) {
   let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
   allArticles.fox = items;
 
-  await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
+  await page.goto("https://www.wsj.com/news/types/national-security");
   items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
   allArticles.wsj = items;
 

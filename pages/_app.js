@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossOrigin
+        crossOrigin="true"
       ></link>
       <link
         href="https://fonts.googleapis.com/css2?family=Habibi&family=Telex&display=swap"
