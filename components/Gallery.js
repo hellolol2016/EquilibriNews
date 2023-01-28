@@ -17,14 +17,17 @@ import {
 } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import {Bars} from "react-loading-icons";
-const Thing = ({ num, img, title, link, source }) => {
+import "animate.css"
+const Thing = ({ num, img, title, link, source,flip,setFlip }) => {
   return (
     <Card
       shadow="sm"
       p="lg"
       radius="md"
       withBorder
-      sx={{ width: "40vw", minWidth: "500px" }}
+      sx={{ width: "40vw", minWidth: "500px", margin:"50px"}}
+      className={flip?"animate__animated animate__flipInX":""}
+      onAnimationEnd={()=>setFlip(false)}
     >
       <Card.Section>
         <Image src={img} height={"30vh"} alt={title} />
@@ -65,12 +68,14 @@ export default function Gallery({}) {
   const [index, setIndex] = useState(0);
   const [gal,setGal] = useState([]);
   const [isLoading,setIsLoading] = useState(true);
+  const [flip, setFlip] = useState(false);
   useEffect(function () {
     setGal(JSON.parse(localStorage.getItem("gal")))
     setIsLoading(false);
     console.log("setgal");
   },[]);
   const nextSlide = () => {
+    setFlip(true);
     setIndex((oldIndex) => {
       let index = oldIndex + 1;
       if (index > gal.length - 1) {
@@ -80,6 +85,7 @@ export default function Gallery({}) {
     });
   };
   const prevSlide = () => {
+    setFlip(true);
     setIndex((oldIndex) => {
       let index = oldIndex - 1;
       if (index < 0) {
@@ -92,9 +98,9 @@ export default function Gallery({}) {
   return (
 <Box>
     { !isLoading?(
-
-        <Center sx={{ height: "100vh" }}>
-          <Box>
+      <Center sx={{height:"80vh"}}>
+        <Group spacing="xl">
+          <Box >
             <AiFillLeftCircle fontSize={"40px"} onClick={prevSlide} />
           </Box>
           <Thing
@@ -103,11 +109,15 @@ export default function Gallery({}) {
             img={gal[index].img}
             link={gal[index].url}
             source={gal[index].source}
+            flip={flip}
+            setFlip = {setFlip}
           />
           <Box>
             <AiFillRightCircle fontSize={"40px"} onClick={nextSlide} />
           </Box>
-        </Center>):(
+        </Group>
+</Center>
+        ):(
         
         <Center sx={{ height: "100vh" }}>
           <Bars stroke="#000000" />
