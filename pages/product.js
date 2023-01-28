@@ -45,7 +45,7 @@ export default function Page(props) {
     window.localStorage.setItem("gal",JSON.stringify( arr, null, 2));
   }
   const getFirstFour = (arr) => {
-    return arr.slice(0, 4);
+    return arr?.slice(0, 4);
   };
   const [isLoading, setLoading] = useState(false);
   let rn = new Date();
@@ -58,7 +58,7 @@ export default function Page(props) {
     } else {
       console.log("less than 3 hr");
     }
-    if (userRating > 0) {
+    if (userRating > 0 && !isLoading) {
       const nm = JSON.parse(window.localStorage.getItem("nm"))?.nm;
       const abc = JSON.parse(window.localStorage.getItem("abc"))?.abc;
       const fox = JSON.parse(window.localStorage.getItem("fox"))?.fox;
@@ -68,10 +68,10 @@ export default function Page(props) {
       const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
       if (userRating < 2) {
         setGallery(
-          ...getFirstFour(r),
+          ...getFirstFour(r).concat(
           ...getFirstFour(fox),
           ...getFirstFour(nm),
-          ...getFirstFour(wsj)
+          ...getFirstFour(wsj))
         );
       } else if (userRating < 4) {
         setGallery(
@@ -106,7 +106,7 @@ export default function Page(props) {
     } else {
       console.log("rating wtf");
     }
-  }, []);
+  }, [rating]);
   return (
     <Box>
       <Header />
@@ -115,7 +115,7 @@ export default function Page(props) {
           <Bars stroke="#000000" />
         </Center>
       ) : isGallery ? (
-          <Gallery  />
+          <Gallery  rating={rating}/>
       ) : (
         <ArticleContainer rating={rating} />
       )}

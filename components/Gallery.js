@@ -64,7 +64,7 @@ const Thing = ({ num, img, title, link, source,flip,setFlip }) => {
     </Card>
   );
 };
-export default function Gallery({}) {
+export default function Gallery({rating}) {
   const [index, setIndex] = useState(0);
   const [gal,setGal] = useState([]);
   const [isLoading,setIsLoading] = useState(true);
@@ -73,7 +73,7 @@ export default function Gallery({}) {
     setGal(JSON.parse(localStorage.getItem("gal")))
     setIsLoading(false);
     console.log("setgal");
-  },[]);
+  },[rating]);
   const nextSlide = () => {
     setFlip(true);
     setIndex((oldIndex) => {
@@ -99,7 +99,7 @@ export default function Gallery({}) {
 <Box>
     { !isLoading?(
       <Center sx={{height:"80vh"}}>
-        <Group spacing="xl">
+        <Group spacing="md">
           <Box >
             <AiFillLeftCircle fontSize={"40px"} onClick={prevSlide} />
           </Box>

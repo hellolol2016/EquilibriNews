@@ -33,7 +33,6 @@ function extractFox() {
   }
   return items;
 }
-
 function extractWSJ() {
   const extractedItems = document.querySelectorAll("article");
   const items = [];
@@ -70,7 +69,6 @@ function extractWSJ() {
   }
   return items;
 }
-
 function extractNYT() {
   const extractedItems = document.querySelectorAll(".css-112uytv");
   const items = [];
@@ -91,9 +89,9 @@ function extractNYT() {
           source:"nyt"
     };
 
-    //if(items.length < 5){
-      //memo.img= element.querySelector("img").src;
-    //}
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -106,7 +104,6 @@ function extractNYT() {
   }
   return items;
 }
-
 function extractABC() {
   const extractedItems = document.querySelectorAll(".ContentRoll__Item");
   const items = [];
@@ -137,12 +134,11 @@ function extractABC() {
       return items;
     }
     if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+      memo.img= element.querySelector("source").srcset;
     }
   }
   return items;
 }
-
 function extractDM() {
   const column = document.querySelectorAll(".article");
   const items = [];
@@ -176,7 +172,6 @@ function extractDM() {
   }
   return items;
 }
-  
 function extractR() {
   const column = document.querySelectorAll("article");
   const items = [];
@@ -209,7 +204,6 @@ function extractR() {
   }
   return items;
 }
-
 function extractVOX() {
   const column = document.querySelectorAll(".c-compact-river__entry");
   const items = [];
@@ -241,7 +235,6 @@ function extractVOX() {
   }
   return items;
 }
-
 function extractNM() {
   const column = document.querySelectorAll(".article_link");
   const items = [];
@@ -276,7 +269,6 @@ function extractNM() {
   }
   return items;
 }
-
 //function extractImg(){
   //return document.querySelector("img").src;
 //}
