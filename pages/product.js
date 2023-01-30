@@ -2,7 +2,7 @@ import { Box, Center } from "@mantine/core";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ArticleContainer from "../components/ArticleContainer";
-import Gallery from "../components/gallery";
+import Gallery from "../components/Gallery";
 import { Bars } from "react-loading-icons";
 import Header from "../components/Header";
 

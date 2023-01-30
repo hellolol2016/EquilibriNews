@@ -15,6 +15,38 @@ a {
   box-sizing: border-box;
 }
 
+.section-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.mantine-p7pem6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+.mantine-p7pem6.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mantine-p7pem6.lastSlide {
+  transform: translateX(-100%);
+}
+.mantine-p7pem6.nextSlide {
+  transform: translateX(100%);
+}
+
 
 /*!
  * animate.css - https://animate.style/
