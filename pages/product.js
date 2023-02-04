@@ -48,6 +48,7 @@ export default function Page(props) {
     return arr?.slice(0, 4);
   };
   const [isLoading, setLoading] = useState(false);
+  const [galLoading, setGalLoading] = useState(true);
   let rn = new Date();
   useEffect(function () {
     setRating(window.localStorage.getItem("rating"));
@@ -103,6 +104,7 @@ export default function Page(props) {
       } else {
         console.log("errror");
       }
+      setGalLoading(false);
     } else {
       console.log("rating wtf");
     }
@@ -114,7 +116,7 @@ export default function Page(props) {
         <Center sx={{ height: "100vh" }}>
           <Bars stroke="#000000" />
         </Center>
-      ) : isGallery ? (
+      ) : isGallery && !galLoading ? (
           <Gallery  rating={rating}/>
       ) : (
         <ArticleContainer rating={rating} />

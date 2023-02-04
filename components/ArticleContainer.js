@@ -13,7 +13,7 @@ export default function ArticleContainer({ props, rating }) {
     const wsj = JSON.parse(localStorage.getItem("wsj"))?.wsj;
     const vox = JSON.parse(localStorage.getItem("vox"))?.vox;
     console.log(typeof(nm));
-    if (rating >= 0) {
+    if (rating >= 0  ) {
       if (rating < 2) {
         console.log("far left");
         setAllArticles([].concat(r,fox,nm,wsj))

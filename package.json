@@ -13,7 +13,6 @@
     "@mantine/form": "^4.2.7",
     "@mantine/hooks": "^4.2.7",
     "@mantine/next": "^4.2.7",
-    "animate.css": "^4.1.1",
     "chrome-aws-lambda": "^10.1.0",
     "next": "12.1.4",
     "puppeteer": "^19.5.2",

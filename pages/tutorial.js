@@ -30,6 +30,7 @@ export default function Page() {
             Looks like we dont have your user info on this device, lets fix
             that!
           </Text>
+          <Text color={"blue"}>
           <a
             rel="noreferrer"
             href="https://docs.google.com/document/d/1qfKZEnEjxyAQMllxUoKbtM2l3KEgMBKOP4O7XTwQ8J0/edit?usp=sharing"
@@ -37,10 +38,11 @@ export default function Page() {
           >
             Political Alignment Surveys
           </a>
-
+</Text>
           <Slider
             max="10"
             onChangeEnd={setValue}
+            defaultValue={5}
             marks={[
               { value: 0, label: "Far Left" },
               { value: 10, label: "Far Right" },

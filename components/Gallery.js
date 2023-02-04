@@ -17,16 +17,29 @@ import {
 } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import { Bars } from "react-loading-icons";
-import "animate.css";
+
+const text_truncate = (str, length, ending) => {
+    if (length == null) {
+      length = 100;
+    }
+    if (ending == null) {
+      ending = '...';
+    }
+    if (str.length > length) {
+      return str.substring(0, length - ending.length) + ending;
+    } else {
+      return str;
+    }
+  };
+
 const Thing = ({ num, img, title, link, source, pos }) => {
   return (
-    <Box sx={{ overflow: "hidden" }}className="section-center">
       <Card
         shadow="sm"
         p="lg"
         radius="md"
         withBorder
-        sx={{ width: "40vw", minWidth: "500px", margin: "50px" }}
+        sx={{ width: "40vw", minWidth: "500px", margin: "50px", }}
         className={pos}
         key={num}
       >
@@ -34,7 +47,7 @@ const Thing = ({ num, img, title, link, source, pos }) => {
           <Image src={img} height={"30vh"} alt={title} />
         </Card.Section>
         <Group position="apart" mt="md" mb="xs">
-          <Text weight={500}>{title}</Text>
+          <Text weight={500}>{text_truncate(title,80)}</Text>
           {/* CHANGE COLOR */}
           <Badge color="" variant="light">
             {source}
@@ -63,7 +76,6 @@ const Thing = ({ num, img, title, link, source, pos }) => {
           </Button>
         </Group>
       </Card>
-    </Box>
   );
 };
 export default function Gallery({ rating }) {
@@ -88,15 +100,15 @@ export default function Gallery({ rating }) {
       setIndex(0);
     }
   }, [index, gal]);
-  useEffect(() => {
-    let slider = setInterval(() => {
-      console.log(index);
-      setIndex(index + 1);
-    }, 3000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
+  //useEffect(() => {
+    //let slider = setInterval(() => {
+      //console.log(index);
+      //setIndex(index + 1);
+    //}, 3000);
+    //return () => {
+      //clearInterval(slider);
+    //};
+  //}, [index]);
   return (
     <Box>
       {!isLoading ? (
@@ -105,6 +117,8 @@ export default function Gallery({ rating }) {
             <Box>
               <AiFillLeftCircle fontSize={"40px"} onClick={()=>setIndex(index-1)} />
             </Box>
+            <Box className="section-center">
+              <Center>
             {gal.map((article, articleIndex) => {
               const { title, img, url, source } = article;
               let pos = "next";
@@ -128,7 +142,8 @@ export default function Gallery({ rating }) {
                   pos={pos}
                 />
               );
-            })}
+            })}</Center>
+            </Box>
             <Box>
               <AiFillRightCircle fontSize={"40px"} onClick={()=>setIndex(index+1)} />
             </Box>
