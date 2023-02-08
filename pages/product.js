@@ -14,7 +14,7 @@ export default function Page(props) {
 
   async function handleNewsClick() {
     setLoading(true);
-    const res = await fetch("/api/puppeteer");
+    const res = await fetch("/api/scrapeNews");
     const data = await res.json();
 
     window.localStorage.setItem(

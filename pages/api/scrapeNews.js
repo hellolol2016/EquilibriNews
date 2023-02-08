@@ -323,12 +323,16 @@ export default async function handler(req, res) {
     executablePath:
       process.env.NODE_ENV !== "development"
         ? await chromium.executablePath
-        : "/usr/bin/chromium",
-    headless: process.env.NODE_ENV !== "development" ? chromium.headless : true,
+        : process.platform === 'darwin' 
+          ? "/Users/ndo/Library/Caches/ms-playwright/chromium-1045/chrome-mac/Chromium.app/Contents/MacOS/Chromium"
+          : "/usr/bin/chromium",
+    headless: process.env.NODE_ENV === "production" ? chromium.headless : true,
   })
-  const page = await browser.newPage();
-  page.setJavaScriptEnabled(false);
-  page.setViewport({ width: 1280, height: 3000 });
+  const page = await browser.newPage({ 
+    viewport: {width: 1280, height: 3000 }
+  });
+  // page.setJavaScriptEnabled(false);
+  // page.setViewport({ width: 1280, height: 3000 });
 
   await page.goto("https://www.foxnews.com/politics");
   let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
