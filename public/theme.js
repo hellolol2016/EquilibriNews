@@ -1,7 +1,7 @@
 export default {
-  fontFamily: "Telex",
-  headings: { fontFamily: "Habibi" },
-  color: "black",
+  fontFamily: 'Telex',
+  headings: { fontFamily: 'Habibi' },
+  color: 'black',
   breakpoints: {
     xs: 500,
     sm: 800,
@@ -9,4 +9,4 @@ export default {
     lg: 1200,
     xl: 1400,
   },
-};
+}

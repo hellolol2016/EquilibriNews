@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write */**/*.js",
     "dev:local": "vercel dev"
   },
   "dependencies": {
@@ -27,6 +28,9 @@
   "devDependencies": {
     "@sparticuz/chromium": "^103.0.0",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4"
+    "eslint-config-next": "12.1.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4"
   }
 }
