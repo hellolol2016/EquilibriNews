@@ -1,6 +1,6 @@
-const puppeteer = require("puppeteer");
-const fs = require("fs");
-
+import chromium from "chrome-aws-lambda";
+import playwright from "playwright-core"
+const allArticles =  {}
 
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
@@ -21,6 +21,9 @@ function extractFox() {
           : "NONE",
           source:"fox"
     };
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
@@ -30,21 +33,20 @@ function extractFox() {
   }
   return items;
 }
-
 function extractWSJ() {
   const extractedItems = document.querySelectorAll("article");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
       title:
-        (element.querySelector("h3") != null && element.querySelector("h3").innerText.slice(-8)!=="min read")
+        (element.querySelector("h2") != null && element.querySelector("h2").innerText.slice(-8)!=="min read")
           ? element.querySelector(".WSJTheme--headlineText--He1ANr9C").innerText
-          : element.querySelector("h3") != null
-          ? element.querySelector("h3").innerText.slice(0,-10)
+          : element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText.slice(0,-10)
           : "NONE",
       type:
-          element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ") != null
-          ? element.querySelector(".WSJTheme--mins-to-read--3baxNBNG ").innerText
+          element.querySelector(".WSJTheme--summaryText--2LRaCWgJ") != null
+          ? element.querySelector(".WSJTheme--timestamp--22sfkNDv").innerText
           : "NONE",
       url:
         element.querySelector("a") != null
@@ -52,6 +54,9 @@ function extractWSJ() {
           : "NONE",
           source:"wsj"
     };
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -64,9 +69,8 @@ function extractWSJ() {
   }
   return items;
 }
-
 function extractNYT() {
-  const extractedItems = document.querySelectorAll("#stream-panel li");
+  const extractedItems = document.querySelectorAll(".css-112uytv");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
@@ -85,6 +89,9 @@ function extractNYT() {
           source:"nyt"
     };
 
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if(memo.type.length>70){
       memo.type = memo.type.substring(0, 70) + "...";
     }
@@ -97,7 +104,6 @@ function extractNYT() {
   }
   return items;
 }
-
 function extractABC() {
   const extractedItems = document.querySelectorAll(".ContentRoll__Item");
   const items = [];
@@ -127,10 +133,12 @@ function extractABC() {
     if(items.length>29){
       return items;
     }
+    if(items.length < 5){
+      memo.img= element.querySelector("source").srcset;
+    }
   }
   return items;
 }
-
 function extractDM() {
   const column = document.querySelectorAll(".article");
   const items = [];
@@ -164,7 +172,6 @@ function extractDM() {
   }
   return items;
 }
-  
 function extractR() {
   const column = document.querySelectorAll("article");
   const items = [];
@@ -191,10 +198,12 @@ function extractR() {
     if(items.length>29){
       return items;
     }
+    if(items.length < 5){
+      memo.img= element.querySelector("noscript img").src;
+    }
   }
   return items;
 }
-
 function extractVOX() {
   const column = document.querySelectorAll(".c-compact-river__entry");
   const items = [];
@@ -214,7 +223,9 @@ function extractVOX() {
           : "NONE",
           source:"vox"
     };
-
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
@@ -224,6 +235,43 @@ function extractVOX() {
   }
   return items;
 }
+function extractNM() {
+  const column = document.querySelectorAll(".article_link");
+  const items = [];
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector("a").innerText != null
+          ? element.querySelector("a").innerText
+          : "NONE",
+      type:
+        element.querySelectorAll("#copy_small") != null
+          ? element.querySelector("#copy_small").innerText
+          : "NONE",
+      url:
+        element.querySelector("a") != null
+          ? element.querySelector("a").href
+          : "NONE",
+          source:"nm"
+    };
+    if(items.length < 5){
+      memo.img= element.querySelector("img").src;
+    }
+    if(memo.type.length>70){
+      memo.type = memo.type.substring(0, 70) + "...";
+    }
+    if (items.length < 30 && memo.url !== "NONE") {
+      items.push(memo);
+    }
+    if(items.length>29){
+      return items;
+    }
+  }
+  return items;
+}
+//function extractImg(){
+  //return document.querySelector("img").src;
+//}
 
 async function scrapeInfiniteScrollItems(
   page,
@@ -240,44 +288,78 @@ async function scrapeInfiniteScrollItems(
   return items;
 }
 
+
+//async function scrapeImage (page,algo,src){
+  //let imgsrc = "BOOHOO";
+  //try{
+    //imgsrc = await page.evaluate(algo);
+  //}catch(e){
+    //console.log(e);
+    //console.log("boohoo source" , src);
+  //}
+  //return imgsrc;
+//}
+
+//async function getImage(url){
+  //const browser = await chromium.puppeteer.launch({
+    //args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+    //defaultViewport: chromium.defaultViewport,
+    //executablePath: await chromium.executablePath,
+    //headless: true,
+    //ignoreHTTPSErrors: true,
+  //});
+  //const page = await browser.newPage();
+  //page.setJavaScriptEnabled(false);
+  //page.setViewport({ width: 1280, height: 3000 });
+
+  //await page.goto(url);
+  //let img = await scrapeImage(page, extractImg,"img source idk lool");
+  //return img;
+//}
+
 export default async function handler(req, res) {
-  const browser = await puppeteer.launch({
-    args:["--no-sandbox","--disable-setuid-sandbox"],
-    
-  });
+  const browser = await playwright.chromium.launch({
+    args: chromium.args,
+    executablePath:
+      process.env.NODE_ENV !== "development"
+        ? await chromium.executablePath
+        : "/usr/bin/chromium",
+    headless: process.env.NODE_ENV !== "development" ? chromium.headless : true,
+  })
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 3000 });
 
   await page.goto("https://www.foxnews.com/politics");
   let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
-  fs.writeFileSync("./public/articles/fox.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.fox = items;
 
-  await page.goto("https://www.wsj.com/news/politics?mod=nav_top_section");
+  await page.goto("https://www.wsj.com/news/types/national-security");
   items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
-  fs.writeFileSync("./public/articles/wsj.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.wsj = items;
 
   await page.goto("https://www.nytimes.com/section/politics");
   items = await scrapeInfiniteScrollItems(page, extractNYT,"nyt");
-  fs.writeFileSync("./public/articles/nyt.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.nyt = items;
 
   await page.goto("https://abcnews.go.com/Politics");
   items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
-  fs.writeFileSync("./public/articles/abc.json", JSON.stringify({articles:items}, null, 2) + "\n");
-
-  await page.goto("https://www.dailymail.co.uk/news/us-politics/index.html");
-  items = await scrapeInfiniteScrollItems(page, extractDM,"dm");
-  fs.writeFileSync("./public/articles/dm.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.abc = items;
+  
+  await page.goto("https://www.newsmax.com/politics/");
+  items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
+  allArticles.nm = items;
 
   await page.goto("https://reason.com/latest/")
   items = await scrapeInfiniteScrollItems(page, extractR,"r");
-  fs.writeFileSync("./public/articles/r.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.r = items;
 
   await page.goto("https://www.vox.com/policy-and-politics")
   items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  fs.writeFileSync("./public/articles/vox.json", JSON.stringify({articles:items}, null, 2) + "\n");
+  allArticles.vox = items;
+
 
   await browser.close();
 
-  res.status(200).json({success:"true"});
+  res.status(200).json(allArticles);
 }

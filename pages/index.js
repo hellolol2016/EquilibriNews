@@ -61,7 +61,7 @@ export default function Home() {
           <NewsSource img="nyt" alt={"new york times"} h={150} />
           <NewsSource img="fox" alt={"fox news"} h={200} />
           <NewsSource img="r" alt={"r"} h={200} />
-          <NewsSource img="dm" alt={"dm"} h={100} />
+          <NewsSource img="nm" alt={"nm"} h={200} />
         </SimpleGrid>
       </Stack>
        <Footer></Footer> 

@@ -1,10 +1,4 @@
-import {
-  Text,
-  useMantineTheme,
-  Stack,
-  Box,
-  Image,
-} from "@mantine/core";
+import { Text, useMantineTheme, Stack, Box, Image } from "@mantine/core";
 import Link from "next/link";
 import useStyles from "../public/styles";
 import { useEffect, useState } from "react";
@@ -13,10 +7,10 @@ const NavLink = ({ children, href, ...props }) => {
 
   const { classes } = useStyles();
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref >
       <a {...props}>
         <Text
-          style={{ color: theme.colors.gray[0] }}
+          sx={{ color: theme.colors.gray[0],"&:hover": { color: "gray" } }}
           className={classes.noSelect}
         >
           {children}
@@ -33,7 +27,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <Box p="">
+    <Box sx={{ backgroundColor: "black", height: "65px", padding: "10px" }}>
       <Box fixed="true" sx={{ position: "absolute" }}>
         <Link passHref href="/">
           <Image src={"/media/en.png"} alt="en" height={"45px"} />
@@ -41,11 +35,7 @@ export default function Nav() {
       </Box>
       <Stack height={100} justify={"flex-end"} sx={{ flexDirection: "row" }}>
         <NavLink href="/about">About</NavLink>
-        {rating !== null ? (
-          <NavLink href={"/product"}>My News</NavLink>
-        ) : (
-          <NavLink href="/tutorial">Tutorial</NavLink>
-        )}
+        <NavLink href="/tutorial">Change preferences</NavLink>
       </Stack>
     </Box>
   );
