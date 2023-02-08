@@ -41,15 +41,17 @@ export default function Page(props) {
     )
     window.localStorage.setItem('lastCheck', rn)
     setLoading(false)
-    console.log('data :' + data)
-    console.log(data)
+    console.log('data', data)
   }
+
   const setGallery = (arr) => {
     window.localStorage.setItem('gal', JSON.stringify(arr, null, 2))
   }
+
   const getFirstFour = (arr) => {
     return arr?.slice(0, 4)
   }
+
   let rn = new Date()
   useEffect(
     function () {

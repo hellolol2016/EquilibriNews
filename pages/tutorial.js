@@ -14,6 +14,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+
 export default function Page() {
   const [value, setValue] = useState(5)
   return (
