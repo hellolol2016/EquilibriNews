@@ -1,4 +1,4 @@
-import { Box, Center } from "@mantine/core";
+import { Box, Button, Center } from "@mantine/core";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ArticleContainer from "../components/ArticleContainer";
@@ -9,6 +9,9 @@ import Header from "../components/Header";
 export default function Page(props) {
   const [rating, setRating] = useState("");
   const [isGallery, setIsGallery] = useState(true);
+  const [isLoading, setLoading] = useState(true);
+  const [galLoading, setGalLoading] = useState(true);
+
   async function handleNewsClick() {
     setLoading(true);
     const res = await fetch("/api/puppeteer");
@@ -47,8 +50,6 @@ export default function Page(props) {
   const getFirstFour = (arr) => {
     return arr?.slice(0, 4);
   };
-  const [isLoading, setLoading] = useState(false);
-  const [galLoading, setGalLoading] = useState(true);
   let rn = new Date();
   useEffect(function () {
     setRating(window.localStorage.getItem("rating"));
@@ -57,9 +58,10 @@ export default function Page(props) {
     if (last == null || rn - new Date(last) > 10800000) {
       handleNewsClick();
     } else {
+      setLoading(false);
       console.log("less than 3 hr");
     }
-    if (userRating > 0 && !isLoading) {
+    if (userRating > 0 && isLoading == false) {
       const nm = JSON.parse(window.localStorage.getItem("nm"))?.nm;
       const abc = JSON.parse(window.localStorage.getItem("abc"))?.abc;
       const fox = JSON.parse(window.localStorage.getItem("fox"))?.fox;
@@ -69,7 +71,7 @@ export default function Page(props) {
       const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
       if (userRating < 2) {
         setGallery(
-          ...getFirstFour(r).concat(
+          getFirstFour(r).concat(
           ...getFirstFour(fox),
           ...getFirstFour(nm),
           ...getFirstFour(wsj))
@@ -88,10 +90,10 @@ export default function Page(props) {
         );
       } else if (userRating < 9) {
         setGallery(
-          ...getFirstFour(abc),
+          getFirstFour(abc).concat(
           ...getFirstFour(nyt),
           ...getFirstFour(wsj),
-          ...getFirstFour(r)
+          ...getFirstFour(r))
         );
       } else if (userRating < 11) {
         setGallery(
@@ -106,9 +108,9 @@ export default function Page(props) {
       }
       setGalLoading(false);
     } else {
-      console.log("rating wtf");
+      console.log("still loading");
     }
-  }, [rating]);
+  }, [isLoading]);
   return (
     <Box>
       <Header />
@@ -117,7 +119,10 @@ export default function Page(props) {
           <Bars stroke="#000000" />
         </Center>
       ) : isGallery && !galLoading ? (
+        <>
           <Gallery  rating={rating}/>
+          <Button onClick={()=>setIsGallery(false)}> </Button>
+</>
       ) : (
         <ArticleContainer rating={rating} />
       )}

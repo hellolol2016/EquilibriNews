@@ -82,7 +82,6 @@ export default function Gallery({ rating }) {
   const [index, setIndex] = useState(0);
   const [gal, setGal] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [flip, setFlip] = useState(false);
   useEffect(
     function () {
       setGal(JSON.parse(localStorage.getItem("gal")));

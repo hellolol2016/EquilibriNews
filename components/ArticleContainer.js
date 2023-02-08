@@ -35,7 +35,6 @@ export default function ArticleContainer({ props, rating }) {
     }
   },[rating]);
 
-  console.log(allArticles);
   return (
     <SimpleGrid
       cols={3}
