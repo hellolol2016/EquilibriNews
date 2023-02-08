@@ -1,6 +1,5 @@
 import chromium from "chrome-aws-lambda";
 import playwright from "playwright-core"
-const fs = require("fs");
 const allArticles =  {}
 
 function extractFox() {
