@@ -1,10 +1,11 @@
-import { Box, Button, Center } from "@mantine/core";
+import { Box, Button, Center, Stack } from "@mantine/core";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ArticleContainer from "../components/ArticleContainer";
 import Gallery from "../components/Gallery";
 import { Bars } from "react-loading-icons";
 import Header from "../components/Header";
+import { NextLink } from "@mantine/next";
 
 export default function Page(props) {
   const [rating, setRating] = useState("");
@@ -120,11 +121,20 @@ export default function Page(props) {
         </Center>
       ) : isGallery && !galLoading ? (
         <>
+          <Stack>
           <Gallery  rating={rating}/>
-          <Button onClick={()=>setIsGallery(false)}> </Button>
+          <Center>
+        <Button onClick={()=>setIsGallery(false)} sx={{width:"300px"}}>All Articles</Button>
+</Center>
+</Stack>
 </>
       ) : (
+        <>
+        <Box sx={{position:"fixed", top:"300px", right:"0",background:"gray", padding:"30px",}}>
+        <Button onClick={()=>setIsGallery(true)} >Gallery</Button>
+</Box>
         <ArticleContainer rating={rating} />
+        </>
       )}
     </Box>
   );

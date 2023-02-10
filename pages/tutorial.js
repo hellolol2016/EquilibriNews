@@ -9,13 +9,20 @@ import {
   Text,
   Title,
 } from "@mantine/core";
+import { NextLink } from "@mantine/next";
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function Page() {
   const [value, setValue] = useState(5);
+  const [back, setBack] = useState(false);
+  useEffect(function () {
+    if (localStorage.getItem("rating") !== null) {
+      setBack(true);
+    }
+  }, []);
   return (
     <>
       <Head>
@@ -31,14 +38,14 @@ export default function Page() {
             that!
           </Text>
           <Text color={"blue"}>
-          <a
-            rel="noreferrer"
-            href="https://docs.google.com/document/d/1qfKZEnEjxyAQMllxUoKbtM2l3KEgMBKOP4O7XTwQ8J0/edit?usp=sharing"
-            target="_blank"
-          >
-            Political Alignment Surveys
-          </a>
-</Text>
+            <a
+              rel="noreferrer"
+              href="https://docs.google.com/document/d/1qfKZEnEjxyAQMllxUoKbtM2l3KEgMBKOP4O7XTwQ8J0/edit?usp=sharing"
+              target="_blank"
+            >
+              Political Alignment Surveys
+            </a>
+          </Text>
           <Slider
             max="10"
             onChangeEnd={setValue}
@@ -55,13 +62,23 @@ export default function Page() {
             onClick={function () {
               localStorage.setItem("rating", value);
               toast.success("Rating Updated!", { draggable: true });
+              setBack(true);
             }}
           >
             Set Rating
           </Button>
-
-            <Text>Now that you&apos;ve set up your political alignment, I&apos;ll redirect you to the actual articles! They take up to 2 minutes to completely load, so hold on!</Text>
-
+          {back&&
+          
+          <Box>
+            <Text>
+              Now that you&apos;ve set up your political alignment, feel free to
+              access your news here!
+            </Text>
+            <NextLink href="/product">
+            <Button> My News</Button>
+</NextLink>
+          </Box>
+          }
         </Stack>
       </Center>
       <ToastContainer />
