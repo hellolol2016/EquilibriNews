@@ -324,13 +324,14 @@ export default async function handler(req, res) {
         ? await chromium.executablePath
         : process.platform === 'darwin'
         ? '/Users/ndo/Library/Caches/ms-playwright/chromium-1045/chrome-mac/Chromium.app/Contents/MacOS/Chromium'
-        : '/usr/bin/chromium',
+        : "C:/Users/denni/Downloads/chrome-win/chrome.exe"
+        ,
+      
     headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
   })
   const page = await browser.newPage({
     viewport: { width: 1280, height: 3000 },
   })
-
   await page.goto('https://www.foxnews.com/politics')
   let items = await scrapeInfiniteScrollItems(page, extractFox, 'fox')
   allArticles.fox = items
