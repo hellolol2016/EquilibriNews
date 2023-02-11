@@ -324,7 +324,7 @@ export default async function handler(req, res) {
         ? await chromium.executablePath
         : process.platform === 'darwin'
         ? '/Users/ndo/Library/Caches/ms-playwright/chromium-1045/chrome-mac/Chromium.app/Contents/MacOS/Chromium'
-        : "C:/Users/denni/Downloads/chrome-win/chrome.exe"
+        : 'C:/Users/denni/Downloads/chrome-win/chrome.exe'
         ,
       
     headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
