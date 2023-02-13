@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Box, Button, Center } from '@mantine/core'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'

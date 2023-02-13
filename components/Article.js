@@ -1,6 +1,5 @@
-/* eslint-disable prettier/prettier */
-import { Box, Image, Text } from '@mantine/core'
 import Link from 'next/link'
+import { Box, Image, Text } from '@mantine/core'
 export default function Article({ title, type, url, source }) {
   return (
     <a href={url} target="_blank" rel="noreferrer">

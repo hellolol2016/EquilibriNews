@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { BsInstagram, BsGithub, BsYoutube } from 'react-icons/bs'
 import { Footer, Stack } from '@mantine/core'
 import Link from 'next/link'

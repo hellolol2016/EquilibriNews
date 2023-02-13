@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import Head from 'next/head'
 import { Box, Center, Stack, Text, Title } from '@mantine/core'
 import Navbar from '../components/Navbar'

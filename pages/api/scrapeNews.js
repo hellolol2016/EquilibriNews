@@ -1,6 +1,5 @@
-/* eslint-disable prettier/prettier */
 import chromium from 'chrome-aws-lambda'
-import playwright from 'playwright-core'
+import puppeteer from 'puppeteer-core'
 const allArticles = {}
 
 function extractFox() {
@@ -326,7 +325,8 @@ async function scrapeInfiniteScrollItems(page, getNews, src) {
 //}
 
 export default async function handler(req, res) {
-  const browser = await playwright.chromium.launch({
+  const browser = await puppeteer.launch({
+    defaultViewport: { width: 1280, height: 3000 },
     args: chromium.args,
     executablePath:
       process.env.NODE_ENV !== 'development'
@@ -337,12 +337,8 @@ export default async function handler(req, res) {
 
     headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
   })
-  const page = await browser.newPage({
-    viewport: {
-      width: 1280,
-      height: 3000,
-    },
-  })
+  const page = await browser.newPage()
+
   await page.goto('https://www.foxnews.com/politics')
   let items = await scrapeInfiniteScrollItems(page, extractFox, 'fox')
   allArticles.fox = items
