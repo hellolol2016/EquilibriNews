@@ -145,75 +145,75 @@ function extractABC() {
   return items
 }
 
-function extractDM() {
-  const column = document.querySelectorAll('.article')
-  const items = []
-  for (let element of column) {
-    const memo = {
-      title:
-        element.querySelector('h2') != null
-          ? element.querySelector('h2').innerText
-          : 'NONE',
-      type:
-        element.querySelectorAll(
-          'p:not(.show-as-new ):not(.show-as-updated)'
-        ) != null
-          ? element.querySelector('p:not(.show-as-new):not(.show-as-updated)')
-              .innerText
-          : 'NONE',
-      url:
-        element.querySelector('a') != null
-          ? element.querySelector('a').href
-          : 'NONE',
-      source: 'dm',
-    }
-
-    if (memo.type.length > 70) {
-      memo.type = memo.type.substring(0, 70) + '...'
-    }
-
-    if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
-      items.push(memo)
-    }
-    if (items.length > 29) {
-      return items
-    }
-  }
-  return items
-}
-
-function extractR() {
-  const column = document.querySelectorAll('article')
-  const items = []
-  for (let element of column) {
-    const memo = {
-      title:
-        element.querySelector('h4') != null
-          ? element.querySelector('h4').innerText
-          : 'NONE',
-      type:
-        element.querySelectorAll('p') != null
-          ? element.querySelector('p').innerText
-          : 'NONE',
-      url:
-        element.querySelector('a') != null
-          ? element.querySelector('a').href
-          : 'NONE',
-      source: 'r',
-    }
-
-    if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
-      items.push(memo)
-    }
-    if (items.length > 29) {
-      return items
-    }
-    if (items.length < 5) {
-      memo.img = element.querySelector('noscript img').src
-    }
-  }
-  return items
-}
+// function extractDM() {
+//   const column = document.querySelectorAll('.article')
+//   const items = []
+//   for (let element of column) {
+//     const memo = {
+//       title:
+//         element.querySelector('h2') != null
+//           ? element.querySelector('h2').innerText
+//           : 'NONE',
+//       type:
+//         element.querySelectorAll(
+//           'p:not(.show-as-new ):not(.show-as-updated)'
+//         ) != null
+//           ? element.querySelector('p:not(.show-as-new):not(.show-as-updated)')
+//               .innerText
+//           : 'NONE',
+//       url:
+//         element.querySelector('a') != null
+//           ? element.querySelector('a').href
+//           : 'NONE',
+//       source: 'dm',
+//     }
+//
+//     if (memo.type.length > 70) {
+//       memo.type = memo.type.substring(0, 70) + '...'
+//     }
+//
+//     if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
+//       items.push(memo)
+//     }
+//     if (items.length > 29) {
+//       return items
+//     }
+//   }
+//   return items
+// }
+//
+// function extractR() {
+//   const column = document.querySelectorAll('article')
+//   const items = []
+//   for (let element of column) {
+//     const memo = {
+//       title:
+//         element.querySelector('h4') != null
+//           ? element.querySelector('h4').innerText
+//           : 'NONE',
+//       type:
+//         element.querySelectorAll('p') != null
+//           ? element.querySelector('p').innerText
+//           : 'NONE',
+//       url:
+//         element.querySelector('a') != null
+//           ? element.querySelector('a').href
+//           : 'NONE',
+//       source: 'r',
+//     }
+//
+//     if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
+//       items.push(memo)
+//     }
+//     if (items.length > 29) {
+//       return items
+//     }
+//     if (items.length < 5) {
+//       memo.img = element.querySelector('noscript img').src
+//     }
+//   }
+//   return items
+// }
 
 function extractVOX() {
   const column = document.querySelectorAll('.c-compact-river__entry')
@@ -325,7 +325,7 @@ async function scrapeInfiniteScrollItems(page, getNews, src) {
 //return img;
 //}
 
-export default async function handler(req, res) {
+export default async function handler(_, res) {
   const browser = await puppeteer.launch({
     defaultViewport: { width: 1280, height: 3000 },
     args: chromium.args,
