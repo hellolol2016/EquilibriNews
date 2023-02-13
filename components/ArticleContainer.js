@@ -47,11 +47,10 @@ export default function ArticleContainer({ props, rating }) {
         { maxWidth: 650, cols: 1, spacing: 'sm' },
       ]}
     >
-      {allArticles.map((article) => {
+      {allArticles.map((article, i) => {
         return (
-          <Center key={article.title}>
+          <Center key={i}>
             <Article
-              key={article.title}
               title={article.title}
               type={article.type}
               url={article.url}

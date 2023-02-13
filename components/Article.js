@@ -17,7 +17,7 @@ export default function Article({ title, type, url, source }) {
       >
         <Text style={{ fontSize: '15px', fontWeight: 'bold' }}>{title}</Text>
         <Text>{type}</Text>
-        <Image width={'50px'} src={`/media/${source}.png`} />
+        <Image alt={title} width={'50px'} src={`/media/${source}.png`} />
       </Box>
     </a>
   )
