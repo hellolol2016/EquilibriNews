@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write */**/*.js",
+    "lint:fix": "eslint --fix ./**/*.js",
     "dev:local": "vercel dev"
   },
   "dependencies": {

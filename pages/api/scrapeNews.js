@@ -331,8 +331,8 @@ export default async function handler(req, res) {
     executablePath:
       process.env.NODE_ENV !== 'development'
         ? await chromium.executablePath
-        : process.platform === 'darwin'
-        ? '/Users/ndo/Library/Caches/ms-playwright/chromium-1045/chrome-mac/Chromium.app/Contents/MacOS/Chromium'
+        : process.platform === 'linux'
+        ? '/bin/chromium'
         : 'C:/Users/denni/Downloads/chrome-win/chrome.exe',
 
     headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
@@ -359,9 +359,9 @@ export default async function handler(req, res) {
   items = await scrapeInfiniteScrollItems(page, extractNM, 'nm')
   allArticles.nm = items
 
-  await page.goto('https://reason.com/latest/')
-  items = await scrapeInfiniteScrollItems(page, extractR, 'r')
-  allArticles.r = items
+  // await page.goto('https://reason.com/latest/')
+  // items = await scrapeInfiniteScrollItems(page, extractR, 'r')
+  // allArticles.r = items
 
   await page.goto('https://www.vox.com/policy-and-politics')
   items = await scrapeInfiniteScrollItems(page, extractVOX, 'vox')

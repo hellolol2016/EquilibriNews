@@ -7,17 +7,15 @@ const NavLink = ({ children, href, ...props }) => {
 
   const { classes } = useStyles()
   return (
-    (<Link href={href} passHref {...props}>
-
+    <Link href={href} passHref {...props}>
       <Text
         sx={{ color: theme.colors.gray[0], '&:hover': { color: 'gray' } }}
         className={classes.noSelect}
       >
         {children}
       </Text>
-
-    </Link>)
-  );
+    </Link>
+  )
 }
 
 export default function Nav() {
@@ -38,5 +36,5 @@ export default function Nav() {
         <NavLink href="/tutorial">Change preferences</NavLink>
       </Stack>
     </Box>
-  );
+  )
 }
