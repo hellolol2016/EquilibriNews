@@ -2,8 +2,8 @@ import { Box, Center, Stack, Text, Title } from '@mantine/core'
 import Navbar from '../components/Navbar'
 import Image from 'next/image'
 import Footer from '../components/Footer'
-export default function Home() {
 
+export default function Home() {
   return (
     <>
       <Stack>
