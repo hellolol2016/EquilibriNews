@@ -1,5 +1,6 @@
 import chromium from 'chrome-aws-lambda'
 import puppeteer from 'puppeteer-core'
+
 const allArticles = {}
 
 function extractFox() {

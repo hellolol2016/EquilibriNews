@@ -1,12 +1,8 @@
-import Head from 'next/head'
 import { Box, Center, Stack, Text, Title } from '@mantine/core'
 import Navbar from '../components/Navbar'
-import Link from 'next/link'
 import Image from 'next/image'
-import useStyles from '../public/styles'
 import Footer from '../components/Footer'
 export default function Home() {
-  const { classes } = useStyles()
 
   return (
     <>

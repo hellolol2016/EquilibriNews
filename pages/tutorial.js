@@ -1,8 +1,6 @@
 import {
-  Box,
   Button,
   Center,
-  Header,
   Slider,
   Space,
   Stack,
@@ -10,7 +8,6 @@ import {
   Title,
 } from '@mantine/core'
 import Head from 'next/head'
-import Link from 'next/link'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'

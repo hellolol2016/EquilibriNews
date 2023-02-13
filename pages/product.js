@@ -1,5 +1,4 @@
 import { Box, Button, Center } from '@mantine/core'
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import ArticleContainer from '../components/ArticleContainer'
 import Gallery from '../components/Gallery'

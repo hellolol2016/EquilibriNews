@@ -2,19 +2,15 @@ import Head from 'next/head'
 import {
   BackgroundImage,
   Box,
-  Button,
   Center,
-  Grid,
   SimpleGrid,
   Stack,
   Text,
   Title,
 } from '@mantine/core'
 import Navbar from '../components/Navbar'
-import Link from 'next/link'
 import Image from 'next/image'
 import useStyles from '../public/styles'
-import { BsInstagram, BsGithub, BsYoutube } from 'react-icons/bs'
 import Footer from '../components/Footer'
 
 export default function Home() {
