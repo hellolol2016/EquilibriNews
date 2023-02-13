@@ -7,17 +7,17 @@ const NavLink = ({ children, href, ...props }) => {
 
   const { classes } = useStyles()
   return (
-    <Link href={href} passHref>
-      <a {...props}>
-        <Text
-          sx={{ color: theme.colors.gray[0], '&:hover': { color: 'gray' } }}
-          className={classes.noSelect}
-        >
-          {children}
-        </Text>
-      </a>
-    </Link>
-  )
+    (<Link href={href} passHref {...props}>
+
+      <Text
+        sx={{ color: theme.colors.gray[0], '&:hover': { color: 'gray' } }}
+        className={classes.noSelect}
+      >
+        {children}
+      </Text>
+
+    </Link>)
+  );
 }
 
 export default function Nav() {
@@ -29,7 +29,7 @@ export default function Nav() {
   return (
     <Box sx={{ backgroundColor: 'black', height: '65px', padding: '10px' }}>
       <Box fixed="true" sx={{ position: 'absolute' }}>
-        <Link passHref href="/">
+        <Link passHref href="/" legacyBehavior>
           <Image src={'/media/en.png'} alt="en" height={'45px'} />
         </Link>
       </Box>
@@ -38,5 +38,5 @@ export default function Nav() {
         <NavLink href="/tutorial">Change preferences</NavLink>
       </Stack>
     </Box>
-  )
+  );
 }
