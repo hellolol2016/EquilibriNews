@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Box, Center, SimpleGrid } from '@mantine/core'
 import { useEffect, useState } from 'react'
 import Article from './Article'

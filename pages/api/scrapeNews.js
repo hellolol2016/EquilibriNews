@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import chromium from 'chrome-aws-lambda'
 import playwright from 'playwright-core'
 const allArticles = {}

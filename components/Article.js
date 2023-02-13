@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Box, Image, Text } from '@mantine/core'
 import Link from 'next/link'
 export default function Article({ title, type, url, source }) {

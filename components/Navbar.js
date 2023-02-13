@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Text, useMantineTheme, Stack, Box, Image } from '@mantine/core'
 import Link from 'next/link'
 import useStyles from '../public/styles'
