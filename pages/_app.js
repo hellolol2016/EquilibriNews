@@ -1,41 +1,23 @@
-import { createStyles, MantineProvider,Global, Box, Button } from "@mantine/core";
-import "../styles/globals.css";
-import theme from "../public/theme"; 
+import { MantineProvider, Global } from '@mantine/core'
+import '../styles/globals.css'
+import theme from '../public/theme'
+
 function MyApp({ Component, pageProps }) {
-
-
-
-
-
   return (
     <>
-      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="true"
-      ></link>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Habibi&family=Telex&display=swap"
-        rel="stylesheet"
-      ></link>
-      <Global 
-        styles={(theme)=>({
-          a:{root:{backgroundColor:"white"}},
-          body:{
-            backgroundColor:theme.colors.dark[7]
-          }
+      <Global
+        styles={(theme) => ({
+          a: { root: { backgroundColor: 'white' } },
+          body: {
+            backgroundColor: theme.colors.dark[7],
+          },
         })}
-      /> 
-      <MantineProvider
-        theme={theme}
-        withNormalizeCSS
-        withGlobalStyles
-      >
+      />
+      <MantineProvider theme={theme} withNormalizeCSS withGlobalStyles>
         <Component {...pageProps} />
       </MantineProvider>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
