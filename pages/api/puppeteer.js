@@ -33,7 +33,7 @@ function extractFox() {
   return items;
 }
 function extractWSJ() {
-  const extractedItems = document.querySelectorAll("ol article");
+  const extractedItems = document.querySelectorAll("article");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
@@ -54,7 +54,7 @@ function extractWSJ() {
     if (items.length < 4) {
       memo.img =
         element.querySelector("img") != null
-          ? element.querySelector("img").alt
+          ? element.querySelector("img").src
           : "NONE";
     }
     if (memo.type.length > 70) {
@@ -330,33 +330,33 @@ export default async function handler(req, res) {
   page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 3000 });
   let items;
-  //await page.goto("https://www.foxnews.com/politics");
-  //items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
-  //allArticles.fox = items;
+  await page.goto("https://www.foxnews.com/politics");
+  items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
+  allArticles.fox = items;
 
   await page.goto("https://www.wsj.com/news/us");
   items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
   allArticles.wsj = items;
 
-  //await page.goto("https://www.nytimes.com/section/politics");
-  //items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
-  //allArticles.nyt = items;
+  await page.goto("https://www.nytimes.com/section/politics");
+  items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
+  allArticles.nyt = items;
 
-  //await page.goto("https://abcnews.go.com/Politics");
-  //items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
-  //allArticles.abc = items;
+  await page.goto("https://abcnews.go.com/Politics");
+  items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
+  allArticles.abc = items;
 
-  //await page.goto("https://www.newsmax.com/politics/");
-  //items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
-  //allArticles.nm = items;
+  await page.goto("https://www.newsmax.com/politics/");
+  items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
+  allArticles.nm = items;
 
-  //await page.goto("https://reason.com/latest/")
-  //items = await scrapeInfiniteScrollItems(page, extractR,"r");
-  //allArticles.r = items;
+  await page.goto("https://reason.com/latest/")
+  items = await scrapeInfiniteScrollItems(page, extractR,"r");
+  allArticles.r = items;
 
-  //await page.goto("https://www.vox.com/policy-and-politics")
-  //items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  //allArticles.vox = items;
+  await page.goto("https://www.vox.com/policy-and-politics")
+  items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
+  allArticles.vox = items;
 
   await browser.close();
 
