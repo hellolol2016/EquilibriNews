@@ -8,14 +8,12 @@ const NavLink = ({ children, href, ...props }) => {
   const { classes } = useStyles();
   return (
     <Link href={href} passHref >
-      <a {...props}>
         <Text
           sx={{ color: theme.colors.gray[0],"&:hover": { color: "gray" } }}
           className={classes.noSelect}
         >
           {children}
         </Text>
-      </a>
     </Link>
   );
 };

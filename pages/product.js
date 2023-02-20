@@ -44,6 +44,7 @@ export default function Page(props) {
     setLoading(false);
     console.log("data :" + data);
     console.log(data);
+
   }
   const setGallery=(arr)=>{
     window.localStorage.setItem("gal",JSON.stringify( arr, null, 2));
@@ -62,7 +63,8 @@ export default function Page(props) {
       setLoading(false);
       console.log("less than 3 hr");
     }
-    if (userRating > 0 && isLoading == false) {
+
+    if (rating >= 0 && isLoading == false) {
       const nm = JSON.parse(window.localStorage.getItem("nm"))?.nm;
       const abc = JSON.parse(window.localStorage.getItem("abc"))?.abc;
       const fox = JSON.parse(window.localStorage.getItem("fox"))?.fox;
@@ -70,14 +72,14 @@ export default function Page(props) {
       const r = JSON.parse(window.localStorage.getItem("r"))?.r;
       const wsj = JSON.parse(window.localStorage.getItem("wsj"))?.wsj;
       const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
-      if (userRating < 2) {
+      if (rating < 2) {
         setGallery(
           getFirstFour(r).concat(
           ...getFirstFour(fox),
           ...getFirstFour(nm),
           ...getFirstFour(wsj))
         );
-      } else if (userRating < 4) {
+      } else if (rating < 4) {
         setGallery(
           getFirstFour(r).concat(
             ...getFirstFour(fox),
@@ -85,18 +87,18 @@ export default function Page(props) {
             ...getFirstFour(wsj)
           )
         );
-      } else if (userRating < 7) {
+      } else if (rating < 7) {
         setGallery(
           getFirstFour(r).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
         );
-      } else if (userRating < 9) {
+      } else if (rating < 9) {
         setGallery(
           getFirstFour(abc).concat(
           ...getFirstFour(nyt),
           ...getFirstFour(wsj),
           ...getFirstFour(r))
         );
-      } else if (userRating < 11) {
+      } else if (rating < 11) {
         setGallery(
           getFirstFour(abc).concat(
             ...getFirstFour(nyt),

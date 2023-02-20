@@ -1,6 +1,5 @@
 import chromium from "chrome-aws-lambda";
-const fs = require("fs");
-const allArticles =  {}
+const allArticles = {};
 
 function extractFox() {
   const extractedItems = document.querySelectorAll("article");
@@ -19,58 +18,59 @@ function extractFox() {
         element.querySelector(".title a") != null
           ? element.querySelector(".title a").href
           : "NONE",
-          source:"fox"
+      source: "fox",
     };
-    if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+    if (items.length < 5) {
+      memo.img = element.querySelector("img").src;
     }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
   return items;
 }
 function extractWSJ() {
-  const extractedItems = document.querySelectorAll("article");
+  const extractedItems = document.querySelectorAll("ol article");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
       title:
-        (element.querySelector("h2") != null && element.querySelector("h2").innerText.slice(-8)!=="min read")
-          ? element.querySelector(".WSJTheme--headlineText--He1ANr9C").innerText
-          : element.querySelector("h2") != null
-          ? element.querySelector("h2").innerText.slice(0,-10)
+        element.querySelector("h3") != null
+          ? element.querySelector("h3").innerText
           : "NONE",
       type:
-          element.querySelector(".WSJTheme--summaryText--2LRaCWgJ") != null
-          ? element.querySelector(".WSJTheme--timestamp--22sfkNDv").innerText
+        element.querySelector("p") != null
+          ? element.querySelector("p span").innerText
           : "NONE",
       url:
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"wsj"
+      source: "wsj",
     };
-    if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+    if (items.length < 4) {
+      memo.img =
+        element.querySelector("img") != null
+          ? element.querySelector("img").alt
+          : "NONE";
     }
-    if(memo.type.length>70){
+    if (memo.type.length > 70) {
       memo.type = memo.type.substring(0, 70) + "...";
     }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
   return items;
 }
 function extractNYT() {
-  const extractedItems = document.querySelectorAll(".css-112uytv");
+  const extractedItems = document.querySelectorAll("li");
   const items = [];
   for (let element of extractedItems) {
     const memo = {
@@ -86,19 +86,22 @@ function extractNYT() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"nyt"
+      source: "nyt",
     };
 
-    if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+    if (items.length < 4) {
+      memo.img =
+        element.querySelector("img") != null
+          ? element.querySelector("img").src
+          : "NONE";
     }
-    if(memo.type.length>70){
+    if (memo.type.length > 70) {
       memo.type = memo.type.substring(0, 70) + "...";
     }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
@@ -121,20 +124,20 @@ function extractABC() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"abc"
+      source: "abc",
     };
 
-    if(memo.type.length>70){
+    if (memo.type.length > 70) {
       memo.type = memo.type.substring(0, 70) + "...";
     }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
-    if(items.length < 5){
-      memo.img= element.querySelector("source").srcset;
+    if (items.length < 5) {
+      memo.img = element.querySelector("source").srcset;
     }
   }
   return items;
@@ -149,24 +152,27 @@ function extractDM() {
           ? element.querySelector("h2").innerText
           : "NONE",
       type:
-        element.querySelectorAll("p:not(.show-as-new ):not(.show-as-updated)") != null
-          ? element.querySelector("p:not(.show-as-new):not(.show-as-updated)").innerText
+        element.querySelectorAll(
+          "p:not(.show-as-new ):not(.show-as-updated)"
+        ) != null
+          ? element.querySelector("p:not(.show-as-new):not(.show-as-updated)")
+              .innerText
           : "NONE",
       url:
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"dm"
+      source: "dm",
     };
 
-    if(memo.type.length>70){
+    if (memo.type.length > 70) {
       memo.type = memo.type.substring(0, 70) + "...";
     }
 
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
@@ -189,17 +195,17 @@ function extractR() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"r"
+      source: "r",
     };
 
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
-    if(items.length < 5){
-      memo.img= element.querySelector("noscript img").src;
+    if (items.length < 5) {
+      memo.img = element.querySelector("noscript img").src;
     }
   }
   return items;
@@ -221,15 +227,15 @@ function extractVOX() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"vox"
+      source: "vox",
     };
-    if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+    if (items.length < 5) {
+      memo.img = element.querySelector("img").src;
     }
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
@@ -252,69 +258,64 @@ function extractNM() {
         element.querySelector("a") != null
           ? element.querySelector("a").href
           : "NONE",
-          source:"nm"
+      source: "nm",
     };
-    if(items.length < 5){
-      memo.img= element.querySelector("img").src;
+    if (items.length < 5) {
+      memo.img = element.querySelector("img").src;
     }
-    if(memo.type.length>70){
+    if (memo.type.length > 70) {
       memo.type = memo.type.substring(0, 70) + "...";
     }
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if(items.length>29){
+    if (items.length > 29) {
       return items;
     }
   }
   return items;
 }
 //function extractImg(){
-  //return document.querySelector("img").src;
+//return document.querySelector("img").src;
 //}
 
-async function scrapeInfiniteScrollItems(
-  page,
-  getNews,
-  src
-) {
+async function scrapeInfiniteScrollItems(page, getNews, src) {
   let items = [];
   try {
-      items = await page.evaluate(getNews);
+    items = await page.evaluate(getNews);
   } catch (e) {
     console.log(e);
-    console.log("bad source" , src );
+    console.log("bad source", src);
   }
   return items;
 }
 
-
 //async function scrapeImage (page,algo,src){
-  //let imgsrc = "BOOHOO";
-  //try{
-    //imgsrc = await page.evaluate(algo);
-  //}catch(e){
-    //console.log(e);
-    //console.log("boohoo source" , src);
-  //}
-  //return imgsrc;
+//let imgsrc = "BOOHOO";
+//try{
+//imgsrc = await page.evaluate(algo);
+//}catch(e){
+//console.log(e);
+//console.log("boohoo source" , src);
+//}
+//return imgsrc;
 //}
 
 //async function getImage(url){
-  //const browser = await chromium.puppeteer.launch({
-    //args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
-    //defaultViewport: chromium.defaultViewport,
-    //executablePath: await chromium.executablePath,
-    //headless: true,
-    //ignoreHTTPSErrors: true,
-  //});
-  //const page = await browser.newPage();
-  //page.setJavaScriptEnabled(false);
-  //page.setViewport({ width: 1280, height: 3000 });
+//const browser = await chromium.puppeteer.launch({
+//args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+//defaultViewport: chromium.defaultViewport,
+//executablePath: await chromium.executablePath,
+//headless: true,
+//ignoreHTTPSErrors: true,
+//});
+//const page = await browser.newPage();
+//page.setJavaScriptEnabled(false);
+//page.setViewport({ width: 1280, height: 3000 });
 
-  //await page.goto(url);
-  //let img = await scrapeImage(page, extractImg,"img source idk lool");
-  //return img;
+//await page.goto(url);
+//let img = await scrapeImage(page, extractImg,"img source idk lool");
+//return img;
 //}
 
 export default async function handler(req, res) {
@@ -328,35 +329,34 @@ export default async function handler(req, res) {
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 3000 });
+  let items;
+  //await page.goto("https://www.foxnews.com/politics");
+  //items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
+  //allArticles.fox = items;
 
-  await page.goto("https://www.foxnews.com/politics");
-  let items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
-  allArticles.fox = items;
-
-  await page.goto("https://www.wsj.com/news/types/national-security");
+  await page.goto("https://www.wsj.com/news/us");
   items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
   allArticles.wsj = items;
 
-  await page.goto("https://www.nytimes.com/section/politics");
-  items = await scrapeInfiniteScrollItems(page, extractNYT,"nyt");
-  allArticles.nyt = items;
+  //await page.goto("https://www.nytimes.com/section/politics");
+  //items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
+  //allArticles.nyt = items;
 
-  await page.goto("https://abcnews.go.com/Politics");
-  items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
-  allArticles.abc = items;
-  
-  await page.goto("https://www.newsmax.com/politics/");
-  items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
-  allArticles.nm = items;
+  //await page.goto("https://abcnews.go.com/Politics");
+  //items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
+  //allArticles.abc = items;
 
-  await page.goto("https://reason.com/latest/")
-  items = await scrapeInfiniteScrollItems(page, extractR,"r");
-  allArticles.r = items;
+  //await page.goto("https://www.newsmax.com/politics/");
+  //items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
+  //allArticles.nm = items;
 
-  await page.goto("https://www.vox.com/policy-and-politics")
-  items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  allArticles.vox = items;
+  //await page.goto("https://reason.com/latest/")
+  //items = await scrapeInfiniteScrollItems(page, extractR,"r");
+  //allArticles.r = items;
 
+  //await page.goto("https://www.vox.com/policy-and-politics")
+  //items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
+  //allArticles.vox = items;
 
   await browser.close();
 
