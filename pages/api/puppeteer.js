@@ -40,6 +40,8 @@ function extractWSJ() {
       title:
         element.querySelector("h3") != null
           ? element.querySelector("h3").innerText
+          : element.querySelector("h2") != null
+          ? element.querySelector("h2").innerText
           : "NONE",
       type:
         element.querySelector("p") != null
