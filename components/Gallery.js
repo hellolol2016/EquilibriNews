@@ -31,8 +31,13 @@ const text_truncate = (str, length, ending) => {
       return str;
     }
   };
+  
+const addToList = ( title, link, source,type ) => {
+    console.log("added " + title);
+  }
 
-const Thing = ({ num, img, title, link, source, pos }) => {
+
+const Thing = ({ num, img, title, link, source, pos,type }) => {
   return (
       <Card
         shadow="sm"
@@ -66,11 +71,12 @@ const Thing = ({ num, img, title, link, source, pos }) => {
             </Button>
           </a>
           <Button
-            variant="light"
-            color="green"
-            mt="md"
-            radius="md"
-            sx={{ width: "20%", height: "40px" }}
+          variant="light"
+          color="green"
+          mt="md"
+          radius="md"
+          sx={{ width: "20%", height: "40px" }}
+          onClick={() => { addToList(title, link, source, type) }}
           >
             <HiClipboardList fontSize={"30px"} />
           </Button>
@@ -119,7 +125,7 @@ export default function Gallery({ rating }) {
             <Box className="section-center">
               <Center>
             {gal.map((article, articleIndex) => {
-              const { title, img, url, source } = article;
+              const { title, img, url, source,type } = article;
               let pos = "next";
               if (articleIndex === index) {
                 pos = "active";
@@ -139,6 +145,7 @@ export default function Gallery({ rating }) {
                   link={url}
                   source={source}
                   pos={pos}
+                  type={type}
                 />
               );
             })}</Center>
