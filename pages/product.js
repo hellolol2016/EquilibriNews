@@ -44,76 +44,80 @@ export default function Page(props) {
     setLoading(false);
     console.log("data :" + data);
     console.log(data);
-
   }
-  const setGallery=(arr)=>{
-    window.localStorage.setItem("gal",JSON.stringify( arr, null, 2));
-  }
+  const setGallery = (arr) => {
+    window.localStorage.setItem("gal", JSON.stringify(arr, null, 2));
+  };
   const getFirstFour = (arr) => {
     return arr?.slice(0, 4);
   };
   let rn = new Date();
-  useEffect(function () {
-    setRating(window.localStorage.getItem("rating"));
-    let userRating = window.localStorage.getItem("rating");
-    let last = window.localStorage.getItem("lastCheck");
-    if (last == null || rn - new Date(last) > 10800000) {
-      handleNewsClick();
-    } else {
-      setLoading(false);
-      console.log("less than 3 hr");
-    }
-
-    if (rating >= 0 && isLoading == false) {
-      const nm = JSON.parse(window.localStorage.getItem("nm"))?.nm;
-      const abc = JSON.parse(window.localStorage.getItem("abc"))?.abc;
-      const fox = JSON.parse(window.localStorage.getItem("fox"))?.fox;
-      const nyt = JSON.parse(window.localStorage.getItem("nyt"))?.nyt;
-      const r = JSON.parse(window.localStorage.getItem("r"))?.r;
-      const wsj = JSON.parse(window.localStorage.getItem("wsj"))?.wsj;
-      const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
-      if (rating < 2) {
-        setGallery(
-          getFirstFour(r).concat(
-          ...getFirstFour(fox),
-          ...getFirstFour(nm),
-          ...getFirstFour(wsj))
-        );
-      } else if (rating < 4) {
-        setGallery(
-          getFirstFour(r).concat(
-            ...getFirstFour(fox),
-            ...getFirstFour(nm),
-            ...getFirstFour(wsj)
-          )
-        );
-      } else if (rating < 7) {
-        setGallery(
-          getFirstFour(r).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
-        );
-      } else if (rating < 9) {
-        setGallery(
-          getFirstFour(abc).concat(
-          ...getFirstFour(nyt),
-          ...getFirstFour(wsj),
-          ...getFirstFour(r))
-        );
-      } else if (rating < 11) {
-        setGallery(
-          getFirstFour(abc).concat(
-            ...getFirstFour(nyt),
-            ...getFirstFour(wsj),
-            ...getFirstFour(vox)
-          )
-        );
+  useEffect(
+    function () {
+      setRating(window.localStorage.getItem("rating"));
+      let userRating = window.localStorage.getItem("rating");
+      let last = window.localStorage.getItem("lastCheck");
+      if (last == null || rn - new Date(last) > 10800000) {
+        handleNewsClick();
       } else {
-        console.log("errror");
+        setLoading(false);
+        console.log("less than 3 hr");
       }
-      setGalLoading(false);
-    } else {
-      console.log("still loading");
-    }
-  }, [isLoading]);
+
+      if (rating >= 0 && isLoading == false) {
+        const nm = JSON.parse(window.localStorage.getItem("nm"))?.nm;
+        const abc = JSON.parse(window.localStorage.getItem("abc"))?.abc;
+        const fox = JSON.parse(window.localStorage.getItem("fox"))?.fox;
+        const nyt = JSON.parse(window.localStorage.getItem("nyt"))?.nyt;
+        const r = JSON.parse(window.localStorage.getItem("r"))?.r;
+        const wsj = JSON.parse(window.localStorage.getItem("wsj"))?.wsj;
+        const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
+        if (rating < 2) {
+          setGallery(
+            getFirstFour(r).concat(
+              ...getFirstFour(fox),
+              ...getFirstFour(nm),
+              ...getFirstFour(wsj)
+            )
+          );
+        } else if (rating < 4) {
+          setGallery(
+            getFirstFour(r).concat(
+              ...getFirstFour(fox),
+              ...getFirstFour(nm),
+              ...getFirstFour(wsj)
+            )
+          );
+        } else if (rating < 7) {
+          setGallery(
+            getFirstFour(r).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
+          );
+        } else if (rating < 9) {
+          setGallery(
+            getFirstFour(abc).concat(
+              ...getFirstFour(nyt),
+              ...getFirstFour(wsj),
+              ...getFirstFour(r)
+            )
+          );
+        } else if (rating < 11) {
+          setGallery(
+            getFirstFour(abc).concat(
+              ...getFirstFour(nyt),
+              ...getFirstFour(wsj),
+              ...getFirstFour(vox)
+            )
+          );
+        } else {
+          console.log("errror");
+        }
+        setGalLoading(false);
+      } else {
+        console.log("still loading");
+      }
+    },
+    [isLoading]
+  );
   return (
     <Box>
       <Header />
@@ -124,18 +128,31 @@ export default function Page(props) {
       ) : isGallery && !galLoading ? (
         <>
           <Stack>
-          <Gallery  rating={rating}/>
-          <Center>
-        <Button onClick={()=>setIsGallery(false)} sx={{width:"300px"}}>All Articles</Button>
-</Center>
-</Stack>
-</>
+            <Gallery rating={rating} />
+            <Center>
+              <Button
+                onClick={() => setIsGallery(false)}
+                sx={{ width: "300px" }}
+              >
+                All Articles
+              </Button>
+            </Center>
+          </Stack>
+        </>
       ) : (
         <>
-        <Box sx={{position:"fixed", top:"300px", right:"0",background:"gray", padding:"30px",}}>
-        <Button onClick={()=>setIsGallery(true)} >Gallery</Button>
-</Box>
-        <ArticleContainer rating={rating} />
+          <Box
+            sx={{
+              position: "fixed",
+              top: "300px",
+              right: "0",
+              background: "gray",
+              padding: "30px",
+            }}
+          >
+            <Button onClick={() => setIsGallery(true)}>Gallery</Button>
+          </Box>
+          <ArticleContainer rating={rating} />
         </>
       )}
     </Box>
