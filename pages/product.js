@@ -6,7 +6,7 @@ import Gallery from "../components/Gallery";
 import { Bars } from "react-loading-icons";
 import Header from "../components/Header";
 import { NextLink } from "@mantine/next";
-
+import List from "../components/List"
 export default function Page(props) {
   const [rating, setRating] = useState("");
   const [isGallery, setIsGallery] = useState(true);
@@ -152,6 +152,7 @@ export default function Page(props) {
           >
             <Button onClick={() => setIsGallery(true)}>Gallery</Button>
           </Box>
+          <List />
           <ArticleContainer rating={rating} />
         </>
       )}
