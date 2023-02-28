@@ -10,7 +10,7 @@ export default function ArticleContainer({ props, rating }) {
     function () {
       setList(JSON.parse(localStorage.getItem("list")))
     },
-    [rating]
+    [list]
   );
 
   return (
