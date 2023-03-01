@@ -26,7 +26,7 @@ function extractFox() {
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -65,7 +65,7 @@ function extractWSJ() {
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -103,7 +103,7 @@ function extractNYT() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -135,7 +135,7 @@ function extractABC() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
     if (items.length < 5) {
@@ -174,7 +174,7 @@ function extractDM() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -203,7 +203,7 @@ function extractR() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
     if (items.length < 5) {
@@ -237,7 +237,7 @@ function extractVOX() {
     if (items.length < 30 && memo.url !== "NONE" && memo.title !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -271,7 +271,7 @@ function extractNM() {
     if (items.length < 30 && memo.url !== "NONE") {
       items.push(memo);
     }
-    if (items.length > 29) {
+    if (items.length > 15) {
       return items;
     }
   }
@@ -321,6 +321,10 @@ async function scrapeInfiniteScrollItems(page, getNews, src) {
 //}
 
 export default async function handler(req, res) {
+
+    console.time();
+  let rating = req.query.rating;
+  console.log(rating);
   const browser = await chromium.puppeteer.launch({
     args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
     defaultViewport: chromium.defaultViewport,
@@ -332,35 +336,94 @@ export default async function handler(req, res) {
   page.setJavaScriptEnabled(false);
   page.setViewport({ width: 1280, height: 3000 });
   let items;
-  await page.goto("https://www.foxnews.com/politics");
-  items = await scrapeInfiniteScrollItems(page, extractFox,"fox");
-  allArticles.fox = items;
 
-  await page.goto("https://www.wsj.com/news/us");
-  items = await scrapeInfiniteScrollItems(page, extractWSJ,"wsj");
-  allArticles.wsj = items;
+  if (rating >= 0) {
+    if (rating < 2) {
+      //r fox nm wsj
+      await page.goto("https://reason.com/latest/");
+      items = await scrapeInfiniteScrollItems(page, extractR, "r");
+      allArticles.r = items;
 
-  await page.goto("https://www.nytimes.com/section/politics");
-  items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
-  allArticles.nyt = items;
+      await page.goto("https://www.foxnews.com/politics");
+      items = await scrapeInfiniteScrollItems(page, extractFox, "fox");
+      allArticles.fox = items;
 
-  await page.goto("https://abcnews.go.com/Politics");
-  items = await scrapeInfiniteScrollItems(page, extractABC,"abc");
-  allArticles.abc = items;
+      await page.goto("https://www.newsmax.com/politics/");
+      items = await scrapeInfiniteScrollItems(page, extractNM, "nm");
+      allArticles.nm = items;
 
-  await page.goto("https://www.newsmax.com/politics/");
-  items = await scrapeInfiniteScrollItems(page, extractNM,"nm");
-  allArticles.nm = items;
+      await page.goto("https://www.wsj.com/news/us");
+      items = await scrapeInfiniteScrollItems(page, extractWSJ, "wsj");
+      allArticles.wsj = items;
+    } else if (rating < 4) {
+      //r fox nm wsj
+      await page.goto("https://reason.com/latest/");
+      items = await scrapeInfiniteScrollItems(page, extractR, "r");
+      allArticles.r = items;
 
-  await page.goto("https://reason.com/latest/")
-  items = await scrapeInfiniteScrollItems(page, extractR,"r");
-  allArticles.r = items;
+      await page.goto("https://www.foxnews.com/politics");
+      items = await scrapeInfiniteScrollItems(page, extractFox, "fox");
+      allArticles.fox = items;
 
-  await page.goto("https://www.vox.com/policy-and-politics")
-  items = await scrapeInfiniteScrollItems(page, extractVOX,"vox");
-  allArticles.vox = items;
+      await page.goto("https://www.newsmax.com/politics/");
+      items = await scrapeInfiniteScrollItems(page, extractNM, "nm");
+      allArticles.nm = items;
+
+      await page.goto("https://www.wsj.com/news/us");
+      items = await scrapeInfiniteScrollItems(page, extractWSJ, "wsj");
+      allArticles.wsj = items;
+    } else if (rating < 7) {
+      //r nyt wsj
+      await page.goto("https://reason.com/latest/");
+      items = await scrapeInfiniteScrollItems(page, extractR, "r");
+      allArticles.r = items;
+
+      await page.goto("https://www.wsj.com/news/us");
+      items = await scrapeInfiniteScrollItems(page, extractWSJ, "wsj");
+      allArticles.wsj = items;
+
+      await page.goto("https://www.nytimes.com/section/politics");
+      items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
+      allArticles.nyt = items;
+    } else if (rating < 9) {
+      //abc nyt wsj r
+
+      await page.goto("https://abcnews.go.com/Politics");
+      items = await scrapeInfiniteScrollItems(page, extractABC, "abc");
+      allArticles.abc = items;
+      await page.goto("https://www.nytimes.com/section/politics");
+      items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
+      allArticles.nyt = items;
+      await page.goto("https://www.wsj.com/news/us");
+      items = await scrapeInfiniteScrollItems(page, extractWSJ, "wsj");
+      allArticles.wsj = items;
+      await page.goto("https://reason.com/latest/");
+      items = await scrapeInfiniteScrollItems(page, extractR, "r");
+      allArticles.r = items;
+    } else if (rating < 11) {
+      //abc nyt wsj vox
+      await page.goto("https://abcnews.go.com/Politics");
+      items = await scrapeInfiniteScrollItems(page, extractABC, "abc");
+      allArticles.abc = items;
+      await page.goto("https://www.nytimes.com/section/politics");
+      items = await scrapeInfiniteScrollItems(page, extractNYT, "nyt");
+      allArticles.nyt = items;
+      await page.goto("https://www.wsj.com/news/us");
+      items = await scrapeInfiniteScrollItems(page, extractWSJ, "wsj");
+      allArticles.wsj = items;
+      await page.goto("https://www.vox.com/policy-and-politics");
+      items = await scrapeInfiniteScrollItems(page, extractVOX, "vox");
+      allArticles.vox = items;
+    } else {
+      console.log("errror");
+    }
+
+  } else {
+    console.log("still loading");
+  }
 
   await browser.close();
 
+    console.timeEnd();
   res.status(200).json(allArticles);
 }
