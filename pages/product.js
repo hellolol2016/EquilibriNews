@@ -6,7 +6,7 @@ import Gallery from "../components/Gallery";
 import { Bars } from "react-loading-icons";
 import Header from "../components/Header";
 import { NextLink } from "@mantine/next";
-import List from "../components/List"
+import List from "../components/List";
 export default function Page(props) {
   const [rating, setRating] = useState("");
   const [isGallery, setIsGallery] = useState(true);
@@ -74,19 +74,11 @@ export default function Page(props) {
         const vox = JSON.parse(window.localStorage.getItem("vox"))?.vox;
         if (rating < 2) {
           setGallery(
-            getFirstFour(r).concat(
-              ...getFirstFour(fox),
-              ...getFirstFour(nm),
-              ...getFirstFour(wsj)
-            )
+            getFirstFour(r).concat(...getFirstFour(nm), ...getFirstFour(wsj))
           );
         } else if (rating < 4) {
           setGallery(
-            getFirstFour(r).concat(
-              ...getFirstFour(fox),
-              ...getFirstFour(nm),
-              ...getFirstFour(wsj)
-            )
+            getFirstFour(r).concat(...getFirstFour(fox), ...getFirstFour(nm))
           );
         } else if (rating < 7) {
           setGallery(
@@ -94,19 +86,11 @@ export default function Page(props) {
           );
         } else if (rating < 9) {
           setGallery(
-            getFirstFour(abc).concat(
-              ...getFirstFour(nyt),
-              ...getFirstFour(wsj),
-              ...getFirstFour(r)
-            )
+            getFirstFour(abc).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
           );
         } else if (rating < 11) {
           setGallery(
-            getFirstFour(abc).concat(
-              ...getFirstFour(nyt),
-              ...getFirstFour(wsj),
-              ...getFirstFour(vox)
-            )
+            getFirstFour(abc).concat(...getFirstFour(nyt), ...getFirstFour(vox))
           );
         } else {
           console.log("errror");

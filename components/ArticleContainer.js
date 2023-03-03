@@ -31,19 +31,19 @@ export default function ArticleContainer({ props, rating }) {
       if (rating >= 0) {
         if (rating < 2) {
           console.log("far left");
-          setArt([].concat(r, fox, nm, wsj));
+          setArt([].concat(r,nm, wsj));
         } else if (rating < 4) {
           console.log("mid left");
-          setArt([].concat(r, fox, nm, wsj));
+          setArt([].concat(r, fox, nm));
         } else if (rating < 7) {
           console.log("neutral");
           setArt([].concat(r, nyt, wsj));
         } else if (rating < 9) {
           console.log("mid right");
-          setArt([].concat(abc, nyt, wsj, r));
+          setArt([].concat(abc, nyt, wsj));
         } else if (rating < 11) {
           console.log("far right");
-          setArt([].concat(abc, nyt, wsj, vox));
+          setArt([].concat(abc, nyt, vox));
         } else {
           console.log("errror");
         }
