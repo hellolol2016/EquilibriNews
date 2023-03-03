@@ -324,16 +324,20 @@ export default async function handler(req, res) {
   console.time();
   let rating = req.query.rating;
   console.log(rating);
-  const browser = await chromium.puppeteer.launch({
-    args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
-    defaultViewport: chromium.defaultViewport,
-    executablePath: await chromium.executablePath,
-    headless: true,
-    ignoreHTTPSErrors: true,
-  });
+    const browser = await puppeteer.launch({
+    defaultViewport: { width: 1280, height: 3000 },
+    args: chromium.args,
+    executablePath:
+      process.env.NODE_ENV !== 'development'
+        ? await chromium.executablePath
+        : process.platform === 'linux'
+        ? '/bin/chromium'
+        : 'C:/Users/denni/Downloads/chrome-win/chrome.exe',
+
+    headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
+  }) 
   const page = await browser.newPage();
   page.setJavaScriptEnabled(false);
-  page.setViewport({ width: 1280, height: 3000 });
   let items;
 
   if (rating >= 0) {

@@ -3,28 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "set PORT=8000 && next dev",
+    "dev": "next dev --port 8000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint --fix ./**/*.js",
+    "dev:local": "vercel dev"
   },
   "dependencies": {
     "@mantine/core": "^4.2.7",
     "@mantine/form": "^4.2.7",
     "@mantine/hooks": "^4.2.7",
     "@mantine/next": "^4.2.7",
-    "chrome-aws-lambda": "^10.1.0",
-    "next": "12.1.4",
-    "puppeteer": "^19.5.2",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-icons": "^4.4.0",
+    "chrome-aws-lambda": "^6.0.0",
+    "next": "^13.1.6",
+    "puppeteer-core": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-loading-icons": "^1.1.0",
-    "react-toastify": "^9.0.5"
+    "react-toastify": "^9.1.1"
   },
   "devDependencies": {
-    "@sparticuz/chromium": "^103.0.0",
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4"
+    "eslint": "8.34.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.4"
+  },
+  "engines": {
+    "node": "^14"
   }
 }
