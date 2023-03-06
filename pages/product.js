@@ -1,10 +1,12 @@
-import { Box, Button, Center } from '@mantine/core'
+import { Box, Button, Center, Stack } from '@mantine/core'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import ArticleContainer from '../components/ArticleContainer'
 import Gallery from '../components/Gallery'
 import { Bars } from 'react-loading-icons'
 import Header from '../components/Header'
-
+import { NextLink } from '@mantine/next'
+import List from '../components/List'
 export default function Page(props) {
   const [rating, setRating] = useState('')
   const [isGallery, setIsGallery] = useState(true)
@@ -13,7 +15,7 @@ export default function Page(props) {
 
   async function handleNewsClick() {
     setLoading(true)
-    const res = await fetch('/api/scrapeNews')
+    const res = await fetch(`/api/puppeteer?rating=${rating}`)
     const data = await res.json()
 
     window.localStorage.setItem(
@@ -42,15 +44,12 @@ export default function Page(props) {
     setLoading(false)
     console.log('data', data)
   }
-
   const setGallery = (arr) => {
     window.localStorage.setItem('gal', JSON.stringify(arr, null, 2))
   }
-
   const getFirstFour = (arr) => {
     return arr?.slice(0, 4)
   }
-
   let rn = new Date()
   useEffect(
     function () {
@@ -63,7 +62,8 @@ export default function Page(props) {
         setLoading(false)
         console.log('less than 3 hr')
       }
-      if (userRating > 0 && isLoading == false) {
+
+      if (rating >= 0 && isLoading == false) {
         const nm = JSON.parse(window.localStorage.getItem('nm'))?.nm
         const abc = JSON.parse(window.localStorage.getItem('abc'))?.abc
         const fox = JSON.parse(window.localStorage.getItem('fox'))?.fox
@@ -71,41 +71,25 @@ export default function Page(props) {
         const r = JSON.parse(window.localStorage.getItem('r'))?.r
         const wsj = JSON.parse(window.localStorage.getItem('wsj'))?.wsj
         const vox = JSON.parse(window.localStorage.getItem('vox'))?.vox
-        if (userRating < 2) {
+        if (rating < 2) {
           setGallery(
-            getFirstFour(r).concat(
-              ...getFirstFour(fox),
-              ...getFirstFour(nm),
-              ...getFirstFour(wsj)
-            )
+            getFirstFour(r).concat(...getFirstFour(nm), ...getFirstFour(wsj))
           )
-        } else if (userRating < 4) {
+        } else if (rating < 4) {
           setGallery(
-            getFirstFour(r).concat(
-              ...getFirstFour(fox),
-              ...getFirstFour(nm),
-              ...getFirstFour(wsj)
-            )
+            getFirstFour(r).concat(...getFirstFour(fox), ...getFirstFour(nm))
           )
-        } else if (userRating < 7) {
+        } else if (rating < 7) {
           setGallery(
             getFirstFour(r).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
           )
-        } else if (userRating < 9) {
+        } else if (rating < 9) {
           setGallery(
-            getFirstFour(abc).concat(
-              ...getFirstFour(nyt),
-              ...getFirstFour(wsj),
-              ...getFirstFour(r)
-            )
+            getFirstFour(abc).concat(...getFirstFour(nyt), ...getFirstFour(wsj))
           )
-        } else if (userRating < 11) {
+        } else if (rating < 11) {
           setGallery(
-            getFirstFour(abc).concat(
-              ...getFirstFour(nyt),
-              ...getFirstFour(wsj),
-              ...getFirstFour(vox)
-            )
+            getFirstFour(abc).concat(...getFirstFour(nyt), ...getFirstFour(vox))
           )
         } else {
           console.log('errror')
@@ -126,11 +110,34 @@ export default function Page(props) {
         </Center>
       ) : isGallery && !galLoading ? (
         <>
-          <Gallery rating={rating} />
-          <Button onClick={() => setIsGallery(false)}> </Button>
+          <Stack>
+            <Gallery rating={rating} />
+            <Center>
+              <Button
+                onClick={() => setIsGallery(false)}
+                sx={{ width: '300px' }}
+              >
+                All Articles
+              </Button>
+            </Center>
+          </Stack>
         </>
       ) : (
-        <ArticleContainer rating={rating} />
+        <>
+          <Box
+            sx={{
+              position: 'fixed',
+              top: '300px',
+              right: '0',
+              background: 'gray',
+              padding: '30px',
+            }}
+          >
+            <Button onClick={() => setIsGallery(true)}>Gallery</Button>
+          </Box>
+          <List />
+          <ArticleContainer rating={rating} />
+        </>
       )}
     </Box>
   )

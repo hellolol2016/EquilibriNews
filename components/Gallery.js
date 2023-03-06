@@ -28,7 +28,22 @@ const text_truncate = (str, length, ending) => {
   }
 }
 
-const Thing = ({ num, img, title, link, source, pos }) => {
+const addToList = (title, link, source, type) => {
+  console.log('added ' + title)
+  let thing = { title: title, type: type, url: link, source: source }
+  if (localStorage.getItem('list') !== null) {
+    console.log(typeof JSON.parse(localStorage.getItem('list')))
+    localStorage.setItem(
+      'list',
+      //JSON.stringify({ "list": thing }, null, 2)
+      JSON.stringify(JSON.parse(localStorage.getItem('list')).concat([thing]))
+    )
+  } else {
+    localStorage.setItem('list', JSON.stringify([].concat(thing), null, 2))
+  }
+}
+
+const Thing = ({ num, img, title, link, source, pos, type }) => {
   return (
     <Card
       shadow="sm"
@@ -67,6 +82,9 @@ const Thing = ({ num, img, title, link, source, pos }) => {
           mt="md"
           radius="md"
           sx={{ width: '20%', height: '40px' }}
+          onClick={() => {
+            addToList(title, link, source, type)
+          }}
         >
           <HiClipboardList fontSize={'30px'} />
         </Button>
@@ -78,6 +96,7 @@ export default function Gallery({ rating }) {
   const [index, setIndex] = useState(0)
   const [gal, setGal] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+
   useEffect(
     function () {
       setGal(JSON.parse(localStorage.getItem('gal')))
@@ -118,7 +137,7 @@ export default function Gallery({ rating }) {
             <Box className="section-center">
               <Center>
                 {gal.map((article, articleIndex) => {
-                  const { title, img, url, source } = article
+                  const { title, img, url, source, type } = article
                   let pos = 'next'
                   if (articleIndex === index) {
                     pos = 'active'
@@ -138,6 +157,7 @@ export default function Gallery({ rating }) {
                       link={url}
                       source={source}
                       pos={pos}
+                      type={type}
                     />
                   )
                 })}
