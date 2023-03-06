@@ -1,7 +1,7 @@
 import { Box, Center, SimpleGrid } from "@mantine/core";
 import { useEffect, useState } from "react";
 import Article from "./Article";
-
+import { Bars } from "react-loading-icons";
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -31,7 +31,7 @@ export default function ArticleContainer({ props, rating }) {
       if (rating >= 0) {
         if (rating < 2) {
           console.log("far left");
-          setArt([].concat(r,nm, wsj));
+          setArt([].concat(r, nm, wsj));
         } else if (rating < 4) {
           console.log("mid left");
           setArt([].concat(r, fox, nm));
@@ -54,28 +54,34 @@ export default function ArticleContainer({ props, rating }) {
 
   return (
     <Center>
-      <SimpleGrid
-        cols={3}
-        breakpoints={[
-          { maxWidth: 1080, cols: 3, spacing: "md" },
-          { maxWidth: 955, cols: 2, spacing: "sm" },
-          { maxWidth: 650, cols: 1, spacing: "sm" },
-        ]}
-      >
-        {allArticles.map((article) => {
-          return (
-            <Center key={article.title}>
-              <Article
-                key={article.title}
-                title={article.title}
-                type={article.type}
-                url={article.url}
-                source={article.source}
-              />
-            </Center>
-          );
-        })}
-      </SimpleGrid>
+      {allArticles !== null ? (
+        <SimpleGrid
+          cols={3}
+          breakpoints={[
+            { maxWidth: 1080, cols: 3, spacing: "md" },
+            { maxWidth: 955, cols: 2, spacing: "sm" },
+            { maxWidth: 650, cols: 1, spacing: "sm" },
+          ]}
+        >
+          {allArticles.map((article) => {
+            return (
+              <Center key={article.title}>
+                <Article
+                  key={article.title}
+                  title={article.title}
+                  type={article.type}
+                  url={article.url}
+                  source={article.source}
+                />
+              </Center>
+            );
+          })}
+        </SimpleGrid>
+      ) : (
+        <Center sx={{ height: "100vh" }}>
+          <Bars stroke="#000000" />
+        </Center>
+      )}
     </Center>
   );
 }
