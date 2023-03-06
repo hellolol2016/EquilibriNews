@@ -30,19 +30,24 @@ export default function ArticleContainer({ props, rating }) {
     if (rating >= 0) {
       if (rating < 2) {
         console.log('far left')
-        setArt([].concat(r, nm, wsj))
+        setAllArticles([].concat(r, nm, wsj))
+        //setArt([].concat(r, nm, wsj))
       } else if (rating < 4) {
         console.log('mid left')
-        setArt([].concat(r, fox, nm))
+        setAllArticles([].concat(r, nm, fox))
+        //setArt([].concat(r, fox, nm))
       } else if (rating < 7) {
         console.log('neutral')
-        setArt([].concat(r, nyt, wsj))
+        setAllArticles([].concat(r, nyt, wsj))
+        //setArt([].concat(r, nyt, wsj))
       } else if (rating < 9) {
         console.log('mid right')
-        setArt([].concat(abc, nyt, wsj))
+        setAllArticles([].concat(abc, nyt, wsj))
+        //setArt([].concat(abc, nyt, wsj))
       } else if (rating < 11) {
         console.log('far right')
-        setArt([].concat(abc, nyt, vox))
+        setAllArticles([].concat(abc, nyt, vox))
+        //setArt([].concat(abc, nyt, vox))
       } else {
         console.log('errror')
       }
