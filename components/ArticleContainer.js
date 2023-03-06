@@ -18,39 +18,36 @@ export default function ArticleContainer({ props, rating }) {
     console.log(x)
     setAllArticles(shuffle(x))
   }
-  useEffect(
-    function () {
-      const nm = JSON.parse(localStorage.getItem('nm'))?.nm
-      const abc = JSON.parse(localStorage.getItem('abc'))?.abc
-      const fox = JSON.parse(localStorage.getItem('fox'))?.fox
-      const nyt = JSON.parse(localStorage.getItem('nyt'))?.nyt
-      const r = JSON.parse(localStorage.getItem('r'))?.r
-      const wsj = JSON.parse(localStorage.getItem('wsj'))?.wsj
-      const vox = JSON.parse(localStorage.getItem('vox'))?.vox
-      console.log(typeof nm)
-      if (rating >= 0) {
-        if (rating < 2) {
-          console.log('far left')
-          setArt([].concat(r, nm, wsj))
-        } else if (rating < 4) {
-          console.log('mid left')
-          setArt([].concat(r, fox, nm))
-        } else if (rating < 7) {
-          console.log('neutral')
-          setArt([].concat(r, nyt, wsj))
-        } else if (rating < 9) {
-          console.log('mid right')
-          setArt([].concat(abc, nyt, wsj))
-        } else if (rating < 11) {
-          console.log('far right')
-          setArt([].concat(abc, nyt, vox))
-        } else {
-          console.log('errror')
-        }
+  useEffect(function () {
+    const nm = JSON.parse(localStorage.getItem('nm'))?.nm
+    const abc = JSON.parse(localStorage.getItem('abc'))?.abc
+    const fox = JSON.parse(localStorage.getItem('fox'))?.fox
+    const nyt = JSON.parse(localStorage.getItem('nyt'))?.nyt
+    const r = JSON.parse(localStorage.getItem('r'))?.r
+    const wsj = JSON.parse(localStorage.getItem('wsj'))?.wsj
+    const vox = JSON.parse(localStorage.getItem('vox'))?.vox
+    console.log(typeof nm)
+    if (rating >= 0) {
+      if (rating < 2) {
+        console.log('far left')
+        setArt([].concat(r, nm, wsj))
+      } else if (rating < 4) {
+        console.log('mid left')
+        setArt([].concat(r, fox, nm))
+      } else if (rating < 7) {
+        console.log('neutral')
+        setArt([].concat(r, nyt, wsj))
+      } else if (rating < 9) {
+        console.log('mid right')
+        setArt([].concat(abc, nyt, wsj))
+      } else if (rating < 11) {
+        console.log('far right')
+        setArt([].concat(abc, nyt, vox))
+      } else {
+        console.log('errror')
       }
-    },
-    [rating]
-  )
+    }
+  }, [])
 
   return (
     <Center>
