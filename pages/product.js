@@ -127,12 +127,12 @@ export default function Page(props) {
       ) : isGallery && !galLoading ? (
         <>
           <Gallery rating={rating} />
-          <Button onClick={() => setIsGallery(false)}> </Button>
+          <Button onClick={() => setIsGallery(false)}> View All News</Button>
         </>
       ) : (
         <>
           <ArticleContainer rating={rating} />
-          <Button onClick={() => setIsGallery(true)}> </Button>
+          <Button onClick={() => setIsGallery(true)}> View Gallery</Button>
         </>
       )}
     </Box>
