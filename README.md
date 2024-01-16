@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# News Article Web Scraper
+## Overview
+This web scraper is designed to extract news articles from popular news sites. It utilizes NextJS for frontend frameworks, Toastify for notifications, Playwright / Puppeteer for browser imitation, and MantineUI for UI elements.
 
+## Features
+Multi-site Support: Scrapes news articles from a variety of popular news websites.
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://cdn.vox-cdn.com/thumbor/fjx9AlBgNzbugF_DJEptMX3a-kE=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20058266/vox_logo_4x3.jpg" alt="Vox Logo" width="50px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/768px-Fox_News_Channel_logo.svg.png" alt="Fox Logo" width="50px">
+    <img src="https://100r.org/media/2020/05/WSJ-logo.jpg" alt="WSJ Logo" width="50px">
+    <img src="https://lh4.googleusercontent.com/rAu6Oi1vFIlx747JxosPs9qs3vd08vqU49L1eLWojiWrIIAj5xDEcdSwYS_AeGLwSGR6HmWnkeKk7DZJN3oReVQOop8b7q29kzkC3DEAS3XRtv828wTac8OPlPsdQwgOwd573PaF" alt="NYT Logo" width="50px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg" alt="ABC Logo" width="50px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIqAQRzGBqSTYg8LliaoEqsON1cm0Ps7lsA&usqp=CAU" alt="R Logo" width="50px">
+    <img src="https://yt3.googleusercontent.com/fXgXYq-vfZapJMvkRQ2k6L1vj4Zd2J97zKXlsc6G95LdIyfH3PI8o-QPreIbPOkEE0B63i1vNdU=s900-c-k-c0x00ffffff-no-rj" alt="NW Logo" width="50px">
+</div>
+
+Customizable To Personal Taste: Content is adjusted based on the user's input to balance out political bias.
+Gallery vs List: Short gallery that includes the biggest headlines as well as a comprehensive list of important articles.
 ## Getting Started
+### Prerequisites
+Have NPM installed :D
+### Installation
+Clone the repository: git clone https://github.com/hellolol2016/EquilibriNews
 
-First, run the development server:
+### Install dependencies: npm install or pip install -r requirements.txt
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-179769488d.gif)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
+Input your political rating and go on a journey of self-discovery (if you need to)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-9d992a2fb4.gif)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Wait a little bit for the scraper to load (it may take up to 2 minutes!)
 
-## Learn More
+![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-7864d8f29a.gif)
 
-To learn more about Next.js, take a look at the following resources:
+Browse the gallery to see some of the biggest headlines
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-6e7ff2a5fe.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Switch back and forth from the Gallery and List modes
 
-## Deploy on Vercel
+![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-78d1ee1456.gif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+Shoutout to Melissa Amaya for her words of encouragement & guidance and ndom91 for showing me hope in my darkest hours (trying to deploy this)
