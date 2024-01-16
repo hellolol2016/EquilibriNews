@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer-core'
-const { chromium, firefox, webkit } = require('playwright') 
+const { chromium, firefox, webkit } = require('playwright')
 
 const allArticles = {}
 
