@@ -1,5 +1,5 @@
-import chromium from 'chrome-aws-lambda'
 import puppeteer from 'puppeteer-core'
+const { chromium, firefox, webkit } = require('playwright') 
 
 const allArticles = {}
 
@@ -322,19 +322,7 @@ async function scrapeItems(page, getNews, src) {
 //}
 
 export default async function handler(_, res) {
-  const browser = await puppeteer.launch({
-    defaultViewport: { width: 1280, height: 3000 },
-    args: chromium.args,
-    executablePath:
-      process.env.NODE_ENV !== 'development'
-        ? await chromium.executablePath
-        : process.platform === 'linux'
-        ? '/bin/chromium'
-        : 'C:/Program Files/Google/Chrome/Application/chrome.exe',
-
-    headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
-  })
-
+  const browser = await chromium.launch()
   const page = await browser.newPage()
   let items = {}
 
