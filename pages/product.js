@@ -130,7 +130,10 @@ export default function Page(props) {
           <Button onClick={() => setIsGallery(false)}> </Button>
         </>
       ) : (
-        <ArticleContainer rating={rating} />
+        <>
+          <ArticleContainer rating={rating} />
+          <Button onClick={() => setIsGallery(true)}> </Button>
+        </>
       )}
     </Box>
   )

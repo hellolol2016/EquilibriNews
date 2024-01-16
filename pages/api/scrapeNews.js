@@ -36,20 +36,17 @@ function extractFox() {
 }
 
 function extractWSJ() {
-  const extractedItems = document.querySelectorAll('article')
+  const extractedItems = document.querySelectorAll('div.css-bdm6mo')
   const items = []
   for (let element of extractedItems) {
     const memo = {
       title:
-        element.querySelector('h2') != null &&
-        element.querySelector('h2').innerText.slice(-8) !== 'min read'
-          ? element.querySelector('.WSJTheme--headlineText--He1ANr9C').innerText
-          : element.querySelector('h2') != null
-          ? element.querySelector('h2').innerText.slice(0, -10)
+        element.querySelector('h3') != null
+          ? element.querySelector('h3').innerText
           : 'NONE',
       type:
-        element.querySelector('.WSJTheme--summaryText--2LRaCWgJ') != null
-          ? element.querySelector('.WSJTheme--timestamp--22sfkNDv').innerText
+        element.querySelector('p') != null
+          ? element.querySelector('p').innerText
           : 'NONE',
       url:
         element.querySelector('a') != null
@@ -74,13 +71,13 @@ function extractWSJ() {
 }
 
 function extractNYT() {
-  const extractedItems = document.querySelectorAll('.css-112uytv')
+  const extractedItems = document.querySelectorAll('article')
   const items = []
   for (let element of extractedItems) {
     const memo = {
       title:
-        element.querySelector('h2') != null
-          ? element.querySelector('h2').innerText
+        element.querySelector('h3') != null
+          ? element.querySelector('h3').innerText
           : 'NONE',
       type:
         element.querySelector('p') != null
@@ -182,38 +179,37 @@ function extractABC() {
 //   return items
 // }
 //
-// function extractR() {
-//   const column = document.querySelectorAll('article')
-//   const items = []
-//   for (let element of column) {
-//     const memo = {
-//       title:
-//         element.querySelector('h4') != null
-//           ? element.querySelector('h4').innerText
-//           : 'NONE',
-//       type:
-//         element.querySelectorAll('p') != null
-//           ? element.querySelector('p').innerText
-//           : 'NONE',
-//       url:
-//         element.querySelector('a') != null
-//           ? element.querySelector('a').href
-//           : 'NONE',
-//       source: 'r',
-//     }
-//
-//     if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
-//       items.push(memo)
-//     }
-//     if (items.length > 29) {
-//       return items
-//     }
-//     if (items.length < 5) {
-//       memo.img = element.querySelector('noscript img').src
-//     }
-//   }
-//   return items
-// }
+function extractR() {
+  const column = document.querySelectorAll('article')
+  const items = []
+  for (let element of column) {
+    const memo = {
+      title:
+        element.querySelector('h4') != null
+          ? element.querySelector('h4').innerText
+          : 'NONE',
+      type:
+        element.querySelectorAll('p') != null
+          ? element.querySelector('p').innerText
+          : 'NONE',
+      url:
+        element.querySelector('a') != null
+          ? element.querySelector('a').href
+          : 'NONE',
+      source: 'r',
+    }
+    if (items.length < 30 && memo.url !== 'NONE' && memo.title !== 'NONE') {
+      items.push(memo)
+    }
+    if (items.length > 29) {
+      return items
+    }
+    if (items.length < 5) {
+      memo.img = element.querySelector('img').src
+    }
+  }
+  return items
+}
 
 function extractVOX() {
   const column = document.querySelectorAll('.c-compact-river__entry')
@@ -223,11 +219,11 @@ function extractVOX() {
     const memo = {
       title:
         element.querySelector('h2') != null
-          ? element.querySelector('h2').innerText
+          ? element.querySelector('h2').innerHTML
           : 'NONE',
       type:
-        element.querySelectorAll('time') != null
-          ? element.querySelector('time').innerText
+        element.querySelector('time') != null
+          ? element.querySelector('time').innerHTML
           : 'NONE',
       url:
         element.querySelector('a') != null
@@ -286,7 +282,7 @@ function extractNM() {
 //return document.querySelector("img").src;
 //}
 
-async function scrapeInfiniteScrollItems(page, getNews, src) {
+async function scrapeItems(page, getNews, src) {
   let items = []
   try {
     items = await page.evaluate(getNews)
@@ -334,38 +330,40 @@ export default async function handler(_, res) {
         ? await chromium.executablePath
         : process.platform === 'linux'
         ? '/bin/chromium'
-        : 'C:/Users/denni/Downloads/chrome-win/chrome.exe',
+        : 'C:/Program Files/Google/Chrome/Application/chrome.exe',
 
     headless: process.env.NODE_ENV === 'production' ? chromium.headless : true,
   })
+
   const page = await browser.newPage()
+  let items = {}
 
   await page.goto('https://www.foxnews.com/politics')
-  let items = await scrapeInfiniteScrollItems(page, extractFox, 'fox')
+  items = await scrapeItems(page, extractFox, 'fox')
   allArticles.fox = items
 
-  await page.goto('https://www.wsj.com/news/types/national-security')
-  items = await scrapeInfiniteScrollItems(page, extractWSJ, 'wsj')
+  await page.goto('https://www.wsj.com/politics/national-security')
+  items = await scrapeItems(page, extractWSJ, 'wsj')
   allArticles.wsj = items
 
   await page.goto('https://www.nytimes.com/section/politics')
-  items = await scrapeInfiniteScrollItems(page, extractNYT, 'nyt')
+  items = await scrapeItems(page, extractNYT, 'nyt')
   allArticles.nyt = items
 
   await page.goto('https://abcnews.go.com/Politics')
-  items = await scrapeInfiniteScrollItems(page, extractABC, 'abc')
+  items = await scrapeItems(page, extractABC, 'abc')
   allArticles.abc = items
 
   await page.goto('https://www.newsmax.com/politics/')
-  items = await scrapeInfiniteScrollItems(page, extractNM, 'nm')
+  items = await scrapeItems(page, extractNM, 'nm')
   allArticles.nm = items
 
-  // await page.goto('https://reason.com/latest/')
-  // items = await scrapeInfiniteScrollItems(page, extractR, 'r')
-  // allArticles.r = items
+  await page.goto('https://reason.com/latest/')
+  items = await scrapeItems(page, extractR, 'r')
+  allArticles.r = items
 
   await page.goto('https://www.vox.com/policy-and-politics')
-  items = await scrapeInfiniteScrollItems(page, extractVOX, 'vox')
+  items = await scrapeItems(page, extractVOX, 'vox')
   allArticles.vox = items
 
   await browser.close()
