@@ -25,25 +25,29 @@ Clone the repository: git clone https://github.com/hellolol2016/EquilibriNews
 
 ### Install dependencies: npm install or pip install -r requirements.txt
 
-![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-179769488d.gif)
+![Animated GIF](https://s13.gifyu.com/images/S0i1A.gif)
 
 ## Usage
 Input your political rating and go on a journey of self-discovery (if you need to)
 
-![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-9d992a2fb4.gif)
+![Animated GIF](https://s13.gifyu.com/images/S0i1X.gif)
 
 
 Wait a little bit for the scraper to load (it may take up to 2 minutes!)
 
-![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-7864d8f29a.gif)
+![Animated GIF](https://s13.gifyu.com/images/S0iAL.gif)
 
 Browse the gallery to see some of the biggest headlines
 
-![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-6e7ff2a5fe.gif)
+![Animated GIF](https://s13.gifyu.com/images/S0iA3.gif)
 
 Switch back and forth from the Gallery and List modes
 
-![Animated GIF](https://im5.ezgif.com/tmp/ezgif-5-78d1ee1456.gif)
+![Animated GIF](https://s13.gifyu.com/images/S0iA8.gif)
+
+Access the original articles from the original site!
+
+![Animated GIF](https://s13.gifyu.com/images/S0iOp.gif)
 
 ## Contributing
 Shoutout to Melissa Amaya for her words of encouragement & guidance and ndom91 for showing me hope in my darkest hours (trying to deploy this)
