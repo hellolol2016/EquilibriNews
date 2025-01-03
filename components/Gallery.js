@@ -40,7 +40,7 @@ const Thing = ({ num, img, title, link, source, pos }) => {
       key={num}
     >
       <Card.Section>
-        <Image src={img} height={'30vh'} alt={title} />
+        <Image src={img} height={'25vh'} alt={title} />
       </Card.Section>
       <Group position="apart" mt="md" mb="xs">
         <Text weight={500}>{text_truncate(title, 80)}</Text>

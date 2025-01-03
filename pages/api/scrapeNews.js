@@ -1,4 +1,3 @@
-import puppeteer from 'puppeteer-core'
 const { chromium, firefox, webkit } = require('playwright')
 
 const allArticles = {}
@@ -346,13 +345,14 @@ export default async function handler(_, res) {
   items = await scrapeItems(page, extractNM, 'nm')
   allArticles.nm = items
 
-  await page.goto('https://reason.com/latest/')
-  items = await scrapeItems(page, extractR, 'r')
-  allArticles.r = items
+  //await page.goto('https://reason.com/latest/')
+  //items = await scrapeItems(page, extractR, 'r')
+  //allArticles.r = items
 
-  await page.goto('https://www.vox.com/policy-and-politics')
-  items = await scrapeItems(page, extractVOX, 'vox')
-  allArticles.vox = items
+  //await page.goto('https://www.vox.com/politics')
+  //items = await scrapeItems(page, extractVOX, 'vox')
+  //allArticles.vox = items
+  allArticles.vox = { placeholder: 'nothing' }
 
   await browser.close()
 
